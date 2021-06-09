@@ -6,7 +6,7 @@ body {
     font-family: 'Indie Flower', cursive;
 }
 
-/* from Bulma */
+/* Bulma, icons stay consistent in size and alignment */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -24,7 +24,7 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #169B62;
     color: white;
     min-width: 260px;
 }
@@ -52,13 +52,17 @@ body {
     border: 1px solid black !important;
 }
 
-/* -------------------------------- Media Queries */
+.bg-black {
+    background: #000 !important;
+}
 
-/* Slightly larger container on xl screens */
+/* Media Queries */
+
+/* slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* fixed top navbar only on medium and up */
