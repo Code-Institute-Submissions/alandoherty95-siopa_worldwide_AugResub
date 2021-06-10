@@ -5,7 +5,7 @@ from .models import Product
 
 
 def all_products(request):
-    """ A view showing all products in our range. Includes sorting and searching """
+    """ View showing all products in our range, sorting and searching """
 
     products = Product.objects.all()
 
@@ -17,7 +17,7 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view showing individual product details """
+    """ View showing individual product details on their own page """
 
     product = get_object_or_404(Product, pk=product_id)
 
