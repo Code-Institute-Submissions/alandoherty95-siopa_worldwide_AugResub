@@ -1,0 +1,71 @@
+[{
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001340155",
+            "name": "Cadbury Dairy Milk",
+            "description": "Our classic bar of deliciously creamy Cadbury Dairy Milk milk chocolate, made with fresh milk. A mouthful of “mmmm” in every piece!",
+            "price": 3.99,
+            "category": 1,
+            "rating": 4.8,
+            "image_url": "https://images.sweetauthoring.com/product/85624.png",
+            "image": ""
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001600425",
+            "name": "Cadbury Dairy Milk Fruit & Nut",
+            "description": "A mouth-watering combination of crunchy almonds and delicious dried grapes, all engulfed in Cadbury Dairy Milk milk chocolate to make a chocolate bar like no other!",
+            "price": 3.99,
+            "category": 1,
+            "rating": 4.5,
+            "image_url": "https://images.sweetauthoring.com/product/85630.png",
+            "image": ""
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001730010",
+            "name": "Cadbury Dairy Milk Oreo",
+            "description": "Deliciously creamy Cadbury Dairy Milk milk chocolate, packed with soft vanilla flavour filling and crunchy Oreo pieces - snap off a bite of biscuity bliss!",
+            "price": 3.99,
+            "category": 1,
+            "rating": 4.5,
+            "image_url": "https://images.sweetauthoring.com/product/65205.png",
+            "image": ""
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001890157",
+            "name": "Cadbury Dairy Milk Chopped Nut",
+            "description": "Deliciously smooth Cadbury Dairy Milk milk chocolate, filled with hazelnuts - chopped for the perfect combination in every bite!",
+            "price": 3.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://images.sweetauthoring.com/product/85628.png",
+            "image": ""
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "5002111605",
+            "name": "Simply Calphalon Enameled Cast Iron Panini Pan",
+            "description": "Deliciously creamy Cadbury Dairy Milk milk chocolate, scattered with golden chunks of Daim - snap off a piece for irresistible crunchiness and smoothness in every bite!",
+            "price": 3.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://images.sweetauthoring.com/product/65209.png",
+            "image": ""
+        }
+    }
+]
