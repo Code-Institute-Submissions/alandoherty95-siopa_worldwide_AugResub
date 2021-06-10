@@ -1,6 +1,8 @@
-from django.urls import path
-from . import views
+from django.shortcuts import render
 
-urlpatterns = [
-    path('', views.index, name='home')
-]
+# Create your views here.
+
+def index(request):
+    """ A view to return the index page """
+
+    return render(request, 'home/index.html')
