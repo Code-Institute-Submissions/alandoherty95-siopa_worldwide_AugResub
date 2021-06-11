@@ -1,67 +1,132 @@
 [
-    {
-        "pk": 1,
-        "model": "products.product",
-        "fields": {
-            "sku": "5001340155",
-            "name": "Cadbury Dairy Milk",
-            "description": "Our classic bar of deliciously creamy Cadbury Dairy Milk milk chocolate, made with fresh milk. A mouthful of “mmmm” in every piece!",
-            "price": 3.99,
-            "category": 1,
-            "image_url": "https://images.sweetauthoring.com/product/85624.png",
-            "image": "products-chocolate-milk.png"
-        }
-    },
-    {
-        "pk": 2,
-        "model": "products.product",
-        "fields": {
-            "sku": "5001600425",
-            "name": "Cadbury Dairy Milk Fruit & Nut",
-            "description": "A mouth-watering combination of crunchy almonds and delicious dried grapes, all engulfed in Cadbury Dairy Milk milk chocolate to make a chocolate bar like no other!",
-            "price": 3.99,
-            "category": 1,
-            "image_url": "https://images.sweetauthoring.com/product/85630.png",
-            "image": "products-chocolate-fruit.png"
-        }
-    },
-    {
-        "pk": 3,
-        "model": "products.product",
-        "fields": {
-            "sku": "5001730010",
-            "name": "Cadbury Dairy Milk Oreo",
-            "description": "Deliciously creamy Cadbury Dairy Milk milk chocolate, packed with soft vanilla flavour filling and crunchy Oreo pieces - snap off a bite of biscuity bliss!",
-            "price": 3.99,
-            "category": 1,
-            "image_url": "https://images.sweetauthoring.com/product/65205.png",
-            "image": "products-chocolate-oreo.png"
-        }
-    },
-    {
-        "pk": 4,
-        "model": "products.product",
-        "fields": {
-            "sku": "5001890157",
-            "name": "Cadbury Dairy Milk Chopped Nut",
-            "description": "Deliciously smooth Cadbury Dairy Milk milk chocolate, filled with hazelnuts - chopped for the perfect combination in every bite!",
-            "price": 3.99,
-            "category": 1,
-            "image_url": "https://images.sweetauthoring.com/product/85628.png",
-            "image": "products-chocolate-nut.png"
-        }
-    },
-    {
-        "pk": 5,
-        "model": "products.product",
-        "fields": {
-            "sku": "5002111605",
-            "name": "Cadbury Dairy Milk Daim",
-            "description": "Deliciously creamy Cadbury Dairy Milk milk chocolate, scattered with golden chunks of Daim - snap off a piece for irresistible crunchiness and smoothness in every bite!",
-            "price": 3.99,
-            "category": 1,
-            "image_url": "https://images.sweetauthoring.com/product/65209.png",
-            "image": "products-chocolate-daim.png"
-        }
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001340155",
+      "name": "Cadbury Dairy Milk",
+      "description": "Our classic bar of deliciously creamy Cadbury Dairy Milk milk chocolate, made with fresh milk. A mouthful of “mmmm” in every piece!",
+      "price": 3.99,
+      "category": 1,
+      "image_url": "https://images.sweetauthoring.com/product/85624.png",
+      "image": "products-chocolate-milk.png"
     }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001600425",
+      "name": "Cadbury Dairy Milk Fruit & Nut",
+      "description": "A mouth-watering combination of crunchy almonds and delicious dried grapes, all engulfed in Cadbury Dairy Milk milk chocolate to make a chocolate bar like no other!",
+      "price": 3.99,
+      "category": 1,
+      "image_url": "https://images.sweetauthoring.com/product/85630.png",
+      "image": "products-chocolate-fruit.png"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001730010",
+      "name": "Cadbury Dairy Milk Oreo",
+      "description": "Deliciously creamy Cadbury Dairy Milk milk chocolate, packed with soft vanilla flavour filling and crunchy Oreo pieces - snap off a bite of biscuity bliss!",
+      "price": 3.99,
+      "category": 1,
+      "image_url": "https://images.sweetauthoring.com/product/65205.png",
+      "image": "products-chocolate-oreo.png"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001890157",
+      "name": "Cadbury Dairy Milk Chopped Nut",
+      "description": "Deliciously smooth Cadbury Dairy Milk milk chocolate, filled with hazelnuts - chopped for the perfect combination in every bite!",
+      "price": 3.99,
+      "category": 1,
+      "image_url": "https://images.sweetauthoring.com/product/85628.png",
+      "image": "products-chocolate-nut.png"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "5002111605",
+      "name": "Cadbury Dairy Milk Daim",
+      "description": "Deliciously creamy Cadbury Dairy Milk milk chocolate, scattered with golden chunks of Daim - snap off a piece for irresistible crunchiness and smoothness in every bite!",
+      "price": 3.99,
+      "category": 1,
+      "image_url": "https://images.sweetauthoring.com/product/65209.png",
+      "image": "products-chocolate-daim.png"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001340145",
+      "name": "Tayto Cheese & Onion Crisps",
+      "description": "Renowned cheese & onion flavoured crisps in 45 gram bags. Tayto crisps have been a firm family favourite in Irish households for over 60 years.",
+      "price": 3.49,
+      "category": 2,
+      "image_url": "",
+      "image": "tayto_cheese_onion.jpeg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001450425",
+      "name": "Tayto Salt & Vinegar Crisps",
+      "description": "Renowned salt & vinegar flavoured crisps in 45 gram bags. Tayto crisps have been a firm family favourite in Irish households for over 60 years.",
+      "price": 3.49,
+      "category": 2,
+      "image_url": "",
+      "image": "tayto_salt_vinegar.jpeg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001734510",
+      "name": "Tayto Snax",
+      "description": "Crunchy cheese & onion flavoured crisps in 45 gram bags. Tayto crisps have been a firm family favourite in Irish households for over 60 years.",
+      "price": 3.49,
+      "category": 2,
+      "image_url": "",
+      "image": "tayto-snax.jpeg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001856157",
+      "name": "O'Donnell's Cheese & Onion Crisps",
+      "description": "Authentic hand cooked cheese & onion flavoured crisps in 45 gram bags. From seed to bag using local Irish ingredients.",
+      "price": 3.49,
+      "category": 2,
+      "image_url": "",
+      "image": "odonnells_cheese_onion.jpeg"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "5002115605",
+      "name": "O'Donnell's Salt & Vinegar Crisps",
+      "description": "Authentic hand cooked cheese & onion flavoured crisps in 45 gram bags. From seed to bag using local Irish ingredients",
+      "price": 3.49,
+      "category": 2,
+      "image_url": "",
+      "image": "odonnells_salt_vinegar.jpeg"
+    }
+  }
 ]
