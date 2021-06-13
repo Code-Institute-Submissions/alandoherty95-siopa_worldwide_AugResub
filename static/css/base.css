@@ -2,9 +2,14 @@ html {
     height: 100%;
 }
 
-body {
+.navbar-nav {
     font-family: 'Indie Flower', cursive;
 }
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
 
 /* Bulma, icons stay consistent in size and alignment */
 .icon {
