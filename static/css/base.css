@@ -10,7 +10,6 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-
 /* Bulma, icons stay consistent in size and alignment */
 .icon {
     align-items: center;
@@ -27,6 +26,8 @@ body {
 .main-logo-link {
     width: fit-content;
 }
+
+/* BUTTONS */
 
 .shop-now-button {
     background: #169B62;

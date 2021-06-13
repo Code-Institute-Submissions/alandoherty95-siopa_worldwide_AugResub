@@ -17,8 +17,11 @@
     {% block corecss %}
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Indie Flower Font -->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- Oswald Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -40,7 +43,8 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Siopa Worldwide {% block extra_title %}{% endblock %}</title>
+    <!-- Application title -->
+    <title id="logo-style">Siopa Worldwide {% block extra_title %}{% endblock %}</title>
 </head>
 
 <body>
@@ -52,7 +56,7 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <form method="GET" action="">
+                <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
@@ -65,6 +69,7 @@
                     </div>
                 </form>
             </div>
+            <!-- Navigation dropdown list -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
@@ -87,6 +92,7 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!-- Shopping bag -->
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                             <div class="text-center">
@@ -114,13 +120,14 @@
                 {% include 'includes/nav-bar.html' %}
             </nav>
         </div>
+        <!-- Delivery offer banner -->
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
                 <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
             </div>
         </div>
     </header>
-
+    <!-- Flash messages -->
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}
