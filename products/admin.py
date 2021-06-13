@@ -14,6 +14,7 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('sku',)
 
+
 # ADMIN CATEGORY VIEW
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
