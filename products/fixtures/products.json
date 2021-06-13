@@ -1,223 +1,340 @@
 [
-  {
-    "pk": 1,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001340155",
-      "name": "Cadbury Dairy Milk (200g)",
-      "description": "Our classic bar of deliciously creamy Cadbury Dairy Milk milk chocolate, made with fresh milk. A mouthful of “mmmm” in every piece!",
-      "price": 3.49,
-      "category": 1,
-      "image_url": "https://images.sweetauthoring.com/product/85624.png",
-      "image": "dairy-milk-milk.png"
-    }
-  },
-  {
-    "pk": 2,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001600425",
-      "name": "Cadbury Dairy Milk Fruit & Nut (200g)",
-      "description": "A mouth-watering combination of crunchy almonds and delicious dried grapes, all engulfed in Cadbury Dairy Milk milk chocolate to make a chocolate bar like no other!",
-      "price": 3.49,
-      "category": 1,
-      "image_url": "https://images.sweetauthoring.com/product/85630.png",
-      "image": "dairy-milk-fruit.png"
-    }
-  },
-  {
-    "pk": 3,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001730010",
-      "name": "Cadbury Dairy Milk Oreo (200g)",
-      "description": "Deliciously creamy Cadbury Dairy Milk milk chocolate, packed with soft vanilla flavour filling and crunchy Oreo pieces - snap off a bite of biscuity bliss!",
-      "price": 3.49,
-      "category": 1,
-      "image_url": "https://images.sweetauthoring.com/product/65205.png",
-      "image": "dairy-milk-oreo.png"
-    }
-  },
-  {
-    "pk": 4,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001890157",
-      "name": "Cadbury Dairy Milk Chopped Nut (200g)",
-      "description": "Deliciously smooth Cadbury Dairy Milk milk chocolate, filled with hazelnuts - chopped for the perfect combination in every bite!",
-      "price": 3.49,
-      "category": 1,
-      "image_url": "https://images.sweetauthoring.com/product/85628.png",
-      "image": "dairy-milk-nut.png"
-    }
-  },
-  {
-    "pk": 5,
-    "model": "products.product",
-    "fields": {
-      "sku": "5002111605",
-      "name": "Cadbury Dairy Milk Daim (200g)",
-      "description": "Deliciously creamy Cadbury Dairy Milk milk chocolate, scattered with golden chunks of Daim - snap off a piece for irresistible crunchiness and smoothness in every bite!",
-      "price": 3.49,
-      "category": 1,
-      "image_url": "https://images.sweetauthoring.com/product/65209.png",
-      "image": "dairy-milk-daim.png"
-    }
-  },
-  {
-    "pk": 6,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001340145",
-      "name": "Tayto Cheese & Onion Crisps (45g)",
-      "description": "Renowned cheese & onion flavoured crisps in 45 gram bags. Tayto crisps have been a firm family favourite in Irish households for over 60 years.",
-      "price": 2.89,
-      "category": 2,
-      "image_url": "",
-      "image": "tayto-cheese-onion.jpeg"
-    }
-  },
-  {
-    "pk": 7,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001450425",
-      "name": "Tayto Salt & Vinegar Crisps (45g)",
-      "description": "Renowned salt & vinegar flavoured crisps in 45 gram bags. Tayto crisps have been a firm family favourite in Irish households for over 60 years.",
-      "price": 2.89,
-      "category": 2,
-      "image_url": "",
-      "image": "tayto-salt-vinegar.jpeg"
-    }
-  },
-  {
-    "pk": 8,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001734510",
-      "name": "Tayto Snax (45g)",
-      "description": "Crunchy cheese & onion flavoured crisps in 45 gram bags. Tayto crisps have been a firm family favourite in Irish households for over 60 years.",
-      "price": 2.89,
-      "category": 2,
-      "image_url": "",
-      "image": "tayto-snax.jpeg"
-    }
-  },
-  {
-    "pk": 9,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001856157",
-      "name": "O'Donnell's Cheese & Onion Crisps (45g)",
-      "description": "Authentic hand cooked cheese & onion flavoured crisps in 45 gram bags. From seed to bag using local Irish ingredients.",
-      "price": 2.99,
-      "category": 2,
-      "image_url": "",
-      "image": "odonnells-cheese-onion.jpeg"
-    }
-  },
-  {
-    "pk": 10,
-    "model": "products.product",
-    "fields": {
-      "sku": "5002115605",
-      "name": "O'Donnell's Salt & Vinegar Crisps (45g)",
-      "description": "Authentic hand cooked cheese & onion flavoured crisps in 45 gram bags. From seed to bag using local Irish ingredients",
-      "price": 2.99,
-      "category": 2,
-      "image_url": "",
-      "image": "odonnells-salt-vinegar.jpeg"
-    }
-  },
     {
-    "pk": 11,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001745510",
-      "name": "Tayto Hunky Dory Sour Cream And Onion (135g)",
-      "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
-      "price": 2.99,
-      "category": 2,
-      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009834_3.JPG",
-      "image": "hunkey-sour-cream.jpeg"
-    }
-  },
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001340155",
+            "name": "Cadbury Dairy Milk (200g)",
+            "description": "Our classic bar of deliciously creamy Cadbury Dairy Milk milk chocolate, made with fresh milk. A mouthful of “mmmm” in every piece!",
+            "price": 3.49,
+            "category": 1,
+            "image_url": "https://images.sweetauthoring.com/product/85624.png",
+            "image": "dairy-milk-milk.png"
+        }
+    },
     {
-    "pk": 12,
-    "model": "products.product",
-    "fields": {
-      "sku": "5161745510",
-      "name": "Tayto Hunky Dory Cheese & Onion (135g)",
-      "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
-      "price": 2.99,
-      "category": 2,
-      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009803_3.JPG",
-      "image": "hunkey-cheese-onion.jpeg"
-    }
-  },
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001600425",
+            "name": "Cadbury Dairy Milk Fruit & Nut (200g)",
+            "description": "A mouth-watering combination of crunchy almonds and delicious dried grapes, all engulfed in Cadbury Dairy Milk milk chocolate to make a chocolate bar like no other!",
+            "price": 3.49,
+            "category": 1,
+            "image_url": "https://images.sweetauthoring.com/product/85630.png",
+            "image": "dairy-milk-fruit.png"
+        }
+    },
     {
-    "pk": 13,
-    "model": "products.product",
-    "fields": {
-      "sku": "5121745510",
-      "name": "Tayto Hunky Dory Salt & Vinegar (135g)",
-      "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness. ",
-      "price": 2.99,
-      "category": 2,
-      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009810_3.JPG",
-      "image": "hunkey-salt-vinegar.jpeg"
-    }
-  },
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001730010",
+            "name": "Cadbury Dairy Milk Oreo (200g)",
+            "description": "Deliciously creamy Cadbury Dairy Milk milk chocolate, packed with soft vanilla flavour filling and crunchy Oreo pieces - snap off a bite of biscuity bliss!",
+            "price": 3.49,
+            "category": 1,
+            "image_url": "https://images.sweetauthoring.com/product/65205.png",
+            "image": "dairy-milk-oreo.png"
+        }
+    },
     {
-    "pk": 14,
-    "model": "products.product",
-    "fields": {
-      "sku": "5991745510",
-      "name": "Tayto Hunky Dory Buffalo (135g)",
-      "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
-      "price": 2.99,
-      "category": 2,
-      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009827_3.JPG",
-      "image": "hunkey-buffalo.jpeg"
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001890157",
+            "name": "Cadbury Dairy Milk Chopped Nut (200g)",
+            "description": "Deliciously smooth Cadbury Dairy Milk milk chocolate, filled with hazelnuts - chopped for the perfect combination in every bite!",
+            "price": 3.49,
+            "category": 1,
+            "image_url": "https://images.sweetauthoring.com/product/85628.png",
+            "image": "dairy-milk-nut.png"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "5002111605",
+            "name": "Cadbury Dairy Milk Daim (200g)",
+            "description": "Deliciously creamy Cadbury Dairy Milk milk chocolate, scattered with golden chunks of Daim - snap off a piece for irresistible crunchiness and smoothness in every bite!",
+            "price": 3.49,
+            "category": 1,
+            "image_url": "https://images.sweetauthoring.com/product/65209.png",
+            "image": "dairy-milk-daim.png"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001340145",
+            "name": "Tayto Cheese & Onion Crisps (45g)",
+            "description": "Renowned cheese & onion flavoured crisps in 45 gram bags. Tayto crisps have been a firm family favourite in Irish households for over 60 years.",
+            "price": 2.89,
+            "category": 2,
+            "image_url": "",
+            "image": "tayto-cheese-onion.jpeg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001450425",
+            "name": "Tayto Salt & Vinegar Crisps (45g)",
+            "description": "Renowned salt & vinegar flavoured crisps in 45 gram bags. Tayto crisps have been a firm family favourite in Irish households for over 60 years.",
+            "price": 2.89,
+            "category": 2,
+            "image_url": "",
+            "image": "tayto-salt-vinegar.jpeg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001734510",
+            "name": "Tayto Snax (45g)",
+            "description": "Crunchy cheese & onion flavoured crisps in 45 gram bags. Tayto crisps have been a firm family favourite in Irish households for over 60 years.",
+            "price": 2.89,
+            "category": 2,
+            "image_url": "",
+            "image": "tayto-snax.jpeg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001856157",
+            "name": "O'Donnell's Cheese & Onion Crisps (45g)",
+            "description": "Authentic hand cooked cheese & onion flavoured crisps in 45 gram bags. From seed to bag using local Irish ingredients.",
+            "price": 2.99,
+            "category": 2,
+            "image_url": "",
+            "image": "odonnells-cheese-onion.jpeg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "5002115605",
+            "name": "O'Donnell's Salt & Vinegar Crisps (45g)",
+            "description": "Authentic hand cooked cheese & onion flavoured crisps in 45 gram bags. From seed to bag using local Irish ingredients",
+            "price": 2.99,
+            "category": 2,
+            "image_url": "",
+            "image": "odonnells-salt-vinegar.jpeg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001745510",
+            "name": "Tayto Hunky Dory Sour Cream And Onion (135g)",
+            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
+            "price": 2.99,
+            "category": 2,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009834_3.JPG",
+            "image": "hunkey-sour-cream.jpeg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "5161745510",
+            "name": "Tayto Hunky Dory Cheese & Onion (135g)",
+            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
+            "price": 2.99,
+            "category": 2,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009803_3.JPG",
+            "image": "hunkey-cheese-onion.jpeg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "5121745510",
+            "name": "Tayto Hunky Dory Salt & Vinegar (135g)",
+            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness. ",
+            "price": 2.99,
+            "category": 2,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009810_3.JPG",
+            "image": "hunkey-salt-vinegar.jpeg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "5991745510",
+            "name": "Tayto Hunky Dory Buffalo (135g)",
+            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
+            "price": 2.99,
+            "category": 2,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009827_3.JPG",
+            "image": "hunkey-buffalo.jpeg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "5056996157",
+            "name": "Tayto Hunky Dorys Assorted 6 Pack (25g)",
+            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
+            "price": 3.49,
+            "category": 2,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009872_3.JPG",
+            "image": "hunkey-variety.jpeg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "5564456157",
+            "name": "Cadbury Snack Shortcake Pack (120g)",
+            "description": "Snackable squares of delicious shortcake biscuit, covered with smooth Cadbury milk chocolate for a perfect biscuity bite!",
+            "price": 3.49,
+            "category": 1,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/7622210809025_3.JPG",
+            "image": "snack-shortcake.png"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "5322775605",
+            "name": "Cadbury Snack Sandwich 6 Pack (132g)",
+            "description": "Smooth Cadbury milk chocolate filling, sandwiched between two scrumptious shortcake squares for the perfect biscuity snack!",
+            "price": 3.49,
+            "category": 1,
+            "image_url": "https://images.sweetauthoring.com/product/80691.png",
+            "image": "snack-sandwich.png"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001340775",
+            "name": "Barry's Gold Blend Tea Bags 160 Pack (500 g)",
+            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends.",
+            "price": 7.49,
+            "category": 4,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5099810552408_3.JPG",
+            "image": "barrys-gold-500.jpeg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001609225",
+            "name": "Barry's Gold Blend Tea 80 Pack (250 g)",
+            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends.",
+            "price": 3.69,
+            "category": 4,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5099810020006_3.JPG",
+            "image": "barrys-gold-250.jpeg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001738810",
+            "name": "Barry's Original Blend Tea 160 Pack (500 g)",
+            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends.",
+            "price": 6.99,
+            "category": 4,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5099810735207_3.JPG",
+            "image": "barrys-original-500.jpeg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001811157",
+            "name": "Barry's Decaf Blend Tea 80 Pack (250 g)",
+            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends.",
+            "price": 3.69,
+            "category": 4,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5099810332161_3.JPG",
+            "image": "barrys-decaf-250.jpeg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "5002111605",
+            "name": "Nescafé Gold Blend Coffee (200 g)",
+            "description": "Nescafé Gold Blend is a premium instant coffee with a smooth, distinctive flavour and rich aroma. Our recipe contains mountain-grown Arabica beans ground 10 times finer, to unlock the soul of the bean. So prepare a cup, sit back and savour the moment with this quality blend.",
+            "price": 7.49,
+            "category": 4,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/7613036077514_3.JPG",
+            "image": "nescafe-gold-200.jpeg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001430145",
+            "name": "Nescafé Gold Blend Coffee (100 g)",
+            "description": "Nescafé Gold Blend is a premium instant coffee with a smooth, distinctive flavour and rich aroma. Our recipe contains mountain-grown Arabica beans ground 10 times finer, to unlock the soul of the bean. So prepare a cup, sit back and savour the moment with this quality blend.",
+            "price": 3.99,
+            "category": 4,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/7613036069816_3.JPG",
+            "image": "nescafe-gold-100.jpeg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001450425",
+            "name": "Kenco Rich Coffee (100 g)",
+            "description": "One sip and you'll appreciate the intense richness of Kenco Rich: a distinctive, full bodied coffee. We take a special blend of premium coffee beans, then roast them with care and expertise to create the rich flavour and irresistible aroma..",
+            "price": 3.89,
+            "category": 2,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/8711000519356_3.JPG",
+            "image": "kenco-rich-100"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001734510",
+            "name": "Kenco Millicano Americano Original Coffee (100 g)",
+            "description": "Barista-style blend: Americano Taste: bold, rounded, heart-warming Aroma: rich, welcoming Finish: smooth and balanced with a blend of freeze dried instant coffee and roast and ground coffee. Looking for a stronger taste? Millicano barista-style blends a perfect cup every time.",
+            "price": 3.89,
+            "category": 2,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/8711000519141_3.JPG",
+            "image": "kenco-millicano.jpeg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "5001856157",
+            "name": "Kenco Millicano Americano Original Coffee (100 g)",
+            "description": "Barista-style blend: Intense Taste: dark-roasted, full-bodied, intense Aroma: deep, complex Finish: smooth and aromatic with a blend of freeze dried instant coffee and roast and ground coffee.",
+            "price": 3.99,
+            "category": 2,
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/8711000519233_3.JPG",
+            "image": "kenco-millicano-intense.jpeg"
+        }
     }
-  },
-  {
-    "pk": 15,
-    "model": "products.product",
-    "fields": {
-      "sku": "5056996157",
-      "name": "Tayto Hunky Dorys Assorted 6 Pack (25g)",
-      "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
-      "price": 3.49,
-      "category": 2,
-      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009872_3.JPG",
-      "image": "hunkey-variety.jpeg"
-    }
-  },
-  {
-    "pk": 16,
-    "model": "products.product",
-    "fields": {
-      "sku": "5564456157",
-      "name": "Cadbury Snack Shortcake Pack (120g)",
-      "description": "Snackable squares of delicious shortcake biscuit, covered with smooth Cadbury milk chocolate for a perfect biscuity bite!",
-      "price": 3.49,
-      "category": 1,
-      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/7622210809025_3.JPG",
-      "image": "snack-shortcake.png"
-    }
-  },
-  {
-    "pk": 17,
-    "model": "products.product",
-    "fields": {
-      "sku": "5322775605",
-      "name": "Cadbury Snack Sandwich 6 Pack (132g)",
-      "description": "Smooth Cadbury milk chocolate filling, sandwiched between two scrumptious shortcake squares for the perfect biscuity snack!",
-      "price": 3.49,
-      "category": 1,
-      "image_url": "https://images.sweetauthoring.com/product/80691.png",
-      "image": "snack-sandwich.png"
-    }
-  }
 ]
