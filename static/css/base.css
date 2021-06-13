@@ -27,7 +27,7 @@ body {
     width: fit-content;
 }
 
-/* BUTTONS */
+/* Buttons */
 
 .shop-now-button {
     background: #169B62;
@@ -72,16 +72,21 @@ body {
     z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: #169B62 !important;
+    color: #fff !important;
+}
+
 /* Media Queries */
 
-/* slightly larger container on xl screens */
+/* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
     }
 }
 
-/* fixed top navbar only on medium and up */
+/* Fixed top navbar only on medium screens and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -96,7 +101,7 @@ body {
     }
 }
 
-/* top padding when navbar collapses on mobile */
+/* Top padding when navbar collapses on mobile devices */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
