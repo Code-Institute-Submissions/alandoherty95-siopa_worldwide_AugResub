@@ -2,12 +2,16 @@ html {
     height: 100%;
 }
 
-.navbar-nav {
+.logo-style {
     font-family: 'Indie Flower', cursive;
 }
 
 body {
     font-family: 'Oswald', sans-serif;
+}
+
+#delivery-banner {
+    background-color: #169B62;
 }
 
 /* Bulma, icons stay consistent in size and alignment */
@@ -19,10 +23,6 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
-    text-transform: uppercase;
-}
-
 .main-logo-link {
     width: fit-content;
 }
@@ -31,8 +31,17 @@ body {
 
 .shop-now-button {
     background: #169B62;
-    color: white;
-    min-width: 260px;
+    color: #ffffff;
+    min-width: 360px;
+    border: 2px solid #169B62;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    background: #ffffff;
+    color: #169B62;
+    border: 2px solid #169B62;
 }
 
 .btn-black {
@@ -40,9 +49,6 @@ body {
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -87,6 +93,7 @@ a.category-badge > span.badge:hover {
 
 .btt-link {
     cursor: crosshair;
+    border: 2px solid #169B62;
 }
 
 /* Media Queries */
