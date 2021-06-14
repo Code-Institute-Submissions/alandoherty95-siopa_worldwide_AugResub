@@ -45,12 +45,20 @@ body {
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    background: #000000;
+    color: #ffffff;
 }
 
 .btn-outline-green {
-    background: white;
+    background: #169B62;
+    color: #ffffff !important;
+    border: 1px solid #ffffff;
+}
+
+.btn-outline-green:hover,
+.btn-outline-green:active,
+.btn-outline-green:focus {
+    background: #ffffff;
     color: #169B62 !important;
     border: 1px solid #169B62;
 }
@@ -58,8 +66,9 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #ffffff;
+    color: #000000 !important;
+    border: 1px solid #000000;
 }
 
 .text-black {
@@ -85,8 +94,8 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background: #169B62 !important;
-    color: #fff !important;
+    background: #169B62;
+    color: #ffffff !important;
 }
 
 .btt-button {
