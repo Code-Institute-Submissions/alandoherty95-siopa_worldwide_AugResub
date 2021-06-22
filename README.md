@@ -56,4 +56,331 @@ We continually tweak and adjust this template to help give you the best experien
 
 ---
 
-Happy coding!
+
+**[Siopa Worldwide](insert link to deployed website)**
+
+  
+
+  
+
+Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop shop for all your favourite Irish products. We are dedicated to keeping you stocked up with Irish food and drinks no matter where in the world you are located!
+
+  
+
+  
+
+![Website Mockup](insert website mockup)
+
+  
+
+  
+
+<span id="top"></span>
+
+  
+
+  
+
+![Reciprocate Logo](insert website logo)
+
+  
+
+  
+
+**[Siopa Worldwide](insert link to deployed website)** is a full-stack application selling Irish goods around the globe. The website is designed to showcase the most popular Irish food, beverages and as well as other products.
+
+  
+
+  
+
+## Table of Contents
+
+  
+
+  
+
+1. <a href="#context">**Context**</a>
+
+  
+
+  
+
+2. <a href="#ux">**User Experience (UX)**</a>
+
+  
+
+  
+
+3. <a href="#scope">**Scope**</a>
+
+  
+
+  
+
+4. <a href="#structure">**Structure**</a>
+
+  
+
+  
+
+5. <a href="#wireframes">**Wireframes**</a>
+
+  
+
+  
+
+6. <a href="#technologies">**Technologies**</a>
+
+  
+
+  
+
+7. <a href="#database">**Database**</a>
+
+  
+
+  
+
+8. <a href="#features">**Features**</a>
+
+  
+
+  
+
+9. <a href="#testing">**Testing**</a>
+
+  
+
+  
+
+10. <a href="#deployment">**Deployment**</a>
+
+  
+
+  
+
+11. <a href="#credits">**Credits**</a>
+
+  
+
+  
+
+12. <a href="#acknowledgements">**Acknowledgements**</a>
+
+  
+
+  
+
+<span id="context"></span>
+
+  
+
+  
+
+## 1. Context
+
+  
+
+  
+
+The purpose of this project is to create an e-commerce store specialising in Irish goods. I chose this angle due to the bountiful number of Irish people who live outside of their homeland but still desire Irish products. Typically, Irish people living abroad will find it difficult to source authentic Irish food and beverages. I was able to identify a niche market which can be utilised by anyone who craves Irish products irregardless of their location in the world. In preparation for this project, I conducted research on friends, colleagues and family members to identify the most popular food and beverage products which can not be easily found outside of Ireland.
+
+  
+
+The application is designed with user experience in mind. The website allows users to easily browse through the range of products in our database. Shoppers can use the sorting and searching features to easily find their desired products. The shoppers can add items to their bag with a running cost displayed in the top right corner at all times. The user can complete an order by making a purchase and a confirmation message will be sent via email. The website is intuitive and the purpose is immediately clear to any first-time visitors.
+
+  
+
+  
+
+<span id="ux"></span>
+
+  
+
+  
+
+## 2. User Experience (UX)
+
+  
+
+### Design Process
+
+  
+
+During the research phase of this project, I posed the following questions to friends, family members and peers living abroad:
+
+  
+
+- Which Irish goods to you desire most while living abroad?
+
+- Which online stores do you use for buying Irish goods?
+
+- What are your favourite brands of Irish food and drinks?
+
+- What kind of Irish goods can you purchase in your town or city?
+
+- Is there any store specialising in Irish products in your town or city?
+
+### Target Market
+
+  
+
+The e-commerce store is primarily targeting Irish people who are living abroad. It is difficult for most Irish people living in a foreign country to find their favourite Irish food and beverages. There is a niche market for selling Irish goods to Irish people living abroad.
+
+  
+
+### Overview
+
+  
+
+  
+
+The website was designed with three main objectives:
+
+  
+
+  
+
+- To allow users to browse all products in our database using sorting and searching features
+
+  
+
+  
+
+- To allow shoppers to complete an order by purchasing their desired products
+
+  
+
+  
+
+- To allows shoppers to create an account and view previous orders
+
+  
+
+### **Project Goals**
+
+- As an owner of this e-commerce store, I would like to:
+
+- to encourage users to visit the store
+
+- to encourage users to browse our range of products
+
+- to encourage users to buy products from the store
+
+- to encourage users to return to the website again
+
+- to create, update and delete items in our product range
+
+  
+
+### **User Stories**
+
+  
+
+#### **As a first-time user, I would like to:**
+
+  
+
+**General**
+
+  
+
+- immediately understand the purpose and aim of the website
+
+- be able to easily navigate through the site
+
+- explore a website that appeals to me visually
+
+- know where I am on the website at all times
+
+- be informed of actions I take, successful or otherwise
+
+  
+
+**Products**
+
+  
+
+- browse through a range of products
+
+- sort products by their relevant category
+
+- search for a specific product using keywords
+
+- view the individual product details on a separate page
+
+- adjust the quantity of any product
+
+  
+
+**Shopping Bag**
+
+  
+
+- easily view the contents of my shopping bag
+
+- easily view the total cost of my shopping bag at all times
+
+- remove items from my shopping bag
+
+- adjust the quantity of items for a specific product in my shopping bag
+
+- see any changes I make to my bag reflected in the shopping bag grand total
+
+- view the details of what is in my shopping bag
+
+  
+
+**Checkout**
+
+  
+
+- purchase items by checking out easily and securely 
+
+- receive a confirmation message of my order via email
+
+- view the details of my order in the confirmation email  
+
+**Create Account**
+
+  
+
+- create an account easily and quickly
+
+  
+
+#### **As a registered user:**
+
+  
+
+- log in and out easily and quickly
+
+- reset my password if it is forgotten
+
+- receive a confirmation message that I have successfully registered an account
+
+- view my personal profile
+
+- view my order history in my profile page
+
+- save my default delivery details for future orders
+
+- easily update my delivery information
+
+  
+
+#### **As a Superuser:**
+
+  
+
+- access the admin panel easily
+
+- create, update and delete categories
+
+- add new items to our product range
+
+- edit or delete existing items from our product range
+
+- view and manage users of the site
+
+- view and manage orders
