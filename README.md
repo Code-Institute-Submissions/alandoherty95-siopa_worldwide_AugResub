@@ -385,6 +385,15 @@ The website was designed with three main objectives:
 
 - view and manage orders
 
+## **Wireframes**
+
+![Home Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/wireframes/desktop-wireframes/wireframe-home.png?raw=true)
+
+![Products Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/wireframes/desktop-wireframes/wireframe-products.png?raw=true)
+
+![Product Detail Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/wireframes/desktop-wireframes/wireframe-product-detail.png?raw=true)
+
+
   ## **Technologies Used**
 
 ### **Languages**
