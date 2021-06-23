@@ -385,6 +385,49 @@ The website was designed with three main objectives:
 
 - view and manage orders
 
+## **Design and Development**
+
+### **Design Process**
+
+The primary design goal in mind when designing this application is to attract the customer to explore further. The landing page is bright and striking. There is a prominent call-to-action button inviting users to 'Shop Now'. This button will leads the user to the products page where they can browse all items in our product range.
+-   Design a bright and visually appealing application.
+-   Design an intuitive and easy to navigate website.
+-   Achieve a clean aesthetic displaying only the necessary information.
+-   Use Bootstrap4 features for the layout and structure of the application
+-   Use Bootstrap4 classes and components to provide structure as well as highlighting and enhancing different elements.
+-   Design an application which is responsive on all screen sizes.
+
+#### **Development Process**
+
+The whole development process is broken down into smaller stages to help in managing the project. 
+
+- During the research phase of this project, I posed the following questions to friends, family members and peers living abroad:
+  -   Which Irish goods do you desire most while living abroad?
+    
+  -   Which online stores do you use for buying Irish goods?
+    
+  -   What are your favourite brands of Irish food and drinks?
+    
+  -   What kind of Irish goods can you purchase in your town or city?
+    
+  -   Is there any store specialising in Irish products in your town or city?
+  
+-   Choose a consistent colour scheme
+-   Identify the necessary applications needed
+-   Create wireframes for each page for desktop, mobile and tablet
+-   Create a data set for the products application
+-   Create a minimum viable product
+    -   Set up Django Framework
+    -   Set up Allauth for authentication and registration
+    -   Create a base.html page including navigation with common elements, links and scripts
+    -   Create a home app 
+    -   Create a products app to display all items in our product range
+    -   Create a bag app to display the contents of the shopping bag
+    -   Create a checkout app
+    -   Create a profile app 
+    -   Create additional elements contributing to the user experience such as toasts and messages
+-   Adjust and tailor the layout and styling of each page
+
 ## **Wireframes**
 
 ![Home Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/wireframes/desktop-wireframes/wireframe-home.png?raw=true)
