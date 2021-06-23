@@ -183,7 +183,7 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
-The purpose of this project is to create an e-commerce store specialising in Irish goods. I chose this angle due to the bountiful number of Irish people who live outside of their homeland but still desire Irish products. Typically, Irish people living abroad will find it difficult to source authentic Irish food and beverages. I was able to identify a niche market which can be utilised by anyone who craves Irish products irregardless of their location in the world. In preparation for this project, I conducted research on friends, colleagues and family members to identify the most popular food and beverage products which can not be easily found outside of Ireland.
+The purpose of this project is to create an e-commerce store specialising in Irish goods. I chose this angle due to the bountiful number of Irish people who live outside of their homeland but still desire Irish products. Typically, Irish people living abroad will find it difficult to source authentic Irish food and beverages. I was able to identify a niche market which can be utilised by anyone who craves Irish products regardless of their location in the world. In preparation for this project, I conducted research on friends, colleagues and family members to identify the most popular food and beverage products which can not be easily found outside of Ireland.
 
   
 
@@ -211,7 +211,7 @@ During the research phase of this project, I posed the following questions to fr
 
   
 
-- Which Irish goods to you desire most while living abroad?
+- Which Irish goods do you desire most while living abroad?
 
 - Which online stores do you use for buying Irish goods?
 
@@ -384,3 +384,48 @@ The website was designed with three main objectives:
 - view and manage users of the site
 
 - view and manage orders
+
+  ## **Technologies Used**
+
+### **Languages**
+
+-   **HTML**  - used to create the main structure of the application
+-   **CSS**  - used to position components and style the application
+-   **JavaScript**  - used to for interactivity throughout website
+-   **Python**  - used to handle backend functionality
+
+### **Libraries and Frameworks**
+
+-   [Django](https://www.djangoproject.com/)
+-   [Bootstrap4](https://getbootstrap.com/)
+-   [Stripe](https://www.stripe.com/)
+-   [Google Fonts](https://fonts.google.com/)
+-   [Font Awesome](https://fontawesome.com/)
+-   [jQuery](https://code.jquery.com/)
+-   [Pillow](https://pypi.org/project/Pillow/2.2.1/)
+-   [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+-   [Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+
+### **Project Management**
+
+-   [Git](https://git-scm.com/)
+-   [Gitpod](https://gitpod.io/)
+-   [Github](https://github.com/)
+-   [Heroku](https://signup.heroku.com/)
+
+### **Tools**
+
+-   [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+-   [Moqups](https://moqups.com/)
+-   [Am I Responsive](http://ami.responsivedesign.is/)
+-   [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en)
+-   [Favicon](https://favicon.io/favicon-converter/)
+
+
+### **Resources**
+
+-   [Django Docs](https://docs.djangoproject.com/en/3.2/)
+-   [w3schools](https://www.w3schools.com/)
+-   [Stack Overflow](https://stackoverflow.com/)
+
+
