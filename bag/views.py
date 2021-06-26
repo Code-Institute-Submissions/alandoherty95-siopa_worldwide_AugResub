@@ -27,7 +27,7 @@ def add_to_bag(request, item_id):
 
 
 def adjust_bag(request, item_id):
-    """ ADJUST QUANTITY OF SPECIFIC ITEM """
+    """ ADJUSTS QUANTITY OF SPECIFIC ITEM """
   
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
@@ -39,3 +39,17 @@ def adjust_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
+
+
+def remove_from_bag(request, item_id):
+    """ REMOVES ITEM FROM SHOPPING BAG """
+
+    try:
+        bag = request.session.get('bag', {})
+
+
+        request.session['bag'] = bag
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        return HttpResponse(status=500)
