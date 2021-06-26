@@ -46,6 +46,7 @@
                         </td>
                         <td class="py-3 w-25">
                             <form class="form update-form" method="POST" action="">
+                                <!-- Ensures only forms from trusted domains can be used to POST data back -->
                                 {% csrf_token %}
                                 <div class="form-group">
                                     <div class="input-group">
@@ -72,8 +73,7 @@
                                 </div>
                             </form>
                             <a class="update-qty text-info"><small>Update Quantity</small></a>
-                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
-                                data-size="{{ item.size }}"><small>Remove Item</small></a>
+                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove Item</small></a>
                         </td>
                         <td class="py-3">
                             <p class="my-0">${{ item.product.price }}</p>
@@ -127,6 +127,7 @@
 </div>
 {% endblock %}
 
+<!-- Item quantity selector JS -->
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/input_quantity_script.html' %}
@@ -142,11 +143,9 @@
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var size = $(this).data('size');
         var url = `/bag/remove/${itemId}`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
 
-        $.post(url, data)
+        $.post(url)
          .done(function() {
              location.reload();
          });

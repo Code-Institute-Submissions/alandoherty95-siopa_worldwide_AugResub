@@ -1,11 +1,12 @@
 <script type="text/javascript">
 // Buttons for adjusting quantity of items
 
-    // Disables +/- buttons outside of range
+    // Sets the quantity range (1-99)
     function handleEnableDisable(itemId) {
         var currentValue = parseInt($(`#id_qty_${itemId}`).val());
         var minusDisabled = currentValue < 2;
         var plusDisabled = currentValue > 98;
+        // Disables +/- buttons outside of range (1-99)
         $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
         $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
@@ -23,21 +24,23 @@
         handleEnableDisable(itemId);
     });
 
-    // Increments quantity of item
+    // Increase quantity of item
     $('.increment-qty').click(function(e) {
        e.preventDefault();
        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
        var currentValue = parseInt($(closestInput).val());
+       // Increments quantity of item by 1
        $(closestInput).val(currentValue + 1);
        var itemId = $(this).data('item_id');
        handleEnableDisable(itemId);
     });
 
-    // Decrements quantity of item
+    // Decreases quantity of item
     $('.decrement-qty').click(function(e) {
        e.preventDefault();
        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
        var currentValue = parseInt($(closestInput).val());
+       // Decrements quantity of item by 1
        $(closestInput).val(currentValue - 1);
        var itemId = $(this).data('item_id');
        handleEnableDisable(itemId);
