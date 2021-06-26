@@ -45,7 +45,7 @@
                             <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                         </td>
                         <td class="py-3 w-25">
-                            <form class="form update-form" method="POST" action="">
+                            <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                 <!-- Ensures only forms from trusted domains can be used to POST data back -->
                                 {% csrf_token %}
                                 <div class="form-group">
