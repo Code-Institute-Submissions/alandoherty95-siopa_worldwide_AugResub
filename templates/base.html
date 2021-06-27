@@ -130,7 +130,11 @@
     </header>
     <!-- Flash messages -->
     {% if messages %}
-    <div class="message-container"></div>
+        <div class="message-container">
+            {% for message in messages %}
+                {% include 'includes/toasts/toast_error.html' %}
+            {% endfor %}
+        </div>
     {% endif %}
 
     {% block page_header %}
