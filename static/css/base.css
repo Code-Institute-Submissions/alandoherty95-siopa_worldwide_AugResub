@@ -116,6 +116,19 @@ a.category-badge > span.badge:hover {
     color: #169B62 !important;
 }
 
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 88px;
+    right: 18px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
 /* Media Queries */
 
 /* Slightly larger container on xl screens */
