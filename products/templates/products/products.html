@@ -14,7 +14,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font">Browse Products</h2>
+            <h2 class="mt-3">Browse Products</h2>
             <!-- Categories -->
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
@@ -35,14 +35,17 @@
                             class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
                             </option>
+                            <!-- Sorting items by price -->
                             <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
                                 (low to high)</option>
                             <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
                                 (high to low)</option>
+                            <!-- Sorting items by name -->
                             <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
                                 (A-Z)</option>
                             <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
                                 (Z-A)</option>
+                            <!-- Sorting items by category -->
                             <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
                                 Category (A-Z)</option>
                             <option value="category_desc"
@@ -53,7 +56,8 @@
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                        <!-- Return to main products page -->
+                        <span><a href="{% url 'products' %}" class="text-secondary">Products Home</a> | </span>
                         {% endif %}
                         {{ products|length }} Products{% if search_term %} found for
                         <strong>"{{ search_term }}"</strong>{% endif %}
@@ -81,12 +85,11 @@
                     <div class="card-footer bg-white pt-0 border-0 text-left">
                         <div class="row">
                             <div class="col">
-                                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                <p class="lead mb-0 text-left font-weight-bold"><i class="fas fa-tag mr-1"></i>€{{ product.price }}</p>
                                 {% if product.category %}
                                 <p class="mt-2 mb-0">
                                     <a class="text-muted"
-                                        href="{% url 'products' %}?category={{ product.category.name }}">
-                                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                        href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category.friendly_name }}
                                     </a>
                                 </p>
                                 {% endif %}
