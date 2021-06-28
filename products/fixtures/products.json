@@ -341,58 +341,6 @@
     "pk": 27,
     "model": "products.product",
     "fields": {
-      "sku": "5001739910",
-      "name": "Kerrygold Creamery Butter (227 g)",
-      "description": "Enjoy the delicious taste of Kerrygold, Ireland's favourite butter.",
-      "price": 2.49,
-      "category": 6,
-      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011038002275_3.JPG",
-      "image": "kerrygold-227.jpeg"
-    }
-  },
-  {
-    "pk": 28,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001856199",
-      "name": "Kerrygold Creamery Butter (454 g)",
-      "description": "Enjoy the delicious taste of Kerrygold, Ireland's favourite butter.",
-      "price": 3.69,
-      "category": 6,
-      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011038004545_3.JPG",
-      "image": "kerrygold-454.jpeg"
-    }
-  },
-  {
-    "pk": 29,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001739919",
-      "name": "Dairygold Original (454 g)",
-      "description": "Dairygold has been in hearts and homes around Ireland for 30 years.",
-      "price": 3.29,
-      "category": 6,
-      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011037611195_3.JPG",
-      "image": "dairygold-454.jpeg"
-    }
-  },
-  {
-    "pk": 30,
-    "model": "products.product",
-    "fields": {
-      "sku": "5001856129",
-      "name": "Dairygold Original (227 g)",
-      "description": "Dairygold has been in hearts and homes around Ireland for 30 years.",
-      "price": 2.19,
-      "category": 6,
-      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011038004545_3.JPG",
-      "image": "dairygold-227.jpeg"
-    }
-  },
-  {
-    "pk": 31,
-    "model": "products.product",
-    "fields": {
       "sku": "5001739919",
       "name": "Jacob's Fig Roll (200 g)",
       "description": "Jacob's fig rolls. Gorgeous. Unbelievably tasty. Baked right to perfection. Only real sun dried figs - totally natural. Good source of fibre. Trust, generations of trust.",
@@ -403,16 +351,94 @@
     }
   },
   {
-    "pk": 32,
+    "pk": 28,
     "model": "products.product",
     "fields": {
-      "sku": "5001856129",
+      "sku": "5001856124",
       "name": "Jacob's Fig Roll (300 g)",
       "description": "Jacob's fig rolls. Gorgeous. Unbelievably tasty. Baked right to perfection. Only real sun dried figs - totally natural. Good source of fibre. Trust, generations of trust.",
       "price": 2.19,
       "category": 3,
       "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011021403324_3.JPG",
       "image": "fig-roll-300.jpeg"
+    }
+  },
+    {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001856129",
+      "name": "Cadbury Chocolate Fingers (114 g)",
+      "description": "Fantastically fun fingers of crispy biscuit, smothered in Cadbury Dairy Milk milk chocolate!",
+      "price": 3.19,
+      "category": 3,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/0072417161575_3.JPG",
+      "image": "fingers-114.jpeg"
+    }
+  },
+    {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001856122",
+      "name": "Cadbury Mini Fingers Pouch (125 g)",
+      "description": "Fantastically fun fingers of crispy biscuit, smothered in Cadbury Dairy Milk milk chocolate!",
+      "price": 3.39,
+      "category": 3,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/7622210817532_3.JPG",
+      "image": "fingers-125.jpeg"
+    }
+  },
+    {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "sku": "5003365129",
+      "name": "Lucozade Original (500 ml)",
+      "description": "Lucozade Energy Original is a sparkling drink powered by glucose, offering refreshment with that great tasting, classic flavour.",
+      "price": 2.89,
+      "category": 5,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5054267000612_3.JPG",
+      "image": "lucozade-original-500.jpeg"
+    }
+  },
+    {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001856129",
+      "name": "Lucozade Energy Original (900 ml)",
+      "description": "Lucozade Energy Original is a sparkling drink powered by glucose, offering refreshment with that great tasting, classic flavour.",
+      "price": 3.19,
+      "category": 5,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5054267010727_3.JPG",
+      "image": "lucozade-original-900.jpeg"
+    }
+  },
+    {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "sku": "5003365929",
+      "name": "Lucozade Energy Orange Drink (500 ml)",
+      "description": "Lucozade Energy Orange is a sparkling orange drink powered by glucose, offering refreshment with a great tasting flavour.",
+      "price": 2.89,
+      "category": 5,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5054267010642_3.JPG",
+      "image": "lucozade-orange-500.jpeg"
+    }
+  },
+    {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "sku": "5001856729",
+      "name": "Lucozade Energy Original (900 ml)",
+      "description": "Lucozade Energy Orange is a sparkling orange drink powered by glucose, offering refreshment with a great tasting flavour.",
+      "price": 3.19,
+      "category": 5,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5054267010727_3.JPG",
+      "image": "lucozade-orange-900.jpeg"
     }
   }
 ]
