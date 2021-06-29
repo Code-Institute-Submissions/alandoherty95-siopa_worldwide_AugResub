@@ -363,7 +363,7 @@
       "image": "fig-roll-300.jpeg"
     }
   },
-    {
+  {
     "pk": 29,
     "model": "products.product",
     "fields": {
@@ -376,7 +376,7 @@
       "image": "fingers-114.jpeg"
     }
   },
-    {
+  {
     "pk": 30,
     "model": "products.product",
     "fields": {
@@ -389,7 +389,7 @@
       "image": "fingers-125.jpeg"
     }
   },
-    {
+  {
     "pk": 31,
     "model": "products.product",
     "fields": {
@@ -402,7 +402,7 @@
       "image": "lucozade-original-500.jpeg"
     }
   },
-    {
+  {
     "pk": 32,
     "model": "products.product",
     "fields": {
@@ -415,7 +415,7 @@
       "image": "lucozade-original-900.jpeg"
     }
   },
-    {
+  {
     "pk": 33,
     "model": "products.product",
     "fields": {
@@ -428,7 +428,7 @@
       "image": "lucozade-orange-500.jpeg"
     }
   },
-    {
+  {
     "pk": 34,
     "model": "products.product",
     "fields": {
@@ -439,6 +439,84 @@
       "category": 5,
       "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5054267010727_3.JPG",
       "image": "lucozade-orange-900.jpeg"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "sku": "5123365929",
+      "name": "Club Orange (1.75 L)",
+      "description": "Club was originally developed in the 1930s by expert syrup maker, Oliver Grace. Unlike competitors, Grace insisted that the whole of the orange should be used, including the juice, pith and the rind. This unique idea was an instant success as people loved the delicious combination of sweet orange juice and real fruit 'bits'.",
+      "price": 3.19,
+      "category": 5,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5391521831057_3.JPG",
+      "image": "club-orange-175.jpeg"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "sku": "5211856729",
+      "name": "Club Diet Orange (2 L)",
+      "description": "Club was originally developed in the 1930s by expert syrup maker, Oliver Grace. Unlike competitors, Grace insisted that the whole of the orange should be used, including the juice, pith and the rind. This unique idea was an instant success as people loved the delicious combination of sweet orange juice and real fruit 'bits'.",
+      "price": 3.29,
+      "category": 5,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011026005141_3.JPG",
+      "image": "club-diet-orange-2.jpeg"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "sku": "5133365929",
+      "name": "Club Zero Orange (2 L)",
+      "description": "Club was originally developed in the 1930s by expert syrup maker, Oliver Grace. Unlike competitors, Grace insisted that the whole of the orange should be used, including the juice, pith and the rind. This unique idea was an instant success as people loved the delicious combination of sweet orange juice and real fruit 'bits'.",
+      "price": 3.29,
+      "category": 5,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5391521830371_3.JPG",
+      "image": "club-zero-orange-2.jpeg"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "sku": "5241856729",
+      "name": "Club Zero Lemon (2 L)",
+      "description": "Club was originally developed in the 1930s by expert syrup maker, Oliver Grace. Unlike competitors, Grace insisted that the whole of the orange should be used, including the juice, pith and the rind. This unique idea was an instant success as people loved the delicious combination of sweet orange juice and real fruit 'bits'.",
+      "price": 3.29,
+      "category": 5,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5391521831699_3.JPG",
+      "image": "club-zero-lemon-2.jpeg"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+      "sku": "5134565929",
+      "name": "Club Zero Rock Shandy (2 L)",
+      "description": "Club was originally developed in the 1930s by expert syrup maker, Oliver Grace. Unlike competitors, Grace insisted that the whole of the orange should be used, including the juice, pith and the rind. This unique idea was an instant success as people loved the delicious combination of sweet orange juice and real fruit 'bits'.",
+      "price": 3.29,
+      "category": 5,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5391521830647_3.JPG",
+      "image": "club-zero-rock-2.jpeg"
+    }
+  },
+  {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+      "sku": "5241996729",
+      "name": "Club Lemon (1.75 L)",
+      "description": "Club was originally developed in the 1930s by expert syrup maker, Oliver Grace. Unlike competitors, Grace insisted that the whole of the orange should be used, including the juice, pith and the rind. This unique idea was an instant success as people loved the delicious combination of sweet orange juice and real fruit 'bits'.",
+      "price": 3.29,
+      "category": 5,
+      "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5391521830982_3.JPG",
+      "image": "club-lemon-175.jpeg"
     }
   }
 ]

@@ -15,9 +15,9 @@ body {
     margin-top: 2rem;
 }
 
-#delivery-banner {
-    background-color: #169B62;
-    height: 2.5rem;
+.delivery-offer {
+    color: #169B62;
+    padding: 2px;
 }
 
 .main-logo-link {
