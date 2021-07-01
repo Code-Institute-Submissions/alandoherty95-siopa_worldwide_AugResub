@@ -69,8 +69,8 @@
                                     </div>
                                 </div>
                             </form>
-                            <a class="update-qty text-info"><small>Update Quantity</small></a>
-                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove Item</small></a>
+                            <a class="update-qty text-info"><i class="fas fa-pencil-alt"></i></a>
+                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i class="fas fa-trash-alt"></i></a>
                         </td>
                         <td class="py-3">
                             <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -80,7 +80,7 @@
                     <tr>
                         <td colspan="5" class="pt-5 text-right">
                             <h6><strong>Shopping Bag Total: €{{ total|floatformat:2 }}</strong></h6>
-                            <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+                            <h6>+ Delivery Cost: €{{ delivery|floatformat:2 }}</h6>
                             <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                             {% if free_delivery_delta > 0 %}
                             <p class="mb-1 text-danger">
@@ -98,7 +98,7 @@
                                 <span class="text-uppercase">Continue Shopping</span>
                             </a>
                             <a href="{% url 'checkout' %}" class="btn btn-black rounded-3 btn-lg">
-                                <span class="text-uppercase">Checkout</span>
+                                <span class="font-weight-bold text-uppercase">Complete Order</span>
                                 <span class="icon">
                                     <i class="fas fa-cash-register"></i>
                                 </span>
