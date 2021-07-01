@@ -36,7 +36,7 @@ class Order(models.Model):
         """
         return uuid.uuid4().hex.upper()
 
-    def update_grand_total(self):
+    def update_total(self):
         """
         Updates grand total every time a new line item is added to order
         STANDARD_DELIVERY_PERCENTAGE = 12.5%
