@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 
+
 .logo-style {
     font-family: 'Indie Flower', cursive;
 }
@@ -68,6 +69,11 @@ body {
     border: 1px solid #000000;
 }
 
+.card-img-top {
+    width: auto;
+    height: 12rem;
+}
+
 .text-black {
     color: #000 !important;
 }
@@ -90,7 +96,7 @@ body {
     z-index: -1;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #169B62;
     color: #ffffff !important;
 }
@@ -108,7 +114,8 @@ a.category-badge > span.badge:hover {
     border: 2px solid #169B62;
 }
 
-.update-qty, .remove-item {
+.update-qty,
+.remove-item {
     cursor: crosshair;
 }
 
