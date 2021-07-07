@@ -27,6 +27,10 @@ body {
     width: fit-content;
 }
 
+.home-screen {
+    padding-top: 10rem;
+}
+
 /* Buttons */
 
 .shop-now-button {
