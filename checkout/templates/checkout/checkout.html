@@ -37,6 +37,7 @@
                 </div>
             </div>
             {% for item in bag_items %}
+            <!-- Shopping bag contents -->
             <div class="row">
                 <div class="col-3 mb-1">
                     <a href="{% url 'product_detail' item.product.id %}">
@@ -112,18 +113,21 @@
                 </fieldset>
 
                 <div class="submit-button text-right mt-3 mb-2">
+                    <!-- Update order button -->
                     <a href="{% url 'view_bag' %}" class="btn btn-outline-green btn-lg rounded-3">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="font-weight-bold text-uppercase">Adjust Bag</span>
                     </a>
+                    <!-- Complete order button -->
                     <button id="submit-button" class="btn btn-black btn-lg rounded-3">
                         <span class="font-weight-bold text-uppercase">Complete Order</span>
                         <span class="icon">
                             <i class="fas fa-cash-register"></i>
                         </span>
                     </button>
+                    <!-- Displays grand total -->
                     <p class="small text-success my-2">
                         <span class="icon">
                             <i class="fas fa-exclamation-circle"></i>

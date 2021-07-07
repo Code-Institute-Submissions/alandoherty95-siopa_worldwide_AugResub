@@ -16,9 +16,15 @@ body {
     margin-top: 2rem;
 }
 
-.delivery-offer {
-    color: #169B62;
+.greeting {
     padding: 2px;
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.offer {
+    color: #169B62;
 }
 
 .main-logo-link {
@@ -31,6 +37,7 @@ body {
     background: #169B62;
     color: #ffffff;
     min-width: 360px;
+    letter-spacing: 2px;
     border: 2px solid #169B62;
 }
 
@@ -45,12 +52,14 @@ body {
 .btn-black {
     background: #000000;
     color: #ffffff;
+    letter-spacing: 1px;
 }
 
 .btn-outline-green {
     background: #169B62;
     color: #ffffff !important;
     border: 1px solid #ffffff;
+    letter-spacing: 1px;
 }
 
 .btn-outline-green:hover,

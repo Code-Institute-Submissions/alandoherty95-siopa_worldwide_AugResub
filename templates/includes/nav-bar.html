@@ -6,8 +6,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price (Low to High)</a>
+                <a href="{% url 'products' %}?sort=name&direction=asc" class="dropdown-item ">By Name (A to Z)</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category (A to Z)</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -30,7 +31,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="drinks-link">
                 <a href="{% url 'products' %}?category=tea_and_coffee" class="dropdown-item">Tea & Coffee</a>
-                <a href="{% url 'products' %}?category=soda" class="dropdown-item">Soda</a>
+                <a href="{% url 'products' %}?category=soda" class="dropdown-item">Fizzy Drinks</a>
                 <a href="{% url 'products' %}?category=tea_and_coffee,soda" class="dropdown-item">All Drinks</a>
             </div>
         </li>

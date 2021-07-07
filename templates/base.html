@@ -50,12 +50,14 @@
 <body>
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+            <!-- Application logo -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-style text-black my-0">Siopa Worldwide</h2>
                 </a>
             </div>
-            <div class="col-12 col-lg-3 offset-l2 my-auto py-1 py-lg-0">
+            <!-- Search feature -->
+            <div class="col-12 col-lg-3 offset-l2 my-auto">
                 <form method="GET" class="w-80" action="{% url 'products' %}">
                     <div class="input-group w-80">
                         <input class="form-control border border-black rounded-3" type="text" name="q" placeholder="Search for items">
@@ -70,7 +72,7 @@
                 </form>
             </div>
             <!-- Navigation dropdown list -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-4 my-auto">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -79,6 +81,7 @@
                                 <p class="my-0">Account</p>
                             </div>
                         </a>
+                        <!-- Access dependent on user status -->
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
@@ -125,22 +128,22 @@
     </header>
     <!-- Flash messages -->
     {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-                <!-- Uses levels to determine appropriate message type -->
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
+    <div class="message-container">
+        {% for message in messages %}
+        <!-- Uses levels to determine appropriate message type -->
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
     {% endif %}
 
     {% block page_header %}
@@ -150,9 +153,9 @@
     {% endblock %}
 
     {% block postloadjs %}
-        <script type="text/javascript">
-            $('.toast').toast('show');
-        </script>
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
     {% endblock %}
 
 
