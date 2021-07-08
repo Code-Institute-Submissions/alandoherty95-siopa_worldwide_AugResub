@@ -2,6 +2,9 @@ html {
     height: 100%;
 }
 
+.navbar {
+    padding: 0;
+}
 
 .logo-style {
     font-family: 'Indie Flower', cursive;

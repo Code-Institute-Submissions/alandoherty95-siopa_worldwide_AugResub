@@ -118,13 +118,23 @@
             </div>
             {% else %}
             <!-- Empty shopping bag -->
-            <p class="lead mb-5">Your shopping bag is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-outline-green rounded-3 btn-lg">
-                <span class="icon">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span class="text-uppercase">Continue Shopping</span>
-            </a>
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col col-md-4 my-auto">
+                        <p>Your shopping bag is empty.</p>
+                        <a href="{% url 'products' %}" class="btn btn-outline-green rounded-3 btn-lg">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Continue Shopping</span>
+                        </a>
+                    </div>
+                    <div class="col col-md-8 my-auto">
+                        <!-- Siopa Worldwide logo -->
+                        <img src="https://github.com/alandoherty95/siopa_worldwide/blob/master/media/siopa-worldwide-logo.png?raw=true" class="logo-image" alt="Siopa Worldwide Logo">
+                    </div>
+                </div>
+            </div>
             {% endif %}
         </div>
     </div>
