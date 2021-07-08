@@ -1,0 +1,26 @@
+.StripeElement,
+.stripe-style-input {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.StripeElement--webkit-autofill {
+    background-color: #f3fee5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #98a0a8;
+}
+
+.fieldset-label {
+    position: relative;
+    right: 0.4rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #000000;
+    border: 1px solid #000000;
+}
