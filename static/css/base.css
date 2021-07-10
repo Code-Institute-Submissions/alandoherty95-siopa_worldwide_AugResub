@@ -135,7 +135,7 @@ a.category-badge>span.badge:hover {
 
 .update-qty,
 .remove-item {
-    cursor: crosshair;
+    cursor: pointer;
 }
 
 .text-info {

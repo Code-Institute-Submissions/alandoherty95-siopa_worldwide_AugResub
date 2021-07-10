@@ -20,7 +20,8 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">Checkout</h2>
+            <!-- Page heading -->
+            <h2 class="text-uppercase mb-4">Checkout <i class="fas fa-cash-register"></i></h2>
             <hr>
         </div>
     </div>
@@ -29,10 +30,10 @@
         <div class="col-12 col-lg-6 order-lg-last mb-4">
             <p class="text-muted">Order Summary ({{ product_count }})</p>
             <div class="row">
-                <div class="col-7 offset-2">
+                <div class="col-8">
                     <p class="mb-1 mt-0 small text-muted">Items</p>
                 </div>
-                <div class="col-3 text-right">
+                <div class="col-3 offset-1 text-right">
                     <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                 </div>
             </div>
@@ -41,8 +42,10 @@
             <div class="row">
                 <div class="col-3 mb-1">
                     <a href="{% url 'product_detail' item.product.id %}">
+                        <!-- Displays product image -->
                         {% if item.product.image %}
                         <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                        <!-- Or else displays default image -->
                         {% else %}
                         <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                         {% endif %}
@@ -50,24 +53,24 @@
                 </div>
                 <div class="col-6">
                     <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                    <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                    <p class="my-0 small text-muted">Quantity: {{ item.quantity }}</p>
                 </div>
                 <div class="col-3 text-right">
                     <p class="my-0 small text-muted">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                 </div>
             </div>
             {% endfor %}
-            <hr class="my-0 mb-5">
+            <hr class="my-0 mb-3">
             <div class="row text-black">
                 <div class="col-6">
-                    <p class="my-0">Shopping Bag Total:</p>
-                    <p class="my-0">+ Delivery Cost:</p>
-                    <p class="my-0">Grand Total:</p>
+                    <p>Shopping Bag Total:</p>
+                    <p>&#65122; Delivery Cost:</p>
+                    <p>Grand Total:</p>
                 </div>
                 <div class="col-6 text-right">
-                    <p class="my-0">€{{ total | floatformat:2 }}</p>
-                    <p class="my-0">€{{ delivery | floatformat:2 }}</p>
-                    <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                    <p>€{{ total | floatformat:2 }}</p>
+                    <p>€{{ delivery | floatformat:2 }}</p>
+                    <p><strong>${{ grand_total | floatformat:2 }}</strong></p>
                 </div>
             </div>
         </div>
@@ -125,7 +128,7 @@
                         <!-- Displays grand total -->
                         <span class="font-weight-bold text-uppercase">Pay €{{ grand_total|floatformat:2 }}</span>
                         <span class="icon">
-                            <i class="fas fa-cash-register"></i>
+                            <i class="fab fa-cc-stripe fa-lg"></i>
                         </span>
                     </button>
                 </div>
