@@ -4,7 +4,8 @@ from django.dispatch import receiver
 from .models import OrderLineItem
 
 
-@receiver(post_save, sender=OrderLineItem)  # Listens for signals from OrderLineItem model
+@receiver(post_save, sender=OrderLineItem) 
+# Listens for signals from OrderLineItem model
 def update_on_save(sender, instance, created, **kwargs):
     """
     Updates the order total when a line item is added or updated

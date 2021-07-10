@@ -6,9 +6,9 @@ class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',
-                      'street_address1', 'street_address2',
-                      'town_or_city', 'postcode', 'country',
-                      'county',)
+                    'street_address1', 'street_address2',
+                    'town_or_city', 'postcode', 'country',
+                    'county',)
 
     def __init__(self, *args, **kwargs):
         """
@@ -16,7 +16,6 @@ class OrderForm(forms.ModelForm):
         removes auto-generated labels
         """
         super().__init__(*args, **kwargs)
-
         # Sets placeholders in each form field
         placeholders = {
             'full_name': 'Full Name',
