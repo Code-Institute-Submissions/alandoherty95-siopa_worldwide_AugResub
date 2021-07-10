@@ -13,6 +13,7 @@ def checkout(request):
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     bag = request.session.get('bag', {})
+    # Displays message about empty bag
     if not bag:
         messages.error(request, "Your shopping bag is currently empty!")
         return redirect(reverse('products'))
@@ -21,13 +22,14 @@ def checkout(request):
     total = current_bag['grand_total']
     stripe_total = round(total * 100)
     stripe.api_key = stripe_secret_key
+    # Creates payment intent
     intent = stripe.PaymentIntent.create(
         amount=stripe_total,
         currency=settings.STRIPE_CURRENCY,
     )
 
     order_form = OrderForm()
-
+    # Displays warning message about missing key
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Check if Stripe public key is set correctly in your environment?')
@@ -35,8 +37,8 @@ def checkout(request):
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
-        'stripe_public_key': 'pk_test_51JB136HDZWvoD6bSnrIMZSkqgjxghiiYbzKRcrM5GSUe008wJNEMroASvHxIzxbN0I89BY6VVCU1J4nGzqDxpGWI00VrPNGGZU',
-        'client_secret': 'test client secret',
+        'stripe_public_key': 'stripe_public_key',
+        'client_secret': 'intent.client_secret',
     }
 
     return render(request, template, context)
