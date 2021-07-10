@@ -70,7 +70,7 @@ def checkout(request):
         if not bag:
             messages.error(request, "Your shopping bag is currently empty!")
             return redirect(reverse('products'))
-      
+
         current_bag = bag_contents(request)
         total = current_bag['grand_total']
         stripe_total = round(total * 100)
