@@ -43,6 +43,7 @@ class StripeWH_Handler:
         order_exists = False
         attempt = 1
         while attempt <= 5:
+            # Attempts to find order 5 times before creating it
             try:
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
@@ -65,7 +66,7 @@ class StripeWH_Handler:
                 time.sleep(1)
         if order_exists:
             return HttpResponse(
-                content=f'Stripe webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                content=f'Stripe webhook received: {event["type"]} | Successfully verified order is in database',
                 status=200)
         else:
             order = None
