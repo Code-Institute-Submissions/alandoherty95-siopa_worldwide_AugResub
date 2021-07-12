@@ -151,13 +151,14 @@ footer {
 
 .footer-container {
     border-top: 2px solid #000000;
-    height: 30px;
+    min-height: 100%;
 }
 
 .footer-row {
     left: 0;
     bottom: 0;
     width: 100%;
+    position: sticky;
     text-align: center;
     padding-top: 10px;
 }
