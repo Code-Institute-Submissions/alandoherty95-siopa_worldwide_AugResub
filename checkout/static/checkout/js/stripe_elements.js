@@ -68,6 +68,7 @@ form.addEventListener('submit', function(ev) {
     var url = '/checkout/cache_checkout_data/';
 
     $.post(url, postData).done(function() {
+        // Confirms card payment from Stripe 
         stripe.confirmCardPayment(clientSecret, {
             payment_method: {
                 card: card,
@@ -120,7 +121,7 @@ form.addEventListener('submit', function(ev) {
             }
         });
     }).fail(function() {
-        // just reload the page, the error will be in django messages
+        // Reloads the page, shows error from django messages
         location.reload();
     })
 });
