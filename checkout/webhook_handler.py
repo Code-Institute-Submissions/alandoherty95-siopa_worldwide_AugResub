@@ -66,7 +66,8 @@ class StripeWH_Handler:
                 time.sleep(1)
         if order_exists:
             return HttpResponse(
-                content=f'Stripe webhook received: {event["type"]} | Successfully verified order is in database',
+                content=f'Stripe webhook received: {event["type"]} \
+                | Successfully verified order is in database',
                 status=200)
         else:
             order = None
