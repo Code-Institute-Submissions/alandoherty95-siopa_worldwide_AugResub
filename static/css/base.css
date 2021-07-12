@@ -218,8 +218,9 @@ footer {
     }
 }
 
-/* Fixed top navbar only on medium screens and up */
 @media (min-width: 992px) {
+
+    /* Fixed top navbar only on medium screens and up */
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -231,15 +232,24 @@ footer {
     .header-container {
         padding-top: 164px;
     }
+
+    .greeting {
+        font-size: 1.5rem;
+    }
 }
 
-/* Top padding when navbar collapses on mobile devices */
 @media (max-width: 991px) {
+
+    /* Top padding when navbar collapses on mobile devices */
     .header-container {
         padding-top: 116px;
     }
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .greeting {
+        font-size: 1.5rem;
     }
 }
