@@ -123,8 +123,7 @@ We continually tweak and adjust this template to help give you the best experien
 
   
 
-Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop shop for all your favourite Irish products. We are dedicated to keeping you stocked up with Irish food and drinks no matter where in the world you are located!
-
+Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop shop for all your favourite Irish products. Siopa Worldwide is an e-commerce store, offering a range of popular Irish food and beverages. We are dedicated to keeping you stocked up with your favourite Irish food and drinks no matter where in the world you are located! 
   
 
   
@@ -147,7 +146,7 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
-![Reciprocate Logo](insert website logo)
+![Siopa Worldwide Logo](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/siopa-logo-home.png?raw=true)
 
   
 
@@ -155,7 +154,7 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
-**[Siopa Worldwide](insert link to deployed website)** is a full-stack application selling Irish goods around the globe. The website is designed to showcase the most popular Irish food, beverages and as well as other products.
+**[Siopa Worldwide](insert link to deployed website)** is a full-stack e-commerce application selling Irish goods around the globe. The website is designed to showcase the most popular Irish food and beverages. Users of the application can browse through our range of products before purchasing their favourites. The user can enter their personal details, delivery details and payment details when completing an order. The user will then receive an order confirmation via email.
 
   
 
@@ -283,13 +282,13 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
-The purpose of this project is to create an e-commerce store specialising in Irish goods. I chose this angle due to the bountiful number of Irish people who live outside of their homeland but still desire Irish products. Typically, Irish people living abroad will find it difficult to source authentic Irish food and beverages. I was able to identify a niche market which can be utilised by anyone who craves Irish products regardless of their location in the world. In preparation for this project, I conducted research on friends, colleagues and family members to identify the most popular food and beverage products which can not be easily found outside of Ireland.
+The purpose of this project is to create an e-commerce store specialising in Irish products. I chose this angle due to the bountiful number of Irish people who live outside of their homeland but still desire Irish products. Tens of thousands of Irish people emigrate to other countries every year. Typically, Irish people living abroad will find it difficult to source authentic Irish food and beverages. I was able to identify a niche market which can be utilised by anyone who craves Irish products regardless of their location in the world. In preparation for this project, I conducted research on friends, colleagues and family members to identify the most popular food and beverage products which are not easily found outside of Ireland.
 
   
 
   
 
-The application is designed with user experience in mind. The website allows users to easily browse through the range of products in our database. Shoppers can use the sorting and searching features to easily find their desired products. The shoppers can add items to their bag with a running cost displayed in the top right corner at all times. The user can complete an order by making a purchase and a confirmation message will be sent via email. The website is intuitive and the purpose is immediately clear to any first-time visitors.
+The application is simply designed with user experience in mind. The website allows users to easily browse through the range of products in our database. Shoppers can use the sorting and searching features to easily find their desired products. The shoppers can add items to their bag with a running cost displayed in the top right corner at all times. The user can complete an order by making a purchase and a confirmation message will be sent via email. The website is intuitive and the purpose is immediately clear to any first-time visitors.
 
   
 
@@ -641,6 +640,8 @@ The primary design goal in mind when designing this application is to attract th
 
 - Design an application which is responsive on all screen sizes.
 
+- Design a logo that is simple, attractive and memorable.
+
   
 
 #### **Development Process**
@@ -736,23 +737,23 @@ The whole development process is broken down into smaller stages to help in mana
 
   
 
--  [Django](https://www.djangoproject.com/)
+-  [Django](https://www.djangoproject.com/) is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
 
--  [Bootstrap4](https://getbootstrap.com/)
+-  [Bootstrap4](https://getbootstrap.com/) is a powerful front-end framework for faster and easier web development including forms, buttons and navigations.
 
--  [Stripe](https://www.stripe.com/)
+-  [Stripe](https://www.stripe.com/) offers payment processing software and application programming interfaces for e-commerce websites and mobile applications.
 
--  [Google Fonts](https://fonts.google.com/)
+-  [Google Fonts](https://fonts.google.com/) provides a curated collection of the best free fonts available online.
 
--  [Font Awesome](https://fontawesome.com/)
+-  [Font Awesome](https://fontawesome.com/) is a font and icon toolkit based on CSS.
 
--  [jQuery](https://code.jquery.com/)
+-  [jQuery](https://code.jquery.com/) is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling and CSS animation.
 
--  [Pillow](https://pypi.org/project/Pillow/2.2.1/)
+-  [Pillow](https://pypi.org/project/Pillow/2.2.1/) is a Python Imaging Library is a free and open-source additional library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats.
 
--  [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+-  [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) is an application that helps to manage Django forms.
 
--  [Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+-  [Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) is an integrated set of Django applications addressing authentication, registration and account management.
 
   
 
@@ -760,13 +761,13 @@ The whole development process is broken down into smaller stages to help in mana
 
   
 
--  [Git](https://git-scm.com/)
+-  [Git](https://git-scm.com/) is used for version control by making use of the Gitpod terminal to add, commit and push to Github.
 
--  [Gitpod](https://gitpod.io/)
+-  [Gitpod](https://gitpod.io/) is a platform that streamlines developer workflows by providing prebuilt, collaborative development environments in your browser - powered by VS Code.
 
--  [Github](https://github.com/)
+-  [Github](https://github.com/) is a provider of Internet hosting for software development and version control using Git.
 
--  [Heroku](https://signup.heroku.com/)
+-  [Heroku](https://signup.heroku.com/) is a cloud platform as a service supporting several programming languages.
 
   
 
@@ -796,3 +797,43 @@ The whole development process is broken down into smaller stages to help in mana
 -  [w3schools](https://www.w3schools.com/)
 
 -  [Stack Overflow](https://stackoverflow.com/)
+
+-  [Stripe Docs](https://stripe.com/docs)
+
+
+## **Testing**
+
+Stripe Payments
+1.  Click your checkout button
+    
+2.  Fill out the payment details with the test card information:
+    
+
+	-   Enter `4242 4242 4242 4242` as the card number.
+    
+	-   Enter any future date for card expiry.
+    
+	-   Enter any 3-digit number for CVC.
+    
+	-   Enter any billing postal code.
+    
+
+3.  Click Pay.
+    
+4.  You’re redirected to your new success page.
+
+**Payment Intent Process**
+Step 1: When a user hits the checkout page, the checkout view will call out to stripe and create a payment intent for the current amount of the shopping bag
+
+Step 2: When stripe creates it, it’ll have a secret that identifies it which will be returned to us and we'll send it to the template as the client secret variable.
+
+Step 3: Then in the JavaScript on the client side, it’lll call the confirm card payment method from stripe JS using the client secret which will verify the card number.
+
+[https://stripe.com/docs/payments/accept-a-payment-synchronously](https://stripe.com/docs/payments/accept-a-payment-synchronously)
+
+  
+
+[https://stripe.com/docs/payments/handling-payment-events](https://stripe.com/docs/payments/handling-payment-events)
+
+-   No authentication (default U.S. card):  `4242 4242 4242 4242`.
+-   Authentication required:  `4000 0027 6000 3184`.
