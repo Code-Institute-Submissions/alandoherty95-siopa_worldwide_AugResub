@@ -1,4 +1,7 @@
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
+  
 
   
 
@@ -6,7 +9,11 @@ Welcome alandoherty95,
 
   
 
+  
+
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+
+  
 
   
 
@@ -14,7 +21,11 @@ This is the Code Institute student template for Gitpod. We have preinstalled all
 
   
 
+  
+
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+
+  
 
   
 
@@ -22,11 +33,17 @@ To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the ter
 
   
 
+  
+
 A blue button should appear to click: _Make Public_,
 
   
 
+  
+
 Another blue button should appear to click: _Open Browser_.
+
+  
 
   
 
@@ -34,7 +51,11 @@ To run a backend Python file, type `python3 app.py`, if your Python file is name
 
   
 
+  
+
 A blue button should appear to click: _Make Public_,
+
+  
 
   
 
@@ -42,7 +63,11 @@ Another blue button should appear to click: _Open Browser_.
 
   
 
+  
+
 In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+
+  
 
   
 
@@ -50,15 +75,27 @@ To log into the Heroku toolbelt CLI:
 
   
 
+  
+
 1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
+
+  
 
 2. Scroll down to the *API Key* and click *Reveal*
 
+  
+
 3. Copy the key
+
+  
 
 4. In Gitpod, from the terminal, run `heroku_config`
 
+  
+
 5. Paste in your API key when asked
+
+  
 
   
 
@@ -66,7 +103,11 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
   
 
+  
+
 ## Updates Since The Instructional Video
+
+  
 
   
 
@@ -74,7 +115,11 @@ We continually tweak and adjust this template to help give you the best experien
 
   
 
+  
+
 **May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+
+  
 
   
 
@@ -82,7 +127,11 @@ We continually tweak and adjust this template to help give you the best experien
 
   
 
+  
+
 **October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+
+  
 
   
 
@@ -90,7 +139,11 @@ We continually tweak and adjust this template to help give you the best experien
 
   
 
+  
+
 **September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+
+  
 
   
 
@@ -98,7 +151,11 @@ We continually tweak and adjust this template to help give you the best experien
 
   
 
+  
+
 **April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+
+  
 
   
 
@@ -106,13 +163,18 @@ We continually tweak and adjust this template to help give you the best experien
 
   
 
+  
+
 **December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a  href="https://github.com/Eventyret/vscode-bcdn"  target="_blank">README.md file at the official repo</a> for more options.
+
+  
 
   
 
 ---
 
   
+
   
 
 **[Siopa Worldwide](insert link to deployed website)**
@@ -123,14 +185,19 @@ We continually tweak and adjust this template to help give you the best experien
 
   
 
-Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop shop for all your favourite Irish products. Siopa Worldwide is an e-commerce store, offering a range of popular Irish food and beverages. We are dedicated to keeping you stocked up with your favourite Irish food and drinks no matter where in the world you are located! 
   
+
+Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop shop for all your favourite Irish products. Siopa Worldwide is an e-commerce store, offering a range of popular Irish food and beverages. We are dedicated to keeping you stocked up with your favourite Irish food and drinks no matter where in the world you are located!
 
   
 
   
 
-![Website Mockup](insert website mockup)
+  
+
+![Website Mockup](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/mockup-original.png?raw=true)
+
+  
 
   
 
@@ -146,7 +213,11 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
+  
+
 ![Siopa Worldwide Logo](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/siopa-logo-home.png?raw=true)
+
+  
 
   
 
@@ -162,7 +233,11 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
+  
+
 ## Table of Contents
+
+  
 
   
 
@@ -178,7 +253,11 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
+  
+
 2.  <a  href="#ux">**User Experience (UX)**</a>
+
+  
 
   
 
@@ -194,7 +273,11 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
+  
+
 4.  <a  href="#structure">**Structure**</a>
+
+  
 
   
 
@@ -210,7 +293,11 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
+  
+
 6.  <a  href="#technologies">**Technologies**</a>
+
+  
 
   
 
@@ -226,7 +313,11 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
+  
+
 8.  <a  href="#features">**Features**</a>
+
+  
 
   
 
@@ -242,7 +333,11 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
+  
+
 10.  <a  href="#deployment">**Deployment**</a>
+
+  
 
   
 
@@ -258,7 +353,11 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
+  
+
 12.  <a  href="#acknowledgements">**Acknowledgements**</a>
+
+  
 
   
 
@@ -274,7 +373,11 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
+  
+
 ## 1. Context
+
+  
 
   
 
@@ -288,7 +391,11 @@ The purpose of this project is to create an e-commerce store specialising in Iri
 
   
 
+  
+
 The application is simply designed with user experience in mind. The website allows users to easily browse through the range of products in our database. Shoppers can use the sorting and searching features to easily find their desired products. The shoppers can add items to their bag with a running cost displayed in the top right corner at all times. The user can complete an order by making a purchase and a confirmation message will be sent via email. The website is intuitive and the purpose is immediately clear to any first-time visitors.
+
+  
 
   
 
@@ -304,7 +411,11 @@ The application is simply designed with user experience in mind. The website all
 
   
 
+  
+
 ## 2. User Experience (UX)
+
+  
 
   
 
@@ -316,7 +427,11 @@ The application is simply designed with user experience in mind. The website all
 
   
 
+  
+
 During the research phase of this project, I posed the following questions to friends, family members and peers living abroad:
+
+  
 
   
 
@@ -326,7 +441,11 @@ During the research phase of this project, I posed the following questions to fr
 
   
 
+  
+
 - Which online stores do you use for buying Irish goods?
+
+  
 
   
 
@@ -334,7 +453,11 @@ During the research phase of this project, I posed the following questions to fr
 
   
 
+  
+
 - What kind of Irish goods can you purchase in your town or city?
+
+  
 
   
 
@@ -342,7 +465,11 @@ During the research phase of this project, I posed the following questions to fr
 
   
 
+  
+
 ### Target Market
+
+  
 
   
 
@@ -354,7 +481,11 @@ The e-commerce store is primarily targeting Irish people who are living abroad. 
 
   
 
+  
+
 ### Overview
+
+  
 
   
 
@@ -370,7 +501,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - To allow users to browse all products in our database using sorting and searching features
+
+  
 
   
 
@@ -386,7 +521,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - To allows shoppers to create an account and view previous orders
+
+  
 
   
 
@@ -396,7 +535,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - As an owner of this e-commerce store, I would like to:
+
+  
 
   
 
@@ -404,7 +547,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - to encourage users to browse our range of products
+
+  
 
   
 
@@ -412,11 +559,17 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - to encourage users to return to the website again
 
   
 
+  
+
 - to create, update and delete items in our product range
+
+  
 
   
 
@@ -428,7 +581,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 #### **As a first-time user, I would like to:**
+
+  
 
   
 
@@ -440,7 +597,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - immediately understand the purpose and aim of the website
+
+  
 
   
 
@@ -448,7 +609,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - explore a website that appeals to me visually
+
+  
 
   
 
@@ -456,7 +621,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - be informed of actions I take, successful or otherwise
+
+  
 
   
 
@@ -468,7 +637,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - browse through a range of products
+
+  
 
   
 
@@ -476,7 +649,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - search for a specific product using keywords
+
+  
 
   
 
@@ -484,7 +661,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - adjust the quantity of any product
+
+  
 
   
 
@@ -496,7 +677,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - easily view the contents of my shopping bag
+
+  
 
   
 
@@ -504,7 +689,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - remove items from my shopping bag
+
+  
 
   
 
@@ -512,11 +701,17 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - see any changes I make to my bag reflected in the shopping bag grand total
 
   
 
+  
+
 - view the details of what is in my shopping bag
+
+  
 
   
 
@@ -528,7 +723,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - purchase items by checking out easily and securely
+
+  
 
   
 
@@ -536,11 +735,17 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - view the details of my order in the confirmation email
 
   
 
+  
+
 **Create Account**
+
+  
 
   
 
@@ -552,7 +757,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 #### **As a registered user:**
+
+  
 
   
 
@@ -562,7 +771,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - reset my password if it is forgotten
+
+  
 
   
 
@@ -570,7 +783,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - view my personal profile
+
+  
 
   
 
@@ -578,11 +795,17 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - save my default delivery details for future orders
 
   
 
+  
+
 - easily update my delivery information
+
+  
 
   
 
@@ -594,7 +817,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - access the admin panel easily
+
+  
 
   
 
@@ -602,7 +829,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - add new items to our product range
+
+  
 
   
 
@@ -610,7 +841,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 - view and manage users of the site
+
+  
 
   
 
@@ -618,7 +853,11 @@ The website was designed with three main objectives:
 
   
 
+  
+
 ## **Design and Development**
+
+  
 
   
 
@@ -626,21 +865,39 @@ The website was designed with three main objectives:
 
   
 
+  
+
 The primary design goal in mind when designing this application is to attract the customer to explore further. The landing page is bright and striking. There is a prominent call-to-action button inviting users to 'Shop Now'. This button will leads the user to the products page where they can browse all items in our product range.
+
+  
 
 - Design a bright and visually appealing application.
 
+  
+
 - Design an intuitive and easy to navigate website.
+
+  
 
 - Achieve a clean aesthetic displaying only the necessary information.
 
+  
+
 - Use Bootstrap4 features for the layout and structure of the application
+
+  
 
 - Use Bootstrap4 classes and components to provide structure as well as highlighting and enhancing different elements.
 
+  
+
 - Design an application which is responsive on all screen sizes.
 
+  
+
 - Design a logo that is simple, attractive and memorable.
+
+  
 
   
 
@@ -648,51 +905,97 @@ The primary design goal in mind when designing this application is to attract th
 
   
 
+  
+
 The whole development process is broken down into smaller stages to help in managing the project.
+
+  
 
   
 
 - During the research phase of this project, I posed the following questions to friends, family members and peers living abroad:
 
+  
+
 - Which Irish goods do you desire most while living abroad?
+
+  
 
 - Which online stores do you use for buying Irish goods?
 
+  
+
 - What are your favourite brands of Irish food and drinks?
+
+  
 
 - What kind of Irish goods can you purchase in your town or city?
 
+  
+
 - Is there any store specialising in Irish products in your town or city?
+
+  
 
 - Choose a consistent colour scheme
 
+  
+
 - Identify the necessary applications needed
+
+  
 
 - Create wireframes for each page for desktop, mobile and tablet
 
+  
+
 - Create a data set for the products application
+
+  
 
 - Create a minimum viable product
 
+  
+
 - Set up Django Framework
+
+  
 
 - Set up Allauth for authentication and registration
 
+  
+
 - Create a base.html page including navigation with common elements, links and scripts
+
+  
 
 - Create a home app
 
+  
+
 - Create a products app to display all items in our product range
+
+  
 
 - Create a bag app to display the contents of the shopping bag
 
+  
+
 - Create a checkout app
+
+  
 
 - Create a profile app
 
+  
+
 - Create additional elements contributing to the user experience such as toasts and messages
 
+  
+
 - Adjust and tailor the layout and styling of each page
+
+  
 
   
 
@@ -700,7 +1003,11 @@ The whole development process is broken down into smaller stages to help in mana
 
   
 
+  
+
 ![Home Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/wireframes/desktop-wireframes/index-wireframe.png?raw=true)
+
+  
 
   
 
@@ -708,14 +1015,23 @@ The whole development process is broken down into smaller stages to help in mana
 
   
 
+  
+
 ![Product Detail Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/wireframes/desktop-wireframes/product-detail-wireframe.png?raw=true)
+
+  
 
 ![Shopping Bag Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/wireframes/desktop-wireframes/bag-wireframe.png?raw=true)
 
-![Checkout Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/wireframes/desktop-wireframes/checkout-wireframe.png?raw=true)  
+  
+
+![Checkout Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/wireframes/desktop-wireframes/checkout-wireframe.png?raw=true)
+
   
 
 ## **Technologies Used**
+
+  
 
   
 
@@ -723,13 +1039,23 @@ The whole development process is broken down into smaller stages to help in mana
 
   
 
+  
+
 -  **HTML** - used to create the main structure of the application
+
+  
 
 -  **CSS** - used to position components and style the application
 
+  
+
 -  **JavaScript** - used to for interactivity throughout website
 
+  
+
 -  **Python** - used to handle backend functionality
+
+  
 
   
 
@@ -737,23 +1063,43 @@ The whole development process is broken down into smaller stages to help in mana
 
   
 
+  
+
 -  [Django](https://www.djangoproject.com/) is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+
+  
 
 -  [Bootstrap4](https://getbootstrap.com/) is a powerful front-end framework for faster and easier web development including forms, buttons and navigations.
 
+  
+
 -  [Stripe](https://www.stripe.com/) offers payment processing software and application programming interfaces for e-commerce websites and mobile applications.
+
+  
 
 -  [Google Fonts](https://fonts.google.com/) provides a curated collection of the best free fonts available online.
 
+  
+
 -  [Font Awesome](https://fontawesome.com/) is a font and icon toolkit based on CSS.
+
+  
 
 -  [jQuery](https://code.jquery.com/) is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling and CSS animation.
 
+  
+
 -  [Pillow](https://pypi.org/project/Pillow/2.2.1/) is a Python Imaging Library is a free and open-source additional library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats.
+
+  
 
 -  [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) is an application that helps to manage Django forms.
 
+  
+
 -  [Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) is an integrated set of Django applications addressing authentication, registration and account management.
+
+  
 
   
 
@@ -761,13 +1107,23 @@ The whole development process is broken down into smaller stages to help in mana
 
   
 
+  
+
 -  [Git](https://git-scm.com/) is used for version control by making use of the Gitpod terminal to add, commit and push to Github.
+
+  
 
 -  [Gitpod](https://gitpod.io/) is a platform that streamlines developer workflows by providing prebuilt, collaborative development environments in your browser - powered by VS Code.
 
+  
+
 -  [Github](https://github.com/) is a provider of Internet hosting for software development and version control using Git.
 
+  
+
 -  [Heroku](https://signup.heroku.com/) is a cloud platform as a service supporting several programming languages.
+
+  
 
   
 
@@ -775,65 +1131,121 @@ The whole development process is broken down into smaller stages to help in mana
 
   
 
+  
+
 -  [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+
+  
 
 -  [Moqups](https://moqups.com/)
 
+  
+
 -  [Am I Responsive](http://ami.responsivedesign.is/)
 
+  
+
 -  [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en)
+
+  
 
 -  [Favicon](https://favicon.io/favicon-converter/)
 
   
+
   
 
 ### **Resources**
 
   
 
+  
+
 -  [Django Docs](https://docs.djangoproject.com/en/3.2/)
+
+  
 
 -  [w3schools](https://www.w3schools.com/)
 
+  
+
 -  [Stack Overflow](https://stackoverflow.com/)
+
+  
 
 -  [Stripe Docs](https://stripe.com/docs)
 
+  
+  
 
 ## **Testing**
 
+  ### **Resolved Bugs**
+- The function allowing user to remove items from the shopping bag wasn't functioning. I realised I forgot to pass 'data' through when submitting the request. I test the function after inputting data to ensure it works correctly.
+`$.post(url, data)
+.done(function() {
+location.reload();
+});`
+  
+- The subtotal calculation was not displaying in the shopping bag. After investigation, I realised the structure of my html table was incorrect. I rearranged the html code and used the code snippet below to correctly calculate the subtotal of each item in the shopping bag. 
+`<p  class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>`
+
+- The error (screenshot below) was displaying in the terminal. I sought help from a Code Institute tutor who kindly pointed out that the code snippet below should be in `checkout/init.py` instead of `bag/init.py`. 
+`default_app_config = 'checkout.apps.CheckoutConfig'`
+
+![Improperly Configured Error](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-improperly-configured.png?raw=true)
+
+
+
 Stripe Payments
-1.  Click your checkout button
-    
-2.  Fill out the payment details with the test card information:
-    
 
-	-   Enter `4242 4242 4242 4242` as the card number.
-    
-	-   Enter any future date for card expiry.
-    
-	-   Enter any 3-digit number for CVC.
-    
-	-   Enter any billing postal code.
-    
+1. Click your checkout button
 
-3.  Click Pay.
-    
-4.  You’re redirected to your new success page.
+2. Fill out the payment details with the test card information:
+
+  
+
+- Enter `4242 4242 4242 4242` as the card number.
+
+- Enter any future date for card expiry.
+
+- Enter any 3-digit number for CVC.
+
+- Enter any billing postal code.
+
+  
+
+3. Click Pay.
+
+4. You’re redirected to your new success page.
+
+  
 
 **Payment Intent Process**
+
 Step 1: When a user hits the checkout page, the checkout view will call out to stripe and create a payment intent for the current amount of the shopping bag
+
+  
 
 Step 2: When stripe creates it, it’ll have a secret that identifies it which will be returned to us and we'll send it to the template as the client secret variable.
 
+  
+
 Step 3: Then in the JavaScript on the client side, it’lll call the confirm card payment method from stripe JS using the client secret which will verify the card number.
+
+  
 
 [https://stripe.com/docs/payments/accept-a-payment-synchronously](https://stripe.com/docs/payments/accept-a-payment-synchronously)
 
   
 
+  
+
 [https://stripe.com/docs/payments/handling-payment-events](https://stripe.com/docs/payments/handling-payment-events)
 
--   No authentication (default U.S. card):  `4242 4242 4242 4242`.
--   Authentication required:  `4000 0027 6000 3184`.
+  
+
+- No authentication (default U.S. card): `4242 4242 4242 4242`.
+
+- Authentication required: `4000 0027 6000 3184`.
+
