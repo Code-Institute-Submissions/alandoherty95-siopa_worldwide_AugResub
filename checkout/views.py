@@ -51,6 +51,7 @@ def checkout(request):
         order_form = OrderForm(form_data)
         # Saves order if the form is valid
         if order_form.is_valid():
+            # Prevents multiple save events from being executed in database
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
@@ -114,8 +115,8 @@ def checkout(request):
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
-        'stripe_public_key': 'stripe_public_key',
-        'client_secret': 'intent.client_secret',
+        'stripe_public_key': stripe_public_key,
+        'client_secret': intent.client_secret,
     }
 
     return render(request, template, context)
