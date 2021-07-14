@@ -858,8 +858,9 @@ The website was designed with three main objectives:
 ## **Design and Development**
 
   
+### **Colour Scheme**
 
-  
+![Colour Palette](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/colour-palette.png?raw=true)
 
 ### **Design Process**
 
