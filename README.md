@@ -1028,7 +1028,7 @@ The whole development process is broken down into smaller stages to help in mana
 
 ![Checkout Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/wireframes/desktop-wireframes/checkout-wireframe.png?raw=true)
 
-  
+![Database Model Diagram](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/database-model.png?raw=true)
 
 ## **Technologies Used**
 
