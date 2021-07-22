@@ -1196,6 +1196,9 @@ location.reload();
 
 ![Improperly Configured Error](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-improperly-configured.png?raw=true)
 
+- Failed to add new product using add_products.html before edit snippett below:
+  `if form.is_valid():
+  product = form.save()`
 
 
 Stripe Payments
