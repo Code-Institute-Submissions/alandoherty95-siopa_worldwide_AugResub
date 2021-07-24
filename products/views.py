@@ -76,7 +76,7 @@ def product_detail(request, product_id):
 def add_product(request):
     """ Allows admin to add a product to the range """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only the admin can perform this action.)
+        messages.error(request, 'Sorry, only the admin can perform this action.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -103,7 +103,7 @@ def add_product(request):
 def edit_product(request, product_id):
     """ Allows admin to edit a product in the range """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only the admin can perform this action.)
+        messages.error(request, 'Sorry, only the admin can perform this action.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
@@ -132,9 +132,9 @@ def edit_product(request, product_id):
 def delete_product(request, product_id):
     """ Allows admin to delete a product from the range """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only the admin can perform this action.)
+        messages.error(request, 'Sorry, only the admin can perform this action.')
         return redirect(reverse('home'))
-        
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Successfully deleted product!')
