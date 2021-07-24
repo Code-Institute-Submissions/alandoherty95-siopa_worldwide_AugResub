@@ -1,0 +1,23 @@
+
+Hello {{ order.full_name }}!
+
+Thanky uo for shopping at Siopa Worldwide! Below is your order summary:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: €{{ order.order_total }}
+Delivery Cost: €{{ order.delivery_cost }}
+Grand Total: €{{ order.grand_total }}
+
+Your order will be delivered to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+We will contact you on {{ order.phone_number }} to assist with the delivery.
+
+Feel free to contact us at {{ contact_email }}, if you have any questions or queries.
+
+Go raibh míle maith agat!
+
+Best wishes,
+
+The Siopa Worldwide Team
