@@ -1200,6 +1200,8 @@ location.reload();
   `if form.is_valid():
   product = form.save()`
 
+- Deploying to Heroku, entered `heroku login` and received error message `{"error":"Forbidden"}`
+
 
 Stripe Payments
 
