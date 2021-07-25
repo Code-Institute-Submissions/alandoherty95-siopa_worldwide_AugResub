@@ -1,4 +1,5 @@
 
+  
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
   
@@ -225,7 +226,7 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
-**[Siopa Worldwide](insert link to deployed website)** is a full-stack e-commerce application selling Irish goods around the globe. The website is designed to showcase the most popular Irish food and beverages. Users of the application can browse through our range of products before purchasing their favourites. The user can enter their personal details, delivery details and payment details when completing an order. The user will then receive an order confirmation via email.
+**[Siopa Worldwide](insert link to deployed website)** is a full-stack e-commerce application selling Irish goods around the globe. The website is designed to showcase the most sought-after food and beverages known to Ireland. Users of the application can browse through our growing range of products before purchasing their favourites. The user will be prompted to enter their personal details, delivery details and payment details when completing an order. The user will then receive an order confirmation via email. Siopa Worldwide allows users to create an account, update items in their shopping bag, complete purchases and view their order history.
 
   
 
@@ -385,7 +386,7 @@ Welcome to **[Siopa Worldwide](insert link to deployed website)** - a one stop s
 
   
 
-The purpose of this project is to create an e-commerce store specialising in Irish products. I chose this angle due to the bountiful number of Irish people who live outside of their homeland but still desire Irish products. Tens of thousands of Irish people emigrate to other countries every year. Typically, Irish people living abroad will find it difficult to source authentic Irish food and beverages. I was able to identify a niche market which can be utilised by anyone who craves Irish products regardless of their location in the world. In preparation for this project, I conducted research on friends, colleagues and family members to identify the most popular food and beverage products which are not easily found outside of Ireland.
+The purpose of this project is to create an e-commerce store specialising in the most sought-after Irish products. I chose this angle due to the bountiful number of Irish people who live outside of their homeland but still desire Irish products. Tens of thousands of Irish people emigrate to other countries every year. Typically, Irish people living abroad will find it difficult to source authentic Irish food and beverages. I was able to identify a niche market which can be utilised by anyone who craves Irish products regardless of their location in the world. In preparation for this project, I conducted research on friends, colleagues and family members to identify the most popular food and beverage products which are not easily found outside of Ireland.
 
   
 
@@ -417,7 +418,30 @@ The application is simply designed with user experience in mind. The website all
 
   
 
-  
+  ### The Five Planes of UX
+
+#### []()The Strategy Plane
+
+After conducting market research on friends, peers and family members
+I identified a niche market which can be utilised by anyone who craves Irish food and beverages no matter where they are in the world. I want to create an application focusing purely on the most popular Irish goods which are not easily found outside of Ireland. Every shopper will have the ability to create their own account, safely provide their personal information and securely complete an order.
+
+#### []()The Scope Plane
+
+When deciding on the scope of my project, I decided to design a website allowing users to create an account, browse products, add items to their shopping cart and securely complete an order. The primary feature will be the capability to purchase a product through a secure checkout using Stripe Payments. Shoppers can easily sort products by name, price or category. Shoppers can easily search for products, using keywords. To improve the user experience, I want users to be notified of their actions, such as shopping bag updates as well as success and error messages.
+
+#### []()The Structure Plane
+
+After deciding on the features I wanted to include, I focused on the overall structure of the website. I want to keep the design clean and sleek. All potential customers will be able to search for a product using keywords but can also use a sorting feature depending on the needs of the user. I am using the grid system from Bootstrap to clearly display the content of each page. The navigation bar will change depending if the user is anonymous or logged in. Clicking 'Profile' in the navigation bar, reveals more options via a dropdown list. The store owner (admin), signed in as a superuser, can also access the product management page. The store owner will have the option to add, edit or delete items from the product range.
+
+#### []()The Skeleton Plane
+
+I wanted a clear, simple structure throughout the website. Each page will have a fixed navigation bar with consistent styling and prominent call-to-action buttons. There will be a large call-to-action button on the home screen to invite shoppers to browse all products. Each page has a unique heading so users are aware of which page they are on at all times. The products page displays all items neatly, allowing users to view multiple products on the same page. Clicking on a product will direct the shopper to a more detailed view about the individual item. Shoppers can simply add items to their shopping bag with a toast message appearing in the top right corner of the screen when an action is completed. Users can enter their personal information confident in the application's security features. Shoppers can  complete their checkout and receive an email confirmation of their order.
+
+
+
+#### []()The Surface Plane
+
+From conducting research on similar e-commerce sites, I discovered most online stores are quite colourful and brimming with information. Conversely, I wanted to keep the design sleek and simple, only displaying relevant information to the user. Initially, I sketched ideas and wireframes onto paper, before recreating more advanced wireframes online. I designed all the pages for desktop and smaller screen sizes showing the structure and content on the different devices.
 
   
 
@@ -857,10 +881,20 @@ The website was designed with three main objectives:
 
 ## **Design and Development**
 
-  
-### **Colour Scheme**
+-   Browse products
+-   View product details
+-   Create an account
+-   Log in/log out
+-   Add items to shopping bag
+-   View items in shopping bag
+-   Edit and update items in shopping bag
+-   Delete items from shopping bag
+-   Complete an order
+-   View order history
+-   Search for specific items using keywords
+-   Sort items by name, price or category
 
-![Colour Palette](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/colour-palette.png?raw=true)
+  
 
 ### **Design Process**
 
@@ -899,8 +933,23 @@ The primary design goal in mind when designing this application is to attract th
 - Design a logo that is simple, attractive and memorable.
 
   
+The colour scheme chosen for this project was inspired by bright colours to give the website an attractive, vibrant look. The white background gives a sleek, neutral look to the application with green and black nicely complementing.
+    
+  [Colour Scheme](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/colour-palette.png?raw=true)
+   
+-   **#FFFFFF White**  is the backdrop of all headings and text on the website. The bright colour emphasises clarity and removes visual clutter. The black text is easily readable on the white background.
+    
+-   **#169B62 Green**  is used for some buttons seen throughout the website. The buttons were designed to be large and prominent. The bright green button on the white background grabs the attention of the user.
 
+-   **#FFFFFF Black**  is used for headings and text on the website. The black text is easily read on the white background. Black is also used throughout the application for buttons. 
   
+  #### Typography
+
+[Indie Flower Font](https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap) was used because of the bubbly, rounded edges. It grabs the user's attention in contrast to the straight, simple Oswald font.
+
+[Oswald Font](https://fonts.googleapis.com/css2?family=Oswald&display=swap)
+was used for the primary text because it is easy to read. Oswald is designed to be used freely across the internet by web browsers on desktop computers, laptops and mobile devices.
+ 
 
 #### **Development Process**
 
@@ -1028,7 +1077,7 @@ The whole development process is broken down into smaller stages to help in mana
 
 ![Checkout Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/wireframes/desktop-wireframes/checkout-wireframe.png?raw=true)
 
-![Database Model Diagram](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/database-model.png?raw=true)
+  
 
 ## **Technologies Used**
 
@@ -1176,8 +1225,15 @@ The whole development process is broken down into smaller stages to help in mana
 
 -  [Stripe Docs](https://stripe.com/docs)
 
+## **Features**
   
-  
+Features unique to the admin:
+
+The store owner (admin) has the ability to update the products in the store. The admin can add new products to the range by submitting the 'add product' form. After submission the product will be added to the database.
+
+The store owner has the ability to edit items in the product range. The admin can edit fields for product name, description, price etc on the 'edit products' form. Upon submission, the new details are saved in the database.
+
+The admin also has the ability to delete items in the product range. The admin can delete any products by clicking the delete button on the Products page or the Products Detail page.
 
 ## **Testing**
 
@@ -1196,12 +1252,8 @@ location.reload();
 
 ![Improperly Configured Error](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-improperly-configured.png?raw=true)
 
-- Failed to add new product using add_products.html before edit snippett below:
-  `if form.is_valid():
-  product = form.save()`
-
-- Deploying to Heroku, entered `heroku login` and received error message `{"error":"Forbidden"}`
-
+- My initial attempt to deploy to Heroku failed and displayed `{“error”:”Forbidden”}` in the preview panel. Displayed `“IP address mismatch”`in the browser.
+![Error 503 Heroku](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-503-heroku.png?raw=true)
 
 Stripe Payments
 
