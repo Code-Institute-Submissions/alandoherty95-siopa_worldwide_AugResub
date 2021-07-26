@@ -1173,6 +1173,7 @@ The whole development process is broken down into smaller stages to help in mana
 
 -  [Heroku](https://signup.heroku.com/) is a cloud platform as a service supporting several programming languages.
 
+-  [AWS](https://aws.amazon.com/) offers reliable, scalable, and inexpensive cloud computing services for storing files.
   
 
   
@@ -1252,7 +1253,7 @@ location.reload();
 
 ![Improperly Configured Error](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-improperly-configured.png?raw=true)
 
-- My initial attempt to deploy to Heroku failed and displayed `{“error”:”Forbidden”}` in the preview panel. Displayed `“IP address mismatch”`in the browser.
+- My initial attempt to deploy to Heroku failed displaying `{“error”:”Forbidden”}` in the preview panel and `“IP address mismatch”`in the browser. With tutor assistance, a typo was identified in the Procfile. The application deployed successfully after correcting typo.
 ![Error 503 Heroku](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-503-heroku.png?raw=true)
 
 Stripe Payments
