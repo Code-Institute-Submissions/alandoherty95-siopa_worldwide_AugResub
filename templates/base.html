@@ -12,9 +12,9 @@
     <!-- Meta description -->
     <meta name="description" content="Online store selling popular Irish food and beverages!">
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicons/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicons/favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon_io/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ url_for('static', filename='favicons/site.webmanifest') }}">
     {% endblock %}
 
@@ -91,7 +91,9 @@
                         </a>
                         <!-- Access dependent on user status -->
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            <!-- Authenticated users -->
                             {% if request.user.is_authenticated %}
+                            <!-- Admin only -->
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                             {% endif %}
@@ -159,7 +161,7 @@
 
     {% block content %}
     {% endblock %}
-
+    <!-- Toast messages -->
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
