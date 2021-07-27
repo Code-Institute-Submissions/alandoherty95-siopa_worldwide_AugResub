@@ -414,3 +414,49 @@ Extensive manual testing was completed throughout the development of this applic
             
             
 -   Shopping Bag - directs the user to their shopping bag
+
+CHecked with HTML Validator
+
+bag/templates/bag/
+bag.html
+
+checkout/templates/checkout/
+checkout_success.html
+checkout.html
+
+home/templates/home/
+index.html
+
+products/templates/products/
+add_product.html
+edit_product.html
+product_detail.html
+products.html
+
+profiles/templates/profiles/
+profile.html
+
+templates/includes/
+templates/includes/nav-bar.html
+templates/includes/mobile-header.html
+templates/includes/footer.html
+
+templates/
+base.html
+
+templates/includes/toasts/
+toast_error.html
+toast_info.html
+toast_success.html
+toast_warning.html
+
+Checked with CSS Validator
+
+static/css/
+base.css
+
+checkout/static/checkout/css/
+checkout.css
+
+profiles/static/profiles/css/
+profile.css

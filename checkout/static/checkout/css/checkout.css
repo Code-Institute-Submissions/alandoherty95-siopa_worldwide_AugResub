@@ -1,3 +1,4 @@
+/* Stripe payments styling */
 .StripeElement,
 .stripe-style-input {
     box-sizing: border-box;
@@ -39,6 +40,7 @@ select option[value=""] {
     color: #aab7c4 !important;
 }
 
+/* Loading spinner */
 #loading-overlay {
     display: none;
     position: fixed;
@@ -52,8 +54,8 @@ select option[value=""] {
 
 .loading-spinner {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     align-items: center;
     justify-content: center;
     margin: 0;
