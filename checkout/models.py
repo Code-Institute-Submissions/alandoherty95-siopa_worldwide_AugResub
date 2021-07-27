@@ -51,10 +51,10 @@ class Order(models.Model):
         FREE_DELIVERY_THRESHOLD = €60
         Free delivery if order is more than €60
         """
-        self.order_total = self.lineitems.aggregate(
-            Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        self.order_total = self.lineitems.aggregate(Sum(
+            'lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
-            self.delivery_cost = Decimal(settings.STANDARD_DELIVERY_FEE)
+            self.delivery_cost = Decimal(self.order_total) * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         else:
             self.delivery_cost = 0
         self.grand_total = self.order_total + self.delivery_cost

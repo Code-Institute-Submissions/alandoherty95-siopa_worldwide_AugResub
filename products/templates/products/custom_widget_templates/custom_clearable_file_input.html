@@ -2,9 +2,10 @@
 {% if widget.is_initial %}
 <p>{{ widget.initial_text }}:</p>
 <a href="{{ widget.value.url }}">
-    <img width="96" height="96" class="rounded shadow-sm" src="{{ widget.value.url }}">
+    <img width="156" height="156" class="rounded shadow-sm" src="{{ widget.value.url }}">
 </a>
 {% if not widget.required %}
+<!-- Checkbox for removing image -->
 <div class="custom-control custom-checkbox mt-3">
     <input class="custom-control-input" type="checkbox" name="{{ widget.checkbox_name }}" id="{{ widget.checkbox_id }}">
     <label class="custom-control-label text-danger" for="{{ widget.checkbox_id }}">{{ widget.clear_checkbox_label }}</label>
@@ -16,5 +17,5 @@
     Select Image <input id="new-image" type="{{ widget.type }}" name="{{ widget.name }}" {% include "django/forms/widgets/attrs.html" %}>
 </span>
 <strong>
-    <p class="text-danger" id="filename"></p>
+    <p class="text-success" id="filename"></p>
 </strong>

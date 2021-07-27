@@ -226,7 +226,6 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content input {
     border-color: #000000;
-    border-radius: 12%;
 }
 
 /* Hides labels on everything except for the remember me checkbox on login page */

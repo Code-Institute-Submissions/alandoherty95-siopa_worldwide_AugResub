@@ -54,7 +54,6 @@ select option[value=""] {
 
 .loading-spinner {
     display: flex;
-    background-color: #ffffff;
     color: #000000;
     align-items: center;
     justify-content: center;
