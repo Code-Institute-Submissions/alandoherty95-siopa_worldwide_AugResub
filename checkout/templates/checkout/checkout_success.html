@@ -25,7 +25,7 @@
                 <strong>{{ order.email }}</strong>.</p>
         </div>
     </div>
-
+    <!-- Displays order summary -->
     <div class="row">
         <div class="col-12 col-lg-7">
             <div class="order-confirmation-wrapper p-2 border">
@@ -195,6 +195,7 @@
 
     <div class="row">
         <div class="col-12 col-lg-7">
+            <!-- Return to profile button -->
             {% if from_profile %}
             <a href="{% url 'profile' %}" class="btn btn-outline-green rounded-3 my-2">
                 <span class="icon mr-2">
@@ -202,16 +203,18 @@
                 </span>
                 <span class="text-uppercase">Return to Profile</span>
             </a>
+            <!-- Continue shopping button -->
             {% else %}
-            <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-black rounded-3 my-2">
+            <a href="{% url 'products' %}" class="btn btn-black rounded-3 my-2">
                 <span class="icon mr-2">
                     <i class="fas fa-gifts"></i>
                 </span>
-                <span class="text-uppercase">Now check out the latest deals!</span>
+                <span class="text-uppercase">Continue Shopping</span>
             </a>
             {% endif %}
         </div>
     </div>
+    <!-- Continue shopping button -->
     <div class="row">
         <div class="col-12 col-lg-7 text-right">
             <a href="{% url 'products' %}" class="btn btn-outline-green rounded-3 btn-lg">

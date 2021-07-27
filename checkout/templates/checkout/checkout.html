@@ -138,6 +138,7 @@
         </div>
     </div>
 </div>
+<!-- Loading spinner -->
 <div id="loading-overlay">
     <h1 class="text-light loading-spinner">
         <span class="icon">
@@ -149,7 +150,9 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<!-- Stripe, submit checkout form -->
 {{ stripe_public_key|json_script:"id_stripe_public_key" }}
 {{ client_secret|json_script:"id_client_secret" }}
 <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
+checkout/static/checkout/js/stripe_elements.js
 {% endblock %}

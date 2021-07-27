@@ -45,7 +45,7 @@
                             <!-- Checks if image exists -->
                             {% if item.product.image %}
                             <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                            <!-- Displays default image -->
+                            <!-- Or else uses default image -->
                             {% else %}
                             <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                             {% endif %}
