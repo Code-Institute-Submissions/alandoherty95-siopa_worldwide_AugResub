@@ -1256,6 +1256,9 @@ location.reload();
 - My initial attempt to deploy to Heroku failed displaying `{“error”:”Forbidden”}` in the preview panel and `“IP address mismatch”`in the browser. With tutor assistance, a typo was identified in the Procfile. The application deployed successfully after correcting typo.
 ![Error 503 Heroku](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-503-heroku.png?raw=true)
 
+
+- On the checkout success page, street_address1 was displayed twice mistakenly becuase the variable `{{ order.street_address1 }}` was duplicated in the html code. I corrected this by changing the second line to `{{ order.street_address2 }}` instead. Output is now working as expected.
+
 Stripe Payments
 
 1. Click your checkout button
