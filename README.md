@@ -1259,6 +1259,8 @@ location.reload();
 
 - On the checkout success page, street_address1 was displayed twice mistakenly becuase the variable `{{ order.street_address1 }}` was duplicated in the html code. I corrected this by changing the second line to `{{ order.street_address2 }}` instead. Output is now working as expected.
 
+- Some allauth forms were not displaying correctly, hidden behind navigation bar. I updated `{% block content %}` to `{% block inner_content %}` on each allauth template instead. This resolved issue with styling of each form.
+
 Stripe Payments
 
 1. Click your checkout button

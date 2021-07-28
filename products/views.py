@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404
+)
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -32,7 +34,7 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -41,10 +43,12 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(
+                name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -76,7 +80,8 @@ def product_detail(request, product_id):
 def add_product(request):
     """ Allows admin to add a product to the range """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only the admin can perform this action.')
+        messages.error(
+            request, 'Sorry, only the admin can perform this action.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -87,7 +92,9 @@ def add_product(request):
             # Returns to product detail page
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please check if form is valid.')
+            messages.error(
+                request, 'Failed to add product. \
+                    Please check if form is valid.')
     else:
         form = ProductForm()
 
@@ -103,7 +110,8 @@ def add_product(request):
 def edit_product(request, product_id):
     """ Allows admin to edit a product in the range """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only the admin can perform this action.')
+        messages.error(
+            request, 'Sorry, only the admin can perform this action.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
@@ -114,10 +122,13 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please check if form is valid.')
+            messages.error(
+                request, 'Failed to update product. \
+                Please check if form is valid.')
     else:
         form = ProductForm(instance=product)
-        messages.info(request, f'Currently updating details for {product.name}')
+        messages.info(
+            request, f'Currently updating details for {product.name}')
 
     template = 'products/edit_product.html'
     context = {
@@ -132,7 +143,8 @@ def edit_product(request, product_id):
 def delete_product(request, product_id):
     """ Allows admin to delete a product from the range """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only the admin can perform this action.')
+        messages.error(
+            request, 'Sorry, only the admin can perform this action.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
