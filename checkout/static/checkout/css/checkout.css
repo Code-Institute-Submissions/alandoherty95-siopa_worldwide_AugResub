@@ -48,13 +48,12 @@ select option[value=""] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(22, 155, 98 .85);
+    background: rgba(23, 162, 184, .85);
     z-index: 9999;
 }
 
 .loading-spinner {
     display: flex;
-    color: #000000;
     align-items: center;
     justify-content: center;
     margin: 0;

@@ -70,7 +70,7 @@
                 <div class="col-6 text-right">
                     <p>€{{ total | floatformat:2 }}</p>
                     <p>€{{ delivery | floatformat:2 }}</p>
-                    <p><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                    <p><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                 </div>
             </div>
         </div>
@@ -123,12 +123,12 @@
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
-                        <span class="font-weight-bold text-uppercase">Adjust Bag</span>
+                        <span class="text-uppercase">Adjust Bag</span>
                     </a>
                     <!-- Complete order button -->
                     <button id="submit-button" class="btn btn-black btn-lg rounded-3">
                         <!-- Displays grand total -->
-                        <span class="font-weight-bold text-uppercase">Pay €{{ grand_total|floatformat:2 }}</span>
+                        <span class="text-uppercase">Pay €{{ grand_total|floatformat:2 }}</span>
                         <span class="icon">
                             <i class="fab fa-cc-stripe fa-lg"></i>
                         </span>
@@ -140,9 +140,9 @@
 </div>
 <!-- Loading spinner -->
 <div id="loading-overlay">
-    <h1 class="text-light loading-spinner">
+    <h1 class="text-light text-uppercase loading-spinner">
         <span class="icon">
-            <i class="fas fa-2x fa-spinner fa-spin"></i>
+            <i class="fas fa-spinner fa-spin"></i>
         </span>
     </h1>
 </div>
