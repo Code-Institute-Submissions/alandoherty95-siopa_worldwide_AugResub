@@ -13,9 +13,9 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col text-center mt-3">
+        <div class="col mt-3">
             <!-- Page heading -->
-            <h2 class="text-uppercase mt-3">Browse Products</h2>
+            <h2 class="logo-style mt-3">Browse Products</h2>
             <!-- Categories -->
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
@@ -70,7 +70,7 @@
                 <div class="card-body">
                     <h4>{{ product.name }}</h4>
                 </div>
-                <div class="card h-100 border-0">
+                <div class="card h-100 border center">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -132,16 +132,16 @@
                             </button>
                             <!-- Modal heading -->
                             <h5 class="modal-title" id="deleteProduct{{ product.id }}Label">
-                                Delete <br>" {{ product.name }} " from our store? <br>
+                                Would you like to delete {{ product.name }}? <br>
                             </h5>
                             <p>This item will be permenantly removed from our store.</p>
                         </div>
                         <div class="modal-footer modal-btn">
                             <!-- Cancel button -->
-                            <button type="button" data-dismiss="modal">Cancel</button>
+                            <button type="button" data-dismiss="modal" class="btn-outline-green rounded-3">Cancel</button>
                             <!-- Delete button -->
                             <a id="checkoutButton" href="{% url 'delete_product' product.id %}">
-                                <span class="text-uppercase text-danger">Delete</span>
+                                <span class="text-uppercase btn-black rounded-3">Delete</span>
                             </a>
                         </div>
                     </div>
