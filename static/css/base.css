@@ -306,7 +306,7 @@ input[name='q']::placeholder {
     margin-top: 1rem;
 }
 
-.modal-btns {
+.modal-btn {
     display: initial;
 }
 
@@ -334,8 +334,14 @@ input[name='q']::placeholder {
         padding-top: 164px;
     }
 
-    .greeting {
-        font-size: 1.5rem;
+    h2.greeting {
+        padding: 2px;
+        font-size: 1.8rem;
+    }
+
+    h3.greeting {
+        padding: 2px;
+        font-size: 1.6rem;
     }
 }
 
@@ -350,7 +356,13 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
-    .greeting {
+    h2.greeting {
+        padding: 2px;
+        font-size: 1.4rem;
+    }
+
+    h3.greeting {
+        padding: 2px;
         font-size: 1.2rem;
     }
 
