@@ -1,7 +1,7 @@
 <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
     <!-- Ensures only forms from trusted domains can be used to POST data back -->
     {% csrf_token %}
-    <div class="form-group">
+    <div class="form-group w-30">
         <div class="input-group">
             <!-- Quantity selector -->
             <div class="input-group-prepend">
@@ -22,3 +22,7 @@
         </div>
     </div>
 </form>
+<!-- Update quantity button -->
+<a class="update-qty text-info"><i class="fas fa-pencil-alt"></i></a>
+<!-- Remove item button -->
+<a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i class="fas fa-trash-alt"></i></a>

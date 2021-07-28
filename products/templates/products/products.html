@@ -83,7 +83,7 @@
                     <div class="card-footer bg-white pt-0 border-0 text-left">
                         <div class="row">
                             <div class="col">
-                                <p class="lead mb-0 text-left font-weight-bold"><i class="fas fa-tag mr-1"></i>€{{ product.price }}</p>
+                                <p class="lead mb-0 text-left"><i class="fas fa-tag mr-1"></i>€{{ product.price }}</p>
                                 {% if product.category %}
                                 <p class="mt-2 mb-0">
                                     <a class="text-success" href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category.friendly_name }}
@@ -91,7 +91,7 @@
                                 </p>
                                 {% endif %}
                                 {% if request.user.is_superuser %}
-                                <small class="ml-3">
+                                <small>
                                     <a href="{% url 'edit_product' product.id %}">Edit</a> |
                                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                 </small>
@@ -127,11 +127,9 @@
 </div>
 <!-- Back to top button -->
 <div class="btt-button shadow-sm border border-green">
-    <span title="Back to Top">
-        <a class="btt-link d-flex h-100">
-            <i class="fas fa-chevron-up mx-auto my-auto"></i>
-        </a>
-    </span>
+    <a class="btt-link d-flex h-100" title="Back to Top">
+        <i class="fas fa-chevron-up mx-auto my-auto"></i>
+    </a>
 </div>
 {% endblock %}
 <!-- Back to top button JS -->
