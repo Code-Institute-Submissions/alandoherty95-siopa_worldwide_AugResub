@@ -104,7 +104,7 @@ h3.greeting {
 }
 
 .card-body {
-    min-height: 5rem;
+    min-height: 8rem;
 }
 
 .text-black {
@@ -156,51 +156,8 @@ a.category-badge>span.badge:hover {
     color: #169B62 !important;
 }
 
-/* ----------------------------------------------------  Footer */
-
-footer {
-    margin-top: auto;
-}
-
-.footer-container {
-    border-top: 2px solid #000000;
-    max-height: 3rem;
-}
-
-.footer-row {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    position: sticky;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.contact-link a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.contact-link a:hover {
-    text-decoration: none;
-    color: #169B62;
-}
-
-/* Convenience classes from Bootstrap */
-.arrow-success {
-    border-bottom-color: #28a745 !important;
-}
-
-.arrow-danger {
-    border-bottom-color: #dc3545 !important;
-}
-
-.arrow-warning {
-    border-bottom-color: #ffc107 !important;
-}
-
-.arrow-info {
-    border-bottom-color: #17a2b8 !important;
+.card {
+    border: none;
 }
 
 .bag-notification {

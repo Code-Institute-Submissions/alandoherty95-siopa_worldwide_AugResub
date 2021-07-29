@@ -19,7 +19,7 @@
             <!-- Categories -->
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                <span class="p-3 mt-1 badge badge-white text-black rounded-3 border border-dark">{{ c.friendly_name }}</span>
+                <span class="p-3 mt-1 badge badge-white text-black rounded-3 border border-green">{{ c.friendly_name }}</span>
             </a>
             {% endfor %}
             <hr class="w-40 mb-1">
@@ -70,7 +70,7 @@
                 <div class="card-body">
                     <h4>{{ product.name }}</h4>
                 </div>
-                <div class="card h-80">
+                <div class="card">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -152,7 +152,7 @@
     </div>
 </div>
 <!-- Back to top button -->
-<div class="btt-button shadow-sm border border-green">
+<div class="btt-button shadow-sm border">
     <a class="btt-link d-flex h-100" title="Back to Top">
         <i class="fas fa-chevron-up mx-auto my-auto"></i>
     </a>
