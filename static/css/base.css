@@ -98,6 +98,11 @@ h3.greeting {
     height: 12rem;
 }
 
+.item-card {
+    height: 15rem;
+    width: auto;
+}
+
 .text-black {
     color: #000 !important;
 }
@@ -209,7 +214,7 @@ input[name='q']::placeholder {
 .message-container {
     position: fixed;
     top: 88px;
-    right: 18px;
+    right: 28px;
     z-index: 99999999999;
 }
 
