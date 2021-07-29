@@ -315,6 +315,15 @@ input[name='q']::placeholder {
     margin-top: 1rem;
 }
 
+/* Error handling messages */
+.error-message {
+    font-size: 3rem;
+}
+
+.close {
+    font-size: 3rem;
+}
+
 /* Media Queries */
 
 /* Slightly larger container on xl screens */
