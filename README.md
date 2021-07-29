@@ -500,6 +500,8 @@ The admin also has the ability to delete items in the product range. The admin c
 
 - Some allauth forms were not displaying correctly, hidden behind the navigation bar. I updated `{% block content %}` to `{% block inner_content %}` on each allauth template instead. This resolved the issue with styling of each form.
 
+- The button for updating the quantity of items in the shopping bag was not functioning. I realised the their was a mismatch between the ID in bag.html and the relevant JS code. I updated the ID in the JS code to `('.update-qty')`. This issue was resolved after testing.
+
 ## Stripe Payments
 
 1. Click your checkout button

@@ -70,7 +70,7 @@
                 <div class="card-body">
                     <h4>{{ product.name }}</h4>
                 </div>
-                <div class="card h-80 border">
+                <div class="card h-80">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -80,13 +80,13 @@
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     </a>
                     {% endif %}
-                    <div class="card-footer bg-white pt-0 border-0 text-left">
+                    <div class="card-footer bg-white pt-0 text-left">
                         <div class="row">
                             <div class="col">
                                 <p class="lead mb-0 text-left"><i class="fas fa-tag mr-1"></i>€{{ product.price }}</p>
                                 {% if product.category %}
                                 <p class="mt-2 mb-0">
-                                    <a class="text-success" title="Category" href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category.friendly_name }}
+                                    <a class="text-success" title="Item category" href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category.friendly_name }}
                                     </a>
                                 </p>
                                 {% endif %}
