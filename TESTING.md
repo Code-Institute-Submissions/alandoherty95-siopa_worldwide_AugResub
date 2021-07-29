@@ -4,16 +4,23 @@
 
 ## []()Table of Contents
 
--   [Validators]()
-    -   [W3C Validators]()
-    -   [JSHint Validator]()
-    -   [pylint-django]()
-    -   [Markdown]()
--   [User Story Testing]()
--   [Manual Testing]()
--   [Bugs]()
--   [User Testing]()
+- [Validators]()
 
+- [W3C Validators]()
+
+- [JSHint Validator]()
+
+- [pylint-django]()
+
+- [Markdown]()
+
+- [User Story Testing]()
+
+- [Manual Testing]()
+
+- [Bugs]()
+
+- [User Testing]()
 
 ## Validators
 
@@ -23,440 +30,218 @@ This code for this application was put through vigorously tested online using th
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the code on all of the pages across all apps, and to make sure that there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://validator.w3.org/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+- [W3C Markup Validator](https://validator.w3.org/)
+
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 HTML
+
 CSS
+
 JavaScript
+
 Python
+
 Markdown
 
+## User Stories Table
+
+![User Stories Table](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/user-stories.png?raw=true)
 
 #### **As a first-time user, I would like to:**
 
-  
-
-  
-
-  
-
-  
-
 **General**
-
-  
-
-  
-
-  
-
-  
 
 - immediately understand the purpose and aim of the website
 
-  
-
-  
-
-  
-
 - be able to easily navigate through the site
-
-  
-
-  
-
-  
 
 - explore a website that appeals to me visually
 
-  
-
-  
-
-  
-
 - know where I am on the website at all times
-
-  
-
-  
-
-  
 
 - be informed of actions I take, successful or otherwise
 
-  
-
-  
-
-  
-
-  
-
 **Products**
-
-  
-
-  
-
-  
-
-  
 
 - browse through a range of products
 
-  
-
-  
-
-  
-
 - sort products by their relevant category
-
-  
-
-  
-
-  
 
 - search for a specific product using keywords
 
-  
-
-  
-
-  
-
 - view the individual product details on a separate page
-
-  
-
-  
-
-  
 
 - adjust the quantity of any product
 
-  
-
-  
-
-  
-
-  
-
 **Shopping Bag**
-
-  
-
-  
-
-  
-
-  
 
 - easily view the contents of my shopping bag
 
-  
-
-  
-
-  
-
 - easily view the total cost of my shopping bag at all times
-
-  
-
-  
-
-  
 
 - remove items from my shopping bag
 
-  
-
-  
-
-  
-
 - adjust the quantity of items for a specific product in my shopping bag
-
-  
-
-  
-
-  
 
 - see any changes I make to my bag reflected in the shopping bag grand total
 
-  
-
-  
-
-  
-
 - view the details of what is in my shopping bag
-
-  
-
-  
-
-  
-
-  
 
 **Checkout**
 
-  
-
-  
-
-  
-
-  
-
 - purchase items by checking out easily and securely
-
-  
-
-  
-
-  
 
 - receive a confirmation message of my order via email
 
-  
-
-  
-
-  
-
 - view the details of my order in the confirmation email
-
-  
-
-  
-
-  
 
 **Create Account**
 
-  
-
-  
-
-  
-
-  
-
 - create an account easily and quickly
-
-  
-
-  
-
-  
-
-  
 
 #### **As a registered user:**
 
-  
-
-  
-
-  
-
-  
-
 - log in and out easily and quickly
-
-  
-
-  
-
-  
 
 - reset my password if it is forgotten
 
-  
-
-  
-
-  
-
 - receive a confirmation message that I have successfully registered an account
-
-  
-
-  
-
-  
 
 - view my personal profile
 
-  
-
-  
-
-  
-
 - view my order history in my profile page
-
-  
-
-  
-
-  
 
 - save my default delivery details for future orders
 
-  
-
-  
-
-  
-
 - easily update my delivery information
-
-  
-
-  
-
-  
-
-  
 
 #### **As a Superuser:**
 
-  
-
-  
-
-  
-
-  
-
 - access the admin panel easily
-
-  
-
-  
-
-  
 
 - create, update and delete categories
 
-  
-
-  
-
-  
-
 - add new items to our product range
-
-  
-
-  
-
-  
 
 - edit or delete existing items from our product range
 
-  
-
-  
-
-  
-
 - view and manage users of the site
-
-  
-
-  
-
-  
 
 - view and manage orders
 
+## Screenshots
+
+![Desktop Home](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-index.png?raw=true)
+
+![Desktop Sign In](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-sign-in.png?raw=true)
+
+![Desktop Sign Up](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-sign-up.png?raw=true)
+
+![Mobile Profile](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-profile.png?raw=true)
+
+![Mobile Empty Bag](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-empty-bag.png?raw=true)
+
+![Mobile Search Crisps](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-search-crisps.png?raw=true)
+
+![Mobile Sort Name](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-sort-name.png?raw=true)
+
+![Mobile Sort Price](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-sort-price.png?raw=true)
 
 ## Manual Testing
 
 Extensive manual testing was completed throughout the development of this application. Once the website was successfully deployed on Heroku, I completed rigorous manual testing to ensure each button and feature was functioning correctly.
 
-### []()Navigation Bar
+### Navigation Bar
 
-#### []()Desktop View
+#### Desktop View
 
--   Search feature - searches all items in the database using a key word to find relevant search results by title or description
-    
--   Siopa Worldwide Logo - returns the user to the home screen when clicked on
-    
--   Account - reveals a dropdown menu when clicked on:
-    
-    -   If not authenticated:
-        
-        -   Register - directs the user to the registration page and invites them to create an account
-            
-        -   Login - directs the user to the login page
-            
-    -   If user is authenticated:
-        
-        -   Profile - directs the user to their unique profile page
-            
-        -   Logout - logs user out of their account, redirects the user to the home page
-            
-    -   If user is a superuser:
-        
-        -   Product Management - directs the user to the add product page
-            
-            
--   Shopping Bag - directs the user to their shopping bag
+- Search feature - searches all items in the database using a keyword to find relevant search results by title or description
 
-CHecked with HTML Validator
+- Siopa Worldwide Logo - returns the user to the home screen when clicked on
+
+- Account - reveals a dropdown menu when clicked on:
+
+- If not authenticated:
+
+- Register - directs the user to the registration page and invites them to create an account
+
+- Login - directs the user to the login page
+
+- If user is authenticated:
+
+- Profile - directs the user to their unique profile page
+
+- Logout - logs user out of their account, redirects the user to the home page
+
+- If user is a superuser:
+
+- Product Management - directs the user to the add product page
+
+- Shopping Bag - directs the user to their shopping bag
+
+Checked with HTML Validator
 
 bag/templates/bag/
+
 bag.html
 
 checkout/templates/checkout/
+
 checkout_success.html
+
 checkout.html
 
 home/templates/home/
+
 index.html
 
 products/templates/products/
+
 add_product.html
+
 edit_product.html
+
 product_detail.html
+
 products.html
 
 profiles/templates/profiles/
+
 profile.html
 
 templates/includes/
+
 templates/includes/nav-bar.html
+
 templates/includes/mobile-header.html
+
 templates/includes/footer.html
 
 templates/
+
 base.html
 
 templates/includes/toasts/
+
 toast_error.html
+
 toast_info.html
+
 toast_success.html
+
 toast_warning.html
 
 Checked with CSS Validator
 
 static/css/
+
 base.css
 
 checkout/static/checkout/css/
+
 checkout.css
 
 profiles/static/profiles/css/
+
 profile.css
