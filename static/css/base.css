@@ -99,8 +99,12 @@ h3.greeting {
 }
 
 .item-card {
-    height: 15rem;
+    height: 16rem;
     width: auto;
+}
+
+.card-body {
+    min-height: 5rem;
 }
 
 .text-black {
@@ -311,10 +315,6 @@ input[name='q']::placeholder {
     margin-top: 1rem;
 }
 
-.modal-btn {
-    display: initial;
-}
-
 /* Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -340,13 +340,11 @@ input[name='q']::placeholder {
     }
 
     h2.greeting {
-        padding: 2px;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     h3.greeting {
-        padding: 2px;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -363,16 +361,12 @@ input[name='q']::placeholder {
 
     h2.greeting {
         padding: 2px;
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     h3.greeting {
         padding: 2px;
-        font-size: 1.2rem;
-    }
-
-    .display-4.logo-font.text-black {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .nav-link {

@@ -88,7 +88,8 @@ def add_product(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, 'Successfully added {product.name} to our store!')
+            messages.success(
+                request, f'Successfully added {product.name} to our store!')
             # Returns to product detail page
             return redirect(reverse('product_detail', args=[product.id]))
         else:
@@ -119,7 +120,8 @@ def edit_product(request, product_id):
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated details for {product.name}!')
+            messages.success(
+                request, f'Successfully updated details for {product.name}!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(
@@ -149,5 +151,6 @@ def delete_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.success(request, 'Successfully deleted {product.name} from our store!')
+    messages.success(
+        request, f'Successfully deleted {product.name} from our store!')
     return redirect(reverse('products'))
