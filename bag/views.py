@@ -69,5 +69,5 @@ def remove_from_bag(request, item_id):
         return redirect(reverse('view_bag'))
     
     except Exception as e:
-        messages.error(request, f'Error removing item. Error: {e}')
+        messages.error(request, f'Error removing {product.name}. Error: {e}')
         return HttpResponse(status=500)

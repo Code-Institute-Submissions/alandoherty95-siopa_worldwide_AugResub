@@ -1,7 +1,7 @@
 from django.db import models
 
 
-# CATEGORY MODEL
+# CATEGORY FORM MODEL
 class Category(models.Model):
 
     class Meta:
@@ -18,7 +18,7 @@ class Category(models.Model):
         return self.friendly_name
 
 
-# PRODUCT MODEL
+# PRODUCT FORM MODEL
 class Product(models.Model):
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.SET_NULL)

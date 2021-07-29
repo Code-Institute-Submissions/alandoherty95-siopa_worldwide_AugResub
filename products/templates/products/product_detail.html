@@ -13,7 +13,9 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <!-- Product images -->
+        <!-- Page heading -->
+        <h2 class="logo-style mt-3">Browse Products</h2>
+        <!-- Product image -->
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 <h3>{{ product.name }}</h3>
@@ -44,7 +46,7 @@
                 <!-- Admin access only -->
                 {% if request.user.is_superuser %}
                 <small>
-                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                    <a href="{% url 'edit_product' product.id %}" class="text-warning">Edit</a> |
                     <a href="#deleteProduct{{ product.id }}" class="text-danger" data-toggle="modal">Delete</a>
                 </small>
                 {% endif %}
@@ -115,7 +117,7 @@
                     <button type="button" data-dismiss="modal" class="btn-outline-green rounded-3">Cancel</button>
                     <!-- Delete button -->
                     <a id="checkoutButton" href="{% url 'delete_product' product.id %}">
-                        <span class="text-uppercase btn-black rounded-3 text-danger">Delete</span>
+                        <span class="text-uppercase btn-black rounded-3">Delete</span>
                     </a>
                 </div>
             </div>

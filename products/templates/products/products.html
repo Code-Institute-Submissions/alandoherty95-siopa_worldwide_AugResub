@@ -70,7 +70,7 @@
                 <div class="card-body">
                     <h4>{{ product.name }}</h4>
                 </div>
-                <div class="card h-100 border center">
+                <div class="card h-80 border">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -92,7 +92,7 @@
                                 {% endif %}
                                 {% if request.user.is_superuser %}
                                 <small>
-                                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                                    <a href="{% url 'edit_product' product.id %}" class="text-warning">Edit</a> |
                                     <a href="#deleteProduct{{ product.id }}" class="text-danger" data-toggle="modal">Delete</a>
                                 </small>
                                 {% endif %}
