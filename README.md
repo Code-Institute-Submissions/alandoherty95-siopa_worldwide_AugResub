@@ -478,30 +478,60 @@ The admin also has the ability to delete items in the product range. The admin c
 
 ### **Resolved Bugs**
 
-- The function allowing the user to remove items from the shopping bag wasn't functioning. I realised I forgot to pass 'data' through when submitting the request. I test the function after inputting data to ensure it works correctly.
+  
+
+- Issue: The function allowing the user to remove items from the shopping bag wasn't functioning. 
+	- Fix: I realised I forgot to pass 'data' through when submitting the request. I test the function after inputting data to ensure it works correctly.
+
+  
 
 `$.post(url, data).done(function() {location.reload();});`
 
-- The subtotal calculation was not displaying in the shopping bag. After investigation, I realised the structure of my html table was incorrect. I rearranged the html code and used the code snippet below to correctly calculate the subtotal of each item in the shopping bag.
+  
+
+- Issue: The subtotal calculation was not displaying in the shopping bag. 
+	- Fix: After investigation, I realised the structure of my html table was incorrect. I rearranged the html code and used the code snippet below to correctly calculate the subtotal of each item in the shopping bag.
+
+  
 
 `<p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>`
 
-- The error (screenshot below) was displayed in the terminal. I sought help from a Code Institute tutor who kindly pointed out that the code snippet below should be in `checkout/init.py` instead of `bag/init.py`.
+  
+
+- The error (screenshot below) was displayed in the terminal when running my application in Gitpod.
+	- Fix: I sought help from a Code Institute tutor who kindly pointed out that the code snippet below should be in `checkout/init.py` instead of `bag/init.py`.
+
+  
 
 `default_app_config = 'checkout.apps.CheckoutConfig'`
 
+  
+
 ![Improperly Configured Error](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-improperly-configured.png?raw=true)
 
-- My initial attempt to deploy to Heroku failed displaying `{“error”:”Forbidden”}` in the preview panel and `“IP address mismatch”`in the browser. With tutor assistance, a typo was identified in the Procfile. The application deployed successfully after correcting typo.
+  
+
+- Issue: My initial attempt to deploy to Heroku failed displaying `{“error”:”Forbidden”}` in the preview panel and `“IP address mismatch”`in the browser. 
+	- Fix: With tutor assistance, a typo was identified in the Procfile. The application deployed successfully after correcting typo.
+
+  
 
 ![Error 503 Heroku](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-503-heroku.png?raw=true)
 
-- On the checkout success page, street_address1 was displayed twice mistakenly because the variable `{{ order.street_address1 }}` was duplicated in the html code. I corrected this by changing the second line to `{{ order.street_address2 }}` instead. Output is now working as expected.
+  
 
-- Some allauth forms were not displaying correctly, hidden behind the navigation bar. I updated `{% block content %}` to `{% block inner_content %}` on each allauth template instead. This resolved the issue with styling of each form.
+- Issue: On the checkout success page, street_address1 was displayed twice mistakenly because the variable `{{ order.street_address1 }}` was duplicated in the html code. 
+	- Fix: I corrected this by changing the second line to `{{ order.street_address2 }}` instead. Output is now working as expected.
 
-- The button for updating the quantity of items in the shopping bag was not functioning. I realised the their was a mismatch between the ID in bag.html and the relevant JS code. I updated the ID in the JS code to `('.update-qty')`. This issue was resolved after testing.
+  
 
+- Issue: Some allauth forms were not displaying correctly, hidden behind the navigation bar. 
+	- Fix: I updated `{% block content %}` to `{% block inner_content %}` on each allauth template instead. This resolved the issue with styling of each form.
+
+  
+
+- Issue: The button for updating the quantity of items in the shopping bag was not functioning. 
+	- Fix: I realised the their was a mismatch between the ID in bag.html and the relevant JS code. I updated the ID in the JS code to `('.update-qty')`. This issue was resolved after testing.
 ## Stripe Payments
 
 1. Click your checkout button
