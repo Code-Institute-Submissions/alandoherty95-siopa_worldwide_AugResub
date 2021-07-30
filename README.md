@@ -1,12 +1,8 @@
-
-**[Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)**
-A little taste of home.
+**[Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)** - a little taste of home!
 
 Welcome to **[Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)** - a one stop shop for all your favourite Irish products. Siopa Worldwide is an e-commerce store, offering a range of popular Irish food and beverages. We are dedicated to keeping you stocked up with your favourite Irish food and drinks no matter where in the world you are located!
 
 ![Website Mockup](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/mockup-original.png?raw=true)
-
-<span  id="top"></span>
 
 ![Siopa Worldwide Logo](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/siopa-logo-home.png?raw=true)
 
@@ -18,25 +14,25 @@ Welcome to **[Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)** - a one
 
 2.  <a  href="#ux">**User Experience (UX)**</a>
 
-3.  <a  href="#scope">**Scope**</a>
+3.  <a  href="#design">**Design & Development**</a>
 
-4.  <a  href="#structure">**Structure**</a>
+4.  <a  href="#usertesting">**User Stories**</a>
 
 5.  <a  href="#wireframes">**Wireframes**</a>
 
 6.  <a  href="#technologies">**Technologies**</a>
 
-7.  <a  href="#database">**Database**</a>
+7.  <a  href="#features">**Features**</a>
 
-8.  <a  href="#features">**Features**</a>
+8.  <a  href="#testing">**Testing**</a>
 
-9.  <a  href="#testing">**Testing**</a>
+9.  <a  href="#deployment">**Deployment**</a>
 
-10. <a  href="#deployment">**Deployment**</a>
+10. <a  href="#credits">**Credits**</a>
 
-11. <a  href="#credits">**Credits**</a>
+11. <a  href="#acknowledgements">**Acknowledgements**</a>
 
-12. <a  href="#acknowledgements">**Acknowledgements**</a>
+12. <a  href="#extra">**Extra**</a>
 
 <span  id="context"></span>
 
@@ -52,29 +48,31 @@ The application is simply designed with user experience in mind. The website all
 
 ### The Five Planes of UX
 
-#### []()The Strategy Plane
+#### The Strategy Plane
 
 After conducting market research on friends, peers and family members
 
 I identified a niche market which can be utilised by anyone who craves Irish food and beverages no matter where they are in the world. I want to create an application focusing purely on the most popular Irish goods which are not easily found outside of Ireland. Every shopper will have the ability to create their own account, safely provide their personal information and securely complete an order.
 
-#### []()The Scope Plane
+#### The Scope Plane
 
 When deciding on the scope of my project, I decided to design a website allowing users to create an account, browse products, add items to their shopping cart and securely complete an order. The primary feature will be the capability to purchase a product through a secure checkout using Stripe Payments. Shoppers can easily sort products by name, price or category. Shoppers can easily search for products, using keywords. To improve the user experience, I want users to be notified of their actions, such as shopping bag updates as well as success and error messages.
 
-#### []()The Structure Plane
+#### The Structure Plane
 
 After deciding on the features I wanted to include, I focused on the overall structure of the website. I want to keep the design clean and sleek. All potential customers will be able to search for a product using keywords but can also use a sorting feature depending on the needs of the user. I am using the grid system from Bootstrap to clearly display the content of each page. The navigation bar will change depending if the user is anonymous or logged in. Clicking 'Profile' in the navigation bar, reveals more options via a dropdown list. The store owner (admin), signed in as a superuser, can also access the product management page. The store owner will have the option to add, edit or delete items from the product range.
 
-#### []()The Skeleton Plane
+#### The Skeleton Plane
 
 I wanted a clear, simple structure throughout the website. Each page will have a fixed navigation bar with consistent styling and prominent call-to-action buttons. There will be a large call-to-action button on the home screen to invite shoppers to browse all products. Each page has a unique heading so users are aware of which page they are on at all times. The products page displays all items neatly, allowing users to view multiple products on the same page. Clicking on a product will direct the shopper to a more detailed view about the individual item. Shoppers can simply add items to their shopping bag with a toast message appearing in the top right corner of the screen when an action is completed. Users can enter their personal information confident in the application's security features. Shoppers can complete their checkout and receive an email confirmation of their order.
 
-#### []()The Surface Plane
+#### The Surface Plane
 
 From conducting research on similar e-commerce sites, I discovered most online stores are quite colourful and brimming with information. Conversely, I wanted to keep the design sleek and simple, only displaying relevant information to the user. Initially, I sketched ideas and wireframes onto paper, before recreating more advanced wireframes online. I designed all the pages for desktop and smaller screen sizes showing the structure and content on the different devices.
 
-### Design Process
+<span  id="design"></span>
+
+## 3. Design & Development
 
 During the research phase of this project, I posed the following questions to friends, family members and peers living abroad:
 
@@ -116,7 +114,119 @@ The website was designed with three main objectives:
 
 - to create, update and delete items in our product range
 
-### **User Stories**
+### Application Features
+
+- Browse products
+
+- View product details
+
+- Create an account
+
+- Log in/log out
+
+- Add items to shopping bag
+
+- View items in shopping bag
+
+- Edit and update items in shopping bag
+
+- Delete items from shopping bag
+
+- Complete an order
+
+- View order history
+
+- Search for specific items using keywords
+
+- Sort items by name, price or category
+
+### Design Process
+
+The primary design goal in mind when designing this application is to attract the customer to explore further. The landing page is bright and striking. There is a prominent call-to-action button inviting users to 'Shop Now'. This button will lead the user to the products page where they can browse all items in our product range.
+
+- Design a bright and visually appealing application.
+
+- Design an intuitive and easy to navigate website.
+
+- Achieve a clean aesthetic displaying only the necessary information.
+
+- Use Bootstrap4 features for the layout and structure of the application
+
+- Use Bootstrap4 classes and components to provide structure as well as highlighting and enhancing different elements.
+
+- Design an application which is responsive on all screen sizes.
+
+- Design a logo that is simple, attractive and memorable.
+
+The colour scheme chosen for this project was inspired by bright colours to give the website an attractive, vibrant look. The white background gives a sleek, neutral look to the application with green and black nicely complementing.
+
+![Colour Scheme](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/colour-palette.png?raw=true)
+
+- **#FFFFFF White** is the backdrop of all headings and text on the website. The bright colour emphasises clarity and removes visual clutter. The black text is easily readable on the white background.
+
+- **#169B62 Green** is used for some buttons seen throughout the website. The buttons were designed to be large and prominent. The bright green button on the white background grabs the attention of the user.
+
+- **#FFFFFF Black** is used for headings and text on the website. The black text is easily read on the white background. Black is also used throughout the application for buttons.
+
+#### Typography
+
+![Indie Flower Font](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/indie-flower-font.png?raw=true)
+
+[Indie Flower Font](https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap) was used because of the bubbly, rounded edges. It grabs the user's attention in contrast to the straight, simple Oswald font.
+
+![Oswald Font](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/oswald-font.png?raw=true)
+
+[Oswald Font](https://fonts.googleapis.com/css2?family=Oswald&display=swap) was used for the primary text because it is easy to read. Oswald is designed to be used freely across the internet by web browsers on desktop computers, laptops and mobile devices.
+
+### Development Process
+
+The whole development process is broken down into smaller stages to help in managing the project.
+
+- During the research phase of this project, I posed the following questions to friends, family members and peers living abroad:
+
+- Which Irish goods do you desire most while living abroad?
+
+- Which online stores do you use for buying Irish goods?
+
+- What are your favourite brands of Irish food and drinks?
+
+- What kind of Irish goods can you purchase in your town or city?
+
+- Is there any store specialising in Irish products in your town or city?
+
+- Choose a consistent colour scheme
+
+- Identify the necessary applications needed
+
+- Create wireframes for each page for desktop, mobile and tablet
+
+- Create a data set for the products application
+
+- Create a minimum viable product
+
+- Set up Django Framework
+
+- Set up Allauth for authentication and registration
+
+- Create a base.html page including navigation with common elements, links and scripts
+
+- Create a home app
+
+- Create a products app to display all items in our product range
+
+- Create a bag app to display the contents of the shopping bag
+
+- Create a checkout app
+
+- Create a profile app
+
+- Create additional elements contributing to the user experience such as toasts and messages
+
+- Adjust and tailor the layout and styling of each page
+
+<span  id="usertesting"></span>
+
+## 4. User Stories
 
 #### **As a first-time user, I would like to:**
 
@@ -200,117 +310,9 @@ The website was designed with three main objectives:
 
 - view and manage orders
 
-## **Design and Development**
+<span  id="wireframes"></span>
 
-- Browse products
-
-- View product details
-
-- Create an account
-
-- Log in/log out
-
-- Add items to shopping bag
-
-- View items in shopping bag
-
-- Edit and update items in shopping bag
-
-- Delete items from shopping bag
-
-- Complete an order
-
-- View order history
-
-- Search for specific items using keywords
-
-- Sort items by name, price or category
-
-### **Design Process**
-
-The primary design goal in mind when designing this application is to attract the customer to explore further. The landing page is bright and striking. There is a prominent call-to-action button inviting users to 'Shop Now'. This button will lead the user to the products page where they can browse all items in our product range.
-
-- Design a bright and visually appealing application.
-
-- Design an intuitive and easy to navigate website.
-
-- Achieve a clean aesthetic displaying only the necessary information.
-
-- Use Bootstrap4 features for the layout and structure of the application
-
-- Use Bootstrap4 classes and components to provide structure as well as highlighting and enhancing different elements.
-
-- Design an application which is responsive on all screen sizes.
-
-- Design a logo that is simple, attractive and memorable.
-
-The colour scheme chosen for this project was inspired by bright colours to give the website an attractive, vibrant look. The white background gives a sleek, neutral look to the application with green and black nicely complementing.
-
-![Colour Scheme](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/colour-palette.png?raw=true)
-
-- **#FFFFFF White** is the backdrop of all headings and text on the website. The bright colour emphasises clarity and removes visual clutter. The black text is easily readable on the white background.
-
-- **#169B62 Green** is used for some buttons seen throughout the website. The buttons were designed to be large and prominent. The bright green button on the white background grabs the attention of the user.
-
-- **#FFFFFF Black** is used for headings and text on the website. The black text is easily read on the white background. Black is also used throughout the application for buttons.
-
-#### Typography
-
-![Indie Flower Font](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/indie-flower-font.png?raw=true)
-
-[Indie Flower Font](https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap) was used because of the bubbly, rounded edges. It grabs the user's attention in contrast to the straight, simple Oswald font.
-
-![Oswald Font](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/oswald-font.png?raw=true)
-
-[Oswald Font](https://fonts.googleapis.com/css2?family=Oswald&display=swap) was used for the primary text because it is easy to read. Oswald is designed to be used freely across the internet by web browsers on desktop computers, laptops and mobile devices.
-
-#### **Development Process**
-
-The whole development process is broken down into smaller stages to help in managing the project.
-
-- During the research phase of this project, I posed the following questions to friends, family members and peers living abroad:
-
-- Which Irish goods do you desire most while living abroad?
-
-- Which online stores do you use for buying Irish goods?
-
-- What are your favourite brands of Irish food and drinks?
-
-- What kind of Irish goods can you purchase in your town or city?
-
-- Is there any store specialising in Irish products in your town or city?
-
-- Choose a consistent colour scheme
-
-- Identify the necessary applications needed
-
-- Create wireframes for each page for desktop, mobile and tablet
-
-- Create a data set for the products application
-
-- Create a minimum viable product
-
-- Set up Django Framework
-
-- Set up Allauth for authentication and registration
-
-- Create a base.html page including navigation with common elements, links and scripts
-
-- Create a home app
-
-- Create a products app to display all items in our product range
-
-- Create a bag app to display the contents of the shopping bag
-
-- Create a checkout app
-
-- Create a profile app
-
-- Create additional elements contributing to the user experience such as toasts and messages
-
-- Adjust and tailor the layout and styling of each page
-
-## **Wireframes**
+## 5. Wireframes
 
 ### Desktop Wireframes
 
@@ -330,7 +332,9 @@ The whole development process is broken down into smaller stages to help in mana
 
 ![Mobile Wireframes 2](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/mobile-mockups2.png?raw=true)
 
-## **Technologies Used**
+<span  id="technologies"></span>
+
+## 6. Technologies
 
 ### **Languages**
 
@@ -396,7 +400,7 @@ The whole development process is broken down into smaller stages to help in mana
 
 - [Stripe Docs](https://stripe.com/docs)
 
-## **Features**
+## 7. Features
 
 ### Features unique to the admin:
 
@@ -406,8 +410,6 @@ The store owner has the ability to edit items in the product range. The admin ca
 
 The admin also has the ability to delete items in the product range. The admin can delete any products by clicking the delete button on the Products page or the Products Detail page.
 
-
-
 ### Features to implement in future:
 
 - Pagination
@@ -416,7 +418,7 @@ Pagination can be added as the number of items in our store increases. Currently
 
 - Product Ratings
 
-Ratings will give users to opportunity to score their favourite products. Users will also be able to sort products by rating.
+Ratings will give users an opportunity to score their favourite products. Users will also be able to sort products by rating.
 
 - Product Suggestion Form
 
@@ -426,7 +428,24 @@ Users will be given the opportunity to fill out a simple form if they would like
 
 Signing in using social media accounts will make it much easier for users to register their account and will provide additional information for marketing purposes.
 
-## Deployment
+<span id="testing"></span>
+
+## 8. Testing
+
+Please see [TESTING.md](https://github.com/alandoherty95/siopa_worldwide/blob/master/TESTING.md)
+
+<span id="deployment"></span>
+
+## 9. Deployment
+
+This application required the following to run:
+
+- **Python3**
+- **Django**
+- **Django Allauth**
+- **Stripe**
+- **PIP**
+  > The full list of requirements can be found in the requirements.txt file
 
 ### Gitpod Reminders
 
@@ -452,44 +471,117 @@ To log into the Heroku toolbelt CLI:
 
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-## **Testing**
+### **AWS**
 
-### **Resolved Bugs**
+[AWS](https://aws.amazon.com/console/) was utilised when deploying my application. AWS was used to host both the static and media files for this project. I took the following steps to set up AWS:
 
-- Issue: The function allowing the user to remove items from the shopping bag wasn't functioning.
+1. Go to [AWS](https://aws.amazon.com/)
+   Create an account
+   Search for S3 and select it by clicking on it
+2. Create a new bucket
+   Select the region closest to you
+   Uncheck block all public access
+   Click create bucket
 
-- Fix: I realised I forgot to pass 'data' through when submitting the request. I test the function after inputting data to ensure it works correctly.
+3. In the properties section:
+   Turn on static web hosting
+   Enter a default values for the index and error documents
+   Click save
 
-`$.post(url, data).done(function() {location.reload();});`
+4. In the permissions section
+   Add the cors configuration
+   Go to the bucket policy section
+   Select policy generator
+   The policy type will be s3 bucket policy
+   Allow all principals by using the \* symbol
+   Select get object
 
-- Issue: The subtotal calculation was not displaying in the shopping bag.
+5. Copy the ARN and paste it into the ARN box
+   Click add statement
+   Click generate policy
+   Copy this policy into the bucket policy editor
+   Select to allow access to all resources in this bucket by adding a /\* to the end of the resource key
+   Click save button
+   Go to the access control list section
+   Set the list objects permission for everyone under the public access section
 
-- Fix: After investigation, I realised the structure of my html table was incorrect. I rearranged the html code and used the code snippet below to correctly calculate the subtotal of each item in the shopping bag.
+6. Create a user with access to the bucket\*\*
 
-`<p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>`
+   From the services menu open IAM
+   Click groups
+   Create a new group
 
-- The error (screenshot below) was displayed in the terminal when running my application in Gitpod.
+7. Create the policy used to access the bucket
+   Click policies
+   Create policy
+   Go to the JSON tab
+   Select import managed policy
+   Search for s3
+   Import the s3 full access policy
+   Get the bucket ARN from the bucket policy page in s3
+   Paste it into the field
+   Click on review policy
+   Enter a name and description
+   Click on create policy
 
-- Fix: I sought help from a Code Institute tutor who kindly pointed out that the code snippet below should be in `checkout/init.py` instead of `bag/init.py`.
+8. Attach the policy
+   Go to groups
+   Click on the group you just created
+   Click attach policy
+   Search for the policy you just created and select it
+   Click attach policy
 
-`default_app_config = 'checkout.apps.CheckoutConfig'`
+9. Create a user
+   Click add user
+   Enter a name and give programmatic access
+   Click on next button
+   Click through to the end and then create user
+   Download the CSV file which will contain the user access key and secret access key which need to be added to the Heroku config vars
 
-![Improperly Configured Error](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-improperly-configured.png?raw=true)
+<span id="credits"></span>
 
-- Issue: My initial attempt to deploy to Heroku failed displaying `{“error”:”Forbidden”}` in the preview panel and `“IP address mismatch”`in the browser.
+## 10. Credits
 
-- Fix: With tutor assistance, a typo was identified in the Procfile. The application deployed successfully after correcting typo.
+- [Heroku](https://dashboard.heroku.com/apps) for supplying a platform for deploying my website.
 
-![Error 503 Heroku](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-503-heroku.png?raw=true)
+- [Bootstrap](https://getbootstrap.com/) for providing a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
 
-- Issue: On the checkout success page, street_address1 was displayed twice mistakenly because the variable `{{ order.street_address1 }}` was duplicated in the html code.
+- [W3Schools](https://www.w3schools.com/) for providing a wealth of information about HTML, CSS and JavaScript. It was a very informative and beneficial resource.
 
-- Fix: I corrected this by changing the second line to `{{ order.street_address2 }}` instead. Output is now working as expected.
+- [GitHub](https://github.com/) for hosting for software development and version control.
 
-- Issue: Some allauth forms were not displaying correctly, hidden behind the navigation bar.
+- [Google Fonts](https://fonts.google.com/) for making the web more beautiful, fast, and open through great typography. A resource that is very easy to use.
 
-- Fix: I updated `{% block content %}` to `{% block inner_content %}` on each allauth template instead. This resolved the issue with styling of each form.
+- [Slack](https://app.slack.com/client/T0L30B202/C016NG69WG3) community is always helpful and motivating. It is great for asking questions and discussing challenges.
 
-- Issue: The button for updating the quantity of items in the shopping bag was not functioning.
+- [Stack Overflow](https://stackoverflow.com/) for providing a platform for questions and answers by professional and enthusiast programmers.
 
-- Fix: I realised the their was a mismatch between the ID in bag.html and the relevant JS code. I updated the ID in the JS code to `('.update-qty')`. This issue was resolved after testing.
+- [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/) for offering a comprehensive course and walk-through project.
+
+- [Stack Overflow](https://stackoverflow.com/) for providing a forum for posing questions and queries relating to software development.
+
+- [YouTube](https://www.youtube.com/) for supplying countless videos and tutorials on a range of subjects,
+
+- [Google](https://www.google.com/) for providing a search engine to find answers in seconds.
+
+<span id="acknowledgements"></span>
+
+## 11. Acknowledgements
+
+- My Code Institute Mentor [Nishant Kumar](https://github.com/nishant8BITS/) for his continuous help and guidance.
+
+- The Code Institute team for being available to answer any questions or queries I may have.
+
+- My friends lent me their time to demonstrate the website while offering proposals and constructive feedback.
+
+- My family for putting up with me during this project and for providing ideas and feedback along the way.
+
+### Disclaimer
+
+This website was developed for educational purposes.
+
+<span id="extra"></span>
+
+## 12. Extra
+
+

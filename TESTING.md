@@ -2,33 +2,37 @@
 
 [View README](https://github.com/alandoherty95/siopa_worldwide/blob/master/README.md)
 
-## []()Table of Contents
+## Table of Contents
 
-- [Getting Set Up]()
+1.  <a  href="#setup">**Getting Set Up**</a>
 
-- [HTML Validator]()
+2.  <a  href="#htmlvalidator">**HTML Validator**</a>
 
-- [W3C Validators]()
+3.  <a  href="#cssvalidator">**W3C Validator**</a>
 
-- [JSHint Validator]()
+4.  <a  href="#jshint">**JSHint**</a>
 
-- [Python Checker]()
+5.  <a  href="#pythonchecker">**Python Checker**</a>
 
-- [Code Beautify]()
+6.  <a  href="#deployment">**Deployment**</a>
 
-- [Deployment]()
+7.  <a  href="#usertesting">**User Stories Testing**</a>
 
-- [User Story Testing]()
+8.  <a  href="#manual">**Manual Testing**</a>
 
-- [Manual Testing]()
+9.  <a  href="#automated">**Automated Testing**</a>
 
-- [Bugs]()
+10. <a  href="#screenshots">**Screenshots**</a>
 
-- [User Testing]()
+11. <a  href="#resolved">**Resolved Bugs**</a>
 
-## Getting Set Up
+12. <a  href="#unresolved">**Unresolved Bugs**</a>
 
-1. Create repository using the [Code Institute Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
+<span  id="setup"></span>
+
+## 1. Getting Set Up
+
+1. Create a repository using the [Code Institute Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
 
 2. To install django, enter ‘pip3 install django’ in the terminal.
 
@@ -58,23 +62,64 @@ To use the Django Allauth templates, enter ‘pip3 install django-allauth==0.41.
 
 The request context processor here allows allauth and django to access the HTTP request object in our templates. The authentication backends we added give us a really nice feature, allowing users to sign into our store simply using their email address.
 
-The applications we added to our installed apps are allauth and account. The allauth app allows all the basic user account features like logging in and out, user registration and password resets. The other one is for social accounts which specifically handles logging in via social media providers like Facebook and Google. This features will be developed in upcoming versions of the application.
+The applications we added to our installed apps are allauth and account. The allauth app allows all the basic user account features like logging in and out, user registration and password resets. The other one is for social accounts which specifically handles logging in via social media providers like Facebook and Google. These features will be developed in upcoming versions of the application.
 
-## Code Validators
+<span  id="htmlvalidator"></span>
+
+## 2. HTML Validator
 
 This code for this application was put through vigorously tested online using the W3C Validators. During development, I manually tested the code and features of the application to identify any bugs. Once the website was successfully deployed, I continued testing using automatic testing.
 
-### [W3C Validators]()
+The [W3C Markup Validator](https://validator.w3.org/) were used to validate the code on all of the pages across all apps, and to make sure that there were no syntax errors in the project.
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate the code on all of the pages across all apps, and to make sure that there were no syntax errors in the project.
+Checked with HTML Validator
 
-- [W3C Markup Validator](https://validator.w3.org/)
+- bag.html
+- checkout_success.html
+- checkout.html
+- index.html
+- add_product.html
+- edit_product.html
+- product_detail.html
+- products.html
+- profile.html
+- nav-bar.html
+- mobile-header.html
+- base.html
+- toast_error.html
+- toast_info.html
+- toast_success.html
+- toast_warning.html
 
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+<span  id="cssvalidator"></span>
 
-## Deployment
+## 3. CSS Validator
 
-Before deploying my application on Heroku, I had to take some steps to ensure a successfully deployment.
+The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)were used to validate the code on all of the pages across all apps, and to make sure that there were no syntax errors in the project.
+
+Checked with CSS Validator
+
+- base.css
+- checkout.css
+- profile.css
+
+<span  id="jshint"></span>
+
+## 4. JS Hint
+
+[JS Hint](https://jshint.com/) was used to validate all JS code in the application.
+
+<span  id="pythonchecker"></span>
+
+## 5. Python Checker
+
+[Python Checker](https://www.pythonchecker.com/) was used to validate all Python code in the application.
+
+<span  id="deployment"></span>
+
+## 6. Deployment
+
+Before deploying my application on Heroku, I had to take some steps to ensure a successful deployment.
 
 Firstly, in order to use Postgres, we installed `dj_database_url` and `psycopg2`:
 
@@ -120,13 +165,17 @@ I created the application on the website rather than in the CLI, so I had to ini
 
 - Re-enter 'git push heroku master'
 
-# User Stories Table
+<span  id="usertesting"></span>
+
+## 7. User Stories Testing
 
 ![User Stories Table](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/user-stories.png?raw=true)
 
-# Manual Testing Steps
+<span  id="manual"></span>
 
-## 1. Home
+## 8. Manual Testing
+
+### 1. Home
 
 ### General :white_check_mark:
 
@@ -134,7 +183,7 @@ I created the application on the website rather than in the CLI, so I had to ini
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
 3. Click every navigation bar option
 
-### Logged in users have more options in navigation bar :white_check_mark:
+#### Logged in users have more options in navigation bar :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -152,7 +201,7 @@ I created the application on the website rather than in the CLI, so I had to ini
    Profile
    Logout
 
-### Search bar :white_check_mark:
+#### Search bar :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -160,23 +209,23 @@ I created the application on the website rather than in the CLI, so I had to ini
 4. Input keyword and click on search icon
 5. View all items relating to keyword
 
-### Shop Now button :white_check_mark:
+#### Shop Now button :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
 3. Click on 'Shop Now' button
 4. View all products
 
-## 2. Products
+### 2. Products
 
-### Shop for products :white_check_mark:
+#### Shop for products :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
 3. Click on the 'Shop Now' button
 4. Browse range of products
 
-### Sort products :white_check_mark:
+#### Sort products :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -187,7 +236,7 @@ I created the application on the website rather than in the CLI, so I had to ini
    Name
    Category
 
-### Browse categories :white_check_mark:
+#### Browse categories :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -195,7 +244,7 @@ I created the application on the website rather than in the CLI, so I had to ini
 4. Click Kids - T-Shirt or Grown Ups - Sweatshirts
 5. Check different card design for regular, sale(red) and pre-order(blue) items
 
-### Anonymous user :white_check_mark:
+#### Anonymous user :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -208,16 +257,16 @@ I created the application on the website rather than in the CLI, so I had to ini
    Add to bag button  
    Continue shopping button
 
-## 3. Shopping bag
+### 3. Shopping bag
 
-### Empty shopping bag :white_check_mark:
+#### Empty shopping bag :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
 3. Click on shopping bag icon
 4. Displays message 'Your shopping bag is currently empty.' with a button to continue shopping
 
-### Add item to shopping bag :white_check_mark:
+#### Add item to shopping bag :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -226,14 +275,14 @@ I created the application on the website rather than in the CLI, so I had to ini
 5. Click add to bag button
 6. Displays contents of shopping bag in toast message
 
-### Open shopping bag :white_check_mark:
+#### Open shopping bag :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
 3. Click on shopping bag icon
 4. View all contents of shopping bag
 
-### Update quantity of item in shopping bag :white_check_mark:
+#### Update quantity of item in shopping bag :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -244,7 +293,7 @@ I created the application on the website rather than in the CLI, so I had to ini
 7. Click on quantity increment button
 8. Increases quantity of item in shopping bag
 
-### Checkout from shopping bag notification :white_check_mark:
+#### Checkout from shopping bag notification :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -257,7 +306,7 @@ I created the application on the website rather than in the CLI, so I had to ini
 9. Click on pay button
 10. Displays order summary
 
-### Checkout from shopping bag page :white_check_mark:
+#### Checkout from shopping bag page :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -270,7 +319,7 @@ I created the application on the website rather than in the CLI, so I had to ini
 9. Click on pay button
 10. Displays order summary on checkout success page
 
-### Remove item in shopping bag notification :white_check_mark:
+#### Remove item in shopping bag notification :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -281,7 +330,7 @@ I created the application on the website rather than in the CLI, so I had to ini
 7. Click on trash icon
 8. Removes item from shopping bag
 
-### Remove item on shopping bag page :white_check_mark:
+#### Remove item on shopping bag page :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -292,9 +341,9 @@ I created the application on the website rather than in the CLI, so I had to ini
 7. Click on trash icon
 8. Removes item from shopping bag
 
-## 4. Checkout :white_check_mark:
+### 4. Checkout :white_check_mark:
 
-### Checkout for an anonymous User :white_check_mark:
+#### Checkout for an anonymous User :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -307,7 +356,7 @@ I created the application on the website rather than in the CLI, so I had to ini
 9. Click on pay button
 10. Displays order summary on checkout success page
 
-### Checkout for a registered user :white_check_mark:
+#### Checkout for a registered user :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -321,9 +370,9 @@ I created the application on the website rather than in the CLI, so I had to ini
 10. Click on pay button
 11. Displays order summary on checkout success page
 
-## 5. Sign Up :white_check_mark:
+### 5. Sign Up :white_check_mark:
 
-### Sign Up :white_check_mark:
+#### Sign Up :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -333,9 +382,9 @@ I created the application on the website rather than in the CLI, so I had to ini
 6. Click update information button
 7. Login with username and password
 
-## 6. Sign In :white_check_mark:
+### 6. Sign In :white_check_mark:
 
-### Sign In :white_check_mark:
+#### Sign In :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -343,7 +392,7 @@ I created the application on the website rather than in the CLI, so I had to ini
 4. Click Login
 5. Login with username and password
 
-## 7. Profile :white_check_mark:
+### 7. Profile :white_check_mark:
 
 1. Open Browser
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
@@ -352,13 +401,15 @@ I created the application on the website rather than in the CLI, so I had to ini
 5. Click on profile
 6. Displays personal details and order history
 
-## 8. Product Management :white_check_mark:
+### 8. Product Management :white_check_mark:
 
 Product Management :white_check_mark:
 
 - Add new product :white_check_mark:
 - Edit an existing product :white_check_mark:
 - Delete a product :white_check_mark:
+
+### User Requirements
 
 #### **As a first-time user, I would like to:**
 
@@ -442,108 +493,15 @@ Product Management :white_check_mark:
 
 - view and manage orders
 
-## Screenshots
-
-![Desktop Home](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-index.png?raw=true)
-
-The home screen grabs the user's attention with vibrant colours and a prominent call-to-action button. The purpose of the website is immediately clear. Users are encouraged to 'Shop Now'.
-
-![Desktop Sign In](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-sign-in.png?raw=true)
-
-The sign in page is simple and effective in encouraging registered users to log into their profile. First-time users are invited to sign up if they have not created an account yet. There is also the option of resetting passwords if they have forgotten.
-
-![Desktop Sign Up](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-sign-up.png?raw=true)
-
-The sign up page is also pretty simple, requiring just five fields to be filling out when registering. Users are prompted to enter their email address, username and password in order to create an account. Registered users are asked to sign in if they have already created an account.
-
-![Mobile Profile](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-profile.png?raw=true)
-
-The profile page allows users to save their personal details to ensure a quicker checkout when completing an order. All previous order are displayed on the profile page so user's can view their order history.
-
-![Mobile Empty Bag](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-empty-bag.png?raw=true)
-
-The shopping bag page informs users when their bag is empty and encourages them to continue shopping. The Siopa Worldwide logo is also displayed here when the shopping bag is empty. If any items are added to the shopping bag, they will appear here in a table with a breakdown of costs.
-
-![Mobile Search Crisps](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-search-crisps.png?raw=true)
-
-The search feature found at the top of the screen is very useful in finding specific products. Users can enter keywords such as "crisps" or "cheese" and will be shown all results relating to that specific keyword. It is a quick and effective way of finding desired items.
-
-![Mobile Sort Name](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-sort-name.png?raw=true)
-
-The sorting function can be used to display products in a certain order. By selecting an option from the dropdown list, users can sort by price, category or name in ascending or descending order. This offers offers al alternative way of browsing through the items in our store.
-
-![Mobile Sort Price](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-sort-price.png?raw=true)
-
-Users can also sort items by price in order of highest to lowest or lowest to highest. This gives users the opportunity to browse products based on their budgetary requirements.
-
-## Manual Testing
-
 Extensive manual testing was completed throughout the development of this application. Once the website was successfully deployed on Heroku, I completed rigorous manual testing to ensure each button and feature was functioning correctly.
 
 ![Manual Testing Table 1](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/manual-testing-table1.png?raw=true)
 
 ![Manual Testing Table 2](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/manual-testing-table2.png?raw=true)
 
-#### Toast Messages
+<span  id="automated"></span>
 
-![Add product to bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-add-product-to-bag.png?raw=true)
-
-> Adding a product to shopping bag
-
-![Deleted product from bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-deleted-product.png?raw=true)
-
-> Successfully deleted a product to shopping bag
-
-![Deleted product from bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-edit-product.png?raw=true)
-
-> Editing details for a product
-
-![Order confirmation toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-order-confirmation.png?raw=true)
-
-> Order confirmation
-
-![Signed in toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-signed-in.png?raw=true)
-
-> Signed in to account
-
-> ![Signed out toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-signed-out.png?raw=true)
-
-> Signed out of account
-
-![Updated product toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-updated-product.png?raw=true)
-
-> Updated product details
-
-### Navigation Bar
-
-#### Desktop View
-
-### Checked with HTML Validator
-
-- bag.html
-- checkout_success.html
-- checkout.html
-- index.html
-- add_product.html
-- edit_product.html
-- product_detail.html
-- products.html
-- profile.html
-- nav-bar.html
-- mobile-header.html
-- base.html
-- toast_error.html
-- toast_info.html
-- toast_success.html
-- toast_warning.html
-
-### Checked with CSS Validator
-
-- base.css
-- checkout.css
-- profile.css
-
-## Automated Testing
+## 9. Automated Testing
 
 - Home
 
@@ -625,9 +583,79 @@ Extensive manual testing was completed throughout the development of this applic
 
 90 SEO
 
-## Bugs
+<span  id="screenshots"></span>
 
-### Resolved Bugs
+## 10. Screenshots
+
+![Desktop Home](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-index.png?raw=true)
+
+> The home screen grabs the user's attention with vibrant colours and a prominent call-to-action button. The purpose of the website is immediately clear. Users are encouraged to 'Shop Now'.
+
+![Desktop Sign In](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-sign-in.png?raw=true)
+
+> The sign in page is simple and effective in encouraging registered users to log into their profile. First-time users are invited to sign up if they have not created an account yet. There is also the option of resetting passwords if they have forgotten.
+
+![Admin View](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/admin-features.png?raw=true)
+
+> The admin view has more options available. The admin has the capability to edit or delete products from the Products page and the Product Detail page. The admin can also access the Product Management page to add new products to the store.
+
+![Desktop Sign Up](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-sign-up.png?raw=true)
+
+> The sign up page is also pretty simple, requiring just five fields to be filled out when registering. Users are prompted to enter their email address, username and password in order to create an account. Registered users are asked to sign in if they have already created an account.
+
+![Mobile Profile](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-profile.png?raw=true)
+
+> The profile page allows users to save their personal details to ensure a quicker checkout when completing an order. All previous orders are displayed on the profile page so users can view their order history.
+
+![Mobile Empty Bag](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-empty-bag.png?raw=true)
+
+> The shopping bag page informs users when their bag is empty and encourages them to continue shopping. The Siopa Worldwide logo is also displayed here when the shopping bag is empty. If any items are added to the shopping bag, they will appear here in a table with a breakdown of costs.
+
+![Mobile Search Crisps](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-search-crisps.png?raw=true)
+
+> The search feature found at the top of the screen is very useful in finding specific products. Users can enter keywords such as "crisps" or "cheese" and will be shown all results relating to that specific keyword. It is a quick and effective way of finding desired items.
+
+![Mobile Sort Name](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-sort-name.png?raw=true)
+
+> The sorting function can be used to display products in a certain order. By selecting an option from the dropdown list, users can sort by price, category or name in ascending or descending order. This offers an alternative way of browsing through the items in our store.
+
+![Mobile Sort Price](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-mobile-sort-price.png?raw=true)
+
+> Users can also sort items by price in order of highest to lowest or lowest to highest. This gives users the opportunity to browse products based on their budgetary requirements.
+
+#### Toast Messages
+
+![Add product to bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-add-product-to-bag.png?raw=true)
+
+> Adding a product to shopping bag
+
+![Deleted product from bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-deleted-product.png?raw=true)
+
+> Successfully deleted a product to shopping bag
+
+![Deleted product from bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-edit-product.png?raw=true)
+
+> Editing details for a product
+
+![Order confirmation toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-order-confirmation.png?raw=true)
+
+> Order confirmation
+
+![Signed in toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-signed-in.png?raw=true)
+
+> Signed in to account
+
+> ![Signed out toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-signed-out.png?raw=true)
+
+> Signed out of account
+
+![Updated product toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-updated-product.png?raw=true)
+
+> Updated product details
+
+<span  id="resolved"></span>
+
+## 11. Resolved Bugs
 
 - Issue: The function allowing the user to remove items from the shopping bag wasn't functioning.
 
@@ -635,7 +663,7 @@ Extensive manual testing was completed throughout the development of this applic
 
 `$.post(url, data).done(function() {location.reload();});`
 
-- Issue: The subtotal calculation was not displaying in the shopping bag.
+- Issue: The subtotal calculation was not displayed in the shopping bag.
 
 - Fix: After investigation, I realised the structure of my html table was incorrect. I rearranged the html code and used the code snippet below to correctly calculate the subtotal of each item in the shopping bag.
 
@@ -665,11 +693,17 @@ Extensive manual testing was completed throughout the development of this applic
 
 - Issue: The button for updating the quantity of items in the shopping bag was not functioning.
 
-- Fix: I realised the their was a mismatch between the ID in bag.html and the relevant JS code. I updated the ID in the JS code to `('.update-qty')`. This issue was resolved after testing.
+- Fix: I realised that there was a mismatch between the ID in bag.html and the relevant JS code. I updated the ID in the JS code to `('.update-qty')`. This issue was resolved after testing.
 
-### Unresolved Bugs
+<span  id="resolved"></span>
 
-In mobile view, the shopping bag display the current amount in dollars. In all other views, it is displayed correctly in euro.
+## 12. Unresolved Bugs
+
+In the mobile view, the shopping bag displays the current amount in dollars. In all other views, it is displayed correctly in euro.
+
+<span  id="extra"></span>
+
+## 13. Extra
 
 ### Making Stripe Payments
 
