@@ -503,6 +503,26 @@ Extensive manual testing was completed throughout the development of this applic
 
 ![Manual Testing Table 2](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/manual-testing-table2.png?raw=true)
 
+
+#### Responsiveness
+The application was created with user experience in mind. The following devices were selected for testing the responsiveness of the website:
+* iPhone XR, 8, 7
+* Galaxy S9 
+* iPad 10,2"
+* MacBook Pro 13"
+* Pixel 5
+
+#### Browser Compatibility
+The application was also tested on the following internet browsers:
+* [Apple Safari](https://www.apple.com/safari/) 
+* [Google Chrome](https://www.google.com/chrome/)
+* [Microsoft Edge](https://www.microsoft.com/edge)
+
+
+#### Peer-Code-Review
+
+I sent my deployed application to the peer-code-review channel on Slack in hope of receiving feedback or suggestions. Unfortunately, I didn't receive any responses before submitted my project for grading because of the short time remaining.
+
 <span  id="automated"></span>
 
 ## 9. Automated Testing
