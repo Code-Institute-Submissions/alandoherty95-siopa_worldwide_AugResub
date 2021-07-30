@@ -1,3 +1,7 @@
+**[Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)** - a little taste of home!
+
+Welcome to **[Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)** - a one stop shop for all your favourite Irish products. Siopa Worldwide is an e-commerce store, offering a range of popular Irish food and beverages. We are dedicated to keeping you stocked up with your favourite Irish food and drinks no matter where in the world you are located
+
 # Testing
 
 [View README](https://github.com/alandoherty95/siopa_worldwide/blob/master/README.md)
@@ -699,7 +703,11 @@ Extensive manual testing was completed throughout the development of this applic
 
 ## 12. Unresolved Bugs
 
-In the mobile view, the shopping bag displays the current amount in dollars. In all other views, it is displayed correctly in euro.
+- Issue: In the mobile view, the shopping bag displays the current amount in dollars. In all other views, it is displayed correctly in euro.
+
+- Issue: In the mobile view, the shopping bag icon in the top right corner is different compared to all other devices. The icon on mobile devices appears as a shopping bag, whereas on other devices, it appears as a shopping basket.
+
+- Issue: Email confirmation are not being received after an order is completed. Although, this feature was functioning correctly in development, it is currently not functioning. I tried to diagnose the issue beforing submitting but was unable ti do so in the short time remaining.
 
 <span  id="extra"></span>
 
