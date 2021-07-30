@@ -276,6 +276,70 @@ profiles/static/profiles/css/
 
 - profile.css
 
+
+## Automatated Testing
+
+- Home
+
+97 Performance
+78 Accessibility
+100 Best Practices
+100 SEO
+
+- Products
+
+90 Performance
+77 Accessibility
+100 Best Practices
+100 SEO
+
+
+- Product Detail
+
+98 Performance
+70 Accessibility
+93 Best Practices
+100 SEO
+
+- Shopping Bag
+
+98 Performance
+68 Accessibility
+100 Best Practices
+100 SEO
+
+
+- Checkout
+
+87 Performance
+82 Accessibility
+100 Best Practices
+100 SEO
+
+
+- Profile
+
+95 Performance
+78 Accessibility
+100 Best Practices
+100 SEO
+
+- Add Product
+
+98 Performance
+66 Accessibility
+100 Best Practices
+100 SEO
+
+
+- Edit Product
+
+97 Performance
+60 Accessibility
+100 Best Practices
+90 SEO
+
+
 ## Bugs
 
 ### Resolved Bugs
@@ -314,3 +378,4 @@ profiles/static/profiles/css/
 
 - Issue: The button for updating the quantity of items in the shopping bag was not functioning.
   - Fix: I realised the their was a mismatch between the ID in bag.html and the relevant JS code. I updated the ID in the JS code to `('.update-qty')`. This issue was resolved after testing.
+
