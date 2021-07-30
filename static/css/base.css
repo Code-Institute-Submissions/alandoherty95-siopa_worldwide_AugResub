@@ -249,16 +249,6 @@ input[name='q']::placeholder {
     border-color: #dc3545;
 }
 
-/* Deletetion modal */
-
-.modal-header {
-    display: block;
-}
-
-.modal-header p {
-    margin-top: 1rem;
-}
-
 /* Error handling messages */
 .error-message {
     font-size: 3rem;
