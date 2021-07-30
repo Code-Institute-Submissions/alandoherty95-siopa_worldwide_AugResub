@@ -6,48 +6,6 @@ Thank you for shopping at Siopa Worldwide! Below is your order summary:
 Order Number: {{ order.order_number }}
 Order Date: {{ order.date }}
 
-                <table class="table table-sm table-borderless">
-                    <thead class="text-black">
-                        <tr>
-                            <th scope="col">Product Info</th>
-                            <th scope="col"></th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Qty</th>
-                            <th scope="col">Subtotal</th>
-                        </tr>
-                    </thead>
-                    {% for item in bag_items %}
-                    <tr>
-                        <td class="p-3 w-25">
-                            {% include "bag/product-image.html" %}
-                        </td>
-                        <td class="py-3">
-                            {% include "bag/product-details.html" %}
-                        </td>
-                        <td class="py-3">
-                            <p class="my-0">€{{ item.product.price }}</p>
-                        </td>
-                        <td class="py-3 w-25">
-                            {% include "bag/product-quantity.html" %}
-                        </td>
-                        <td class="py-3">
-                            <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                    <tr>
-                        <td colspan="5" class="pt-5 text-right">
-                            {% include "bag/bag-total.html" %}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="text-right">
-                            {% include "bag/checkout-buttons.html" %}
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
 Order Total: €{{ order.order_total }}
 Delivery Cost: €{{ order.delivery_cost }}
 Grand Total: €{{ order.grand_total }}
