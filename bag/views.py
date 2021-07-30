@@ -37,7 +37,7 @@ def add_to_bag(request, item_id):
 
 def adjust_bag(request, item_id):
     """ ADJUSTS QUANTITY OF SPECIFIC ITEM """
-    
+
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
@@ -67,7 +67,7 @@ def remove_from_bag(request, item_id):
             request, f'Removed {product.name} from shopping bag.')
         request.session['bag'] = bag
         return redirect(reverse('view_bag'))
-    
+
     except Exception as e:
         messages.error(request, f'Error removing {product.name}. Error: {e}')
         return HttpResponse(status=500)
