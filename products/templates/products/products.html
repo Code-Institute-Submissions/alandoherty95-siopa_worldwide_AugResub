@@ -101,54 +101,54 @@
                     </div>
                 </div>
             </div>
-        </div>
-        {% if forloop.counter|divisibleby:1 %}
-        <div class="col-12 d-sm-none mb-5">
-            <hr>
-        </div>
-        {% endif %}
-        {% if forloop.counter|divisibleby:2 %}
-        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-            <hr>
-        </div>
-        {% endif %}
-        {% if forloop.counter|divisibleby:3 %}
-        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-            <hr>
-        </div>
-        {% endif %}
-        {% if forloop.counter|divisibleby:4 %}
-        <div class="col-12 d-none d-xl-block mb-5">
-            <hr>
-        </div>
-        {% endif %}
-        <!-- Delete Modal -->
-        <div class="modal fade text-center" id="deleteProduct{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="deleteProduct{{ product.id }}ModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!-- Modal close button -->
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <!-- Modal heading -->
-                        <p class="modal-title" id="deleteProduct{{ product.id }}Label">
-                            Would you like to delete {{ product.name }}? <br>
-                        </p>
-                        <p>This item will be permenantly removed from our store.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <!-- Cancel button -->
-                        <button type="button" data-dismiss="modal" class="btn-outline-green text-uppercase rounded-3">Cancel</button>
-                        <!-- Delete button -->
-                        <a id="checkoutButton" href="{% url 'delete_product' product.id %}">
-                            <span class="text-uppercase btn-black rounded-3">Delete</span>
-                        </a>
+            {% if forloop.counter|divisibleby:1 %}
+            <div class="col-12 d-sm-none mb-5">
+                <hr>
+            </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:2 %}
+            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                <hr>
+            </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:3 %}
+            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                <hr>
+            </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:4 %}
+            <div class="col-12 d-none d-xl-block mb-5">
+                <hr>
+            </div>
+            {% endif %}
+            {% endfor %}
+            <!-- Delete Modal -->
+            <div class="modal fade text-center" id="deleteProduct{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="deleteProduct{{ product.id }}ModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- Modal close button -->
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <!-- Modal heading -->
+                            <p class="modal-title" id="deleteProduct{{ product.id }}Label">
+                                Would you like to delete {{ product.name }}? <br>
+                            </p>
+                            <p>This item will be permenantly removed from our store.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- Cancel button -->
+                            <button type="button" data-dismiss="modal" class="btn-outline-green text-uppercase rounded-3">Cancel</button>
+                            <!-- Delete button -->
+                            <a id="checkoutButton" href="{% url 'delete_product' product.id %}">
+                                <span class="text-uppercase btn-black rounded-3">Delete</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        {% endfor %}
     </div>
 </div>
 <!-- Back to top button -->
