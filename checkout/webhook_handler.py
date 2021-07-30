@@ -19,7 +19,7 @@ class StripeWH_Handler:
         self.request = request
 
     def _send_confirmation_email(self, order):
-        """Send the user a confirmation email"""
+        """Sends the user a confirmation email"""
         cust_email = order.email
         # Renders both files to strings
         subject = render_to_string(
@@ -105,8 +105,7 @@ class StripeWH_Handler:
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-                content=f'Stripe webhook received: {event["type"]} \
-                | Successfully verified order is in database',
+                content=f'Stripe webhook received: {event["type"]} | Successfully verified order is in database',
                 status=200)
         else:
             order = None
