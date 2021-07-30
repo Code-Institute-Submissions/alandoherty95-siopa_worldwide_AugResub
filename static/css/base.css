@@ -291,6 +291,14 @@ input[name='q']::placeholder {
     .header-container {
         padding-top: 164px;
     }
+
+    h2.greeting {
+        font-size: 2.2rem;
+    }
+
+    h3.greeting {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -305,12 +313,10 @@ input[name='q']::placeholder {
     }
 
     h2.greeting {
-        padding: 2px;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     h3.greeting {
-        padding: 2px;
         font-size: 1rem;
     }
 
