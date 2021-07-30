@@ -95,7 +95,7 @@
         "fields": {
             "sku": "5001734510",
             "name": "Tayto Snax (45g)",
-            "description": "Crunchy cheese & onion flavoured crisps in 45 gram bags. Tayto crisps have been a firm family favourite in Irish households for over 60 years.",
+            "description": "Crunchy cheese & onion flavoured potato puffs in 45 gram bags. Tayto crisps have been a firm family favourite in Irish households for over 60 years.",
             "price": 2.89,
             "category": 2,
             "image_url": "https://cdn11.bigcommerce.com/s-r8wttg6tv8/images/stencil/1280x1280/products/650/1839/Tayto_Snax__06562.1522246756.png?c=2",
@@ -121,7 +121,7 @@
         "fields": {
             "sku": "5002115605",
             "name": "O'Donnell's Salt & Vinegar Crisps (45g)",
-            "description": "Authentic hand cooked cheese & onion flavoured crisps in 45 gram bags. From seed to bag using local Irish ingredients",
+            "description": "Authentic hand cooked salt & vinegar flavoured crisps in 45 gram bags. From seed to bag using local Irish ingredients",
             "price": 2.99,
             "category": 2,
             "image_url": "https://lirp.cdn-website.com/26cf71bb/dms3rep/multi/opt/ODonnells_S%26V-125g-631w.png",
@@ -134,7 +134,7 @@
         "fields": {
             "sku": "5001745510",
             "name": "Tayto Hunky Dory Sour Cream And Onion (135g)",
-            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
+            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of sour cream and onion flavour.",
             "price": 2.99,
             "category": 2,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009834_3.JPG",
@@ -147,7 +147,7 @@
         "fields": {
             "sku": "5161745510",
             "name": "Tayto Hunky Dory Cheese & Onion (135g)",
-            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
+            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of cheese & onion flavour.",
             "price": 2.99,
             "category": 2,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009803_3.JPG",
@@ -160,7 +160,7 @@
         "fields": {
             "sku": "5121745510",
             "name": "Tayto Hunky Dory Salt & Vinegar (135g)",
-            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness. ",
+            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of salt & vinegar flavour. ",
             "price": 2.99,
             "category": 2,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009810_3.JPG",
@@ -173,7 +173,7 @@
         "fields": {
             "sku": "5991745510",
             "name": "Tayto Hunky Dory Buffalo (135g)",
-            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
+            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of buffalo flavour.",
             "price": 2.99,
             "category": 2,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009827_3.JPG",
@@ -186,7 +186,7 @@
         "fields": {
             "sku": "5056996157",
             "name": "Tayto Hunky Dorys Assorted 6 Pack (25g)",
-            "description": "Tayto Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
+            "description": "Tayto Assorted Hunky Dorys aren't like those other, scrawny crisps. They're thicker, heavier and ready to squash the rumble in your stomach with massive ridges of flavour and obscene crunchiness.",
             "price": 3.49,
             "category": 2,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011096009872_3.JPG",
@@ -225,7 +225,7 @@
         "fields": {
             "sku": "5001340775",
             "name": "Barry's Gold Blend Tea Bags 160 Pack (500g)",
-            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends.",
+            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends. 160 tea bags in every pack.",
             "price": 7.49,
             "category": 4,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5099810552408_3.JPG",
@@ -238,7 +238,7 @@
         "fields": {
             "sku": "5001609225",
             "name": "Barry's Gold Blend Tea 80 Pack (250g)",
-            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends.",
+            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends. 80 tea bags in every pack.",
             "price": 3.69,
             "category": 4,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5099810020006_3.JPG",
@@ -251,7 +251,7 @@
         "fields": {
             "sku": "5001738810",
             "name": "Barry's Original Blend Tea 160 Pack (500g)",
-            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends.",
+            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends. 160 tea bags in every pack.",
             "price": 6.99,
             "category": 4,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5099810735207_3.JPG",
@@ -264,7 +264,7 @@
         "fields": {
             "sku": "5001811157",
             "name": "Barry's Decaf Blend Tea 80 Pack (250g)",
-            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends.",
+            "description": "Expertly Blended since 1901 As a family-owned Irish company, we understand the importance of tea in Ireland. In fact, we have spent years perfecting our much loved tea blends. 80 tea bags in every pack.",
             "price": 3.69,
             "category": 4,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5099810332161_3.JPG",
@@ -277,7 +277,7 @@
         "fields": {
             "sku": "5002111605",
             "name": "Nescafé Gold Blend Coffee (200g)",
-            "description": "Nescafé Gold Blend is a premium instant coffee with a smooth, distinctive flavour and rich aroma. Our recipe contains mountain-grown Arabica beans ground 10 times finer, to unlock the soul of the bean. So prepare a cup, sit back and savour the moment with this quality blend.",
+            "description": "Nescafé Gold Blend (200g) is a premium instant coffee with a smooth, distinctive flavour and rich aroma. Our recipe contains mountain-grown Arabica beans ground 10 times finer, to unlock the soul of the bean. So prepare a cup, sit back and savour the moment with this quality blend.",
             "price": 7.49,
             "category": 4,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/7613036077514_3.JPG",
@@ -290,7 +290,7 @@
         "fields": {
             "sku": "5001430145",
             "name": "Nescafé Gold Blend Coffee (100g)",
-            "description": "Nescafé Gold Blend is a premium instant coffee with a smooth, distinctive flavour and rich aroma. Our recipe contains mountain-grown Arabica beans ground 10 times finer, to unlock the soul of the bean. So prepare a cup, sit back and savour the moment with this quality blend.",
+            "description": "Nescafé Gold Blend (100g) is a premium instant coffee with a smooth, distinctive flavour and rich aroma. Our recipe contains mountain-grown Arabica beans ground 10 times finer, to unlock the soul of the bean. So prepare a cup, sit back and savour the moment with this quality blend.",
             "price": 3.99,
             "category": 4,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/7613036069816_3.JPG",
@@ -316,7 +316,7 @@
         "fields": {
             "sku": "5001734510",
             "name": "Kenco Millicano Americano Original Coffee (100g)",
-            "description": "Barista-style blend: Americano Taste: bold, rounded, heart-warming Aroma: rich, welcoming Finish: smooth and balanced with a blend of freeze dried instant coffee and roast and ground coffee. Looking for a stronger taste? Millicano barista-style blends a perfect cup every time.",
+            "description": "Barista-style blend: Americano Taste: bold, rounded, heart-warming Aroma: rich, welcoming Finish: smooth and balanced with a blend of freeze dried instant coffee and roast and ground coffee.",
             "price": 3.89,
             "category": 4,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/8711000519141_3.JPG",
@@ -342,7 +342,7 @@
         "fields": {
             "sku": "5001739919",
             "name": "Jacob's Fig Roll (200g)",
-            "description": "Jacob's fig rolls. Gorgeous. Unbelievably tasty. Baked right to perfection. Only real sun dried figs - totally natural. Good source of fibre. Trust, generations of trust.",
+            "description": "Jacob's fig rolls 200g pack. Gorgeous. Unbelievably tasty. Baked right to perfection. Only real sun dried figs - totally natural. Good source of fibre. Trust, generations of trust.",
             "price": 2.29,
             "category": 3,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011021403461_3.JPG",
@@ -355,7 +355,7 @@
         "fields": {
             "sku": "5001856124",
             "name": "Jacob's Fig Roll (300g)",
-            "description": "Jacob's fig rolls. Gorgeous. Unbelievably tasty. Baked right to perfection. Only real sun dried figs - totally natural. Good source of fibre. Trust, generations of trust.",
+            "description": "Jacob's fig rolls 300g pack. Gorgeous. Unbelievably tasty. Baked right to perfection. Only real sun dried figs - totally natural. Good source of fibre. Trust, generations of trust.",
             "price": 2.19,
             "category": 3,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5011021403324_3.JPG",
@@ -368,7 +368,7 @@
         "fields": {
             "sku": "5001856129",
             "name": "Cadbury Chocolate Fingers (114g)",
-            "description": "Fantastically fun fingers of crispy biscuit, smothered in Cadbury Dairy Milk milk chocolate!",
+            "description": "Fantastically fun fingers of crispy biscuit, smothered in Cadbury Dairy Milk milk chocolate! Perfect for sharing with friends and family.",
             "price": 3.19,
             "category": 3,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/0072417161575_3.JPG",
@@ -381,7 +381,7 @@
         "fields": {
             "sku": "5001856122",
             "name": "Cadbury Mini Fingers Pouch (125g)",
-            "description": "Fantastically fun fingers of crispy biscuit, smothered in Cadbury Dairy Milk milk chocolate!",
+            "description": "Fantastically fun fingers of crispy biscuit, smothered in Cadbury Dairy Milk milk chocolate! Perfect for a snack.",
             "price": 3.39,
             "category": 3,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/7622210817532_3.JPG",
@@ -407,7 +407,7 @@
         "fields": {
             "sku": "5001856129",
             "name": "Lucozade Energy Original (900 ml)",
-            "description": "Lucozade Energy Original is a sparkling drink powered by glucose, offering refreshment with that great tasting, classic flavour.",
+            "description": "Lucozade Energy Original is a sparkling drink powered by glucose, offering refreshment with that great tasting, classic flavour. Great for sharing with friends and family.",
             "price": 3.19,
             "category": 5,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5054267010727_3.JPG",
@@ -433,7 +433,7 @@
         "fields": {
             "sku": "5001856729",
             "name": "Lucozade Energy Original (900 ml)",
-            "description": "Lucozade Energy Orange is a sparkling orange drink powered by glucose, offering refreshment with a great tasting flavour.",
+            "description": "Lucozade Energy Orange is a sparkling orange drink powered by glucose, offering refreshment with a great tasting flavour. Great for sharing with friends and family.",
             "price": 3.19,
             "category": 5,
             "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/5054267010727_3.JPG",
