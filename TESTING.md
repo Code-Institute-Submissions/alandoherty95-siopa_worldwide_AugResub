@@ -677,6 +677,20 @@ I sent my deployed application to the peer-code-review channel on Slack in hope 
 
 > Updated product details
 
+#### Stripe Payments Validation
+
+![Invalid Card Number](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/invalid-card-number.png?raw=true)
+
+> Invalid card number entered in Stripe Payments
+
+![Incomplete Card Number](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/incomplete-card-number.png?raw=true)
+
+> Incomplete card number entered in Stripe Payments
+
+![Expired Card Details](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/expired-card.png?raw=true)
+
+> Expired card details entered in Stripe Payments
+
 <span  id="resolved"></span>
 
 ## 11. Resolved Bugs
