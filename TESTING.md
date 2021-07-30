@@ -120,9 +120,245 @@ I created the application on the website rather than in the CLI, so I had to ini
 
 - Re-enter 'git push heroku master'
 
-## User Stories Table
+# User Stories Table
 
 ![User Stories Table](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/user-stories.png?raw=true)
+
+# Manual Testing Steps
+
+## 1. Home
+
+### General :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click every navigation bar option
+
+### Logged in users have more options in navigation bar :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Check if navigation bar contains  
+   Siopa Worldwide  
+   Products  
+   Food
+   Drinks
+   Search bar  
+   User profile icon  
+   Shopping bag icon
+4. Click user profile icon and login with details for registered user
+5. Check that the following options appear when the user profile icon is clicked:
+   Product Management
+   Profile
+   Logout
+
+### Search bar :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on search bar
+4. Input keyword and click on search icon
+5. View all items relating to keyword
+
+### Shop Now button :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on 'Shop Now' button
+4. View all products
+
+## 2. Products
+
+### Shop for products :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Browse range of products
+
+### Sort products :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Click dropdown list of sorting options
+5. Sort items in ascending or descending order according to:  
+   Price
+   Name
+   Category
+
+### Browse categories :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Click Kids - T-Shirt or Grown Ups - Sweatshirts
+5. Check different card design for regular, sale(red) and pre-order(blue) items
+
+### Anonymous user :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Choose any product by clicking on the image
+5. Opens product detail page containing:
+   Product name
+   Product image  
+   Description  
+   Add to bag button  
+   Continue shopping button
+
+## 3. Shopping bag
+
+### Empty shopping bag :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on shopping bag icon
+4. Displays message 'Your shopping bag is currently empty.' with a button to continue shopping
+
+### Add item to shopping bag :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Choose any product by clicking the image
+5. Click add to bag button
+6. Displays contents of shopping bag in toast message
+
+### Open shopping bag :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on shopping bag icon
+4. View all contents of shopping bag
+
+### Update quantity of item in shopping bag :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Choose any product by clicking the image
+5. Click add to bag button
+6. Displays contents of shopping bag in toast message
+7. Click on quantity increment button
+8. Increases quantity of item in shopping bag
+
+### Checkout from shopping bag notification :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Choose any product by clicking the image
+5. Click add to bag button
+6. Displays contents of shopping bag in toast message
+7. Click on complete order button
+8. Fill out required details for delivery and payment
+9. Click on pay button
+10. Displays order summary
+
+### Checkout from shopping bag page :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Choose any product by clicking the image
+5. Click add to bag button
+6. Click on shopping bag icon
+7. Click on complete order button
+8. Fill out required details for delivery and payment
+9. Click on pay button
+10. Displays order summary on checkout success page
+
+### Remove item in shopping bag notification :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Choose any product by clicking the image
+5. Click add to bag button
+6. Displays contents of shopping bag in toast message
+7. Click on trash icon
+8. Removes item from shopping bag
+
+### Remove item on shopping bag page :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Choose any product by clicking the image
+5. Click add to bag button
+6. Click on shopping bag icon
+7. Click on trash icon
+8. Removes item from shopping bag
+
+## 4. Checkout :white_check_mark:
+
+### Checkout for an anonymous User :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Choose any product by clicking the image
+5. Click add to bag button
+6. Click on shopping bag icon
+7. Click on complete order button
+8. Fill out required details for delivery and payment (test credit card: 4242 4242 4242 4242)
+9. Click on pay button
+10. Displays order summary on checkout success page
+
+### Checkout for a registered user :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click on the 'Shop Now' button
+4. Choose any product by clicking the image
+5. Click add to bag button
+6. Click on shopping bag icon
+7. Click on complete order button
+8. Details for user and delivery should already be populated if user provided details previously
+9. Enter payment details (test credit card: 4242 4242 4242 4242)
+10. Click on pay button
+11. Displays order summary on checkout success page
+
+## 5. Sign Up :white_check_mark:
+
+### Sign Up :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click user profile icon
+4. Click Register
+5. Enter details in the form
+6. Click update information button
+7. Login with username and password
+
+## 6. Sign In :white_check_mark:
+
+### Sign In :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click user profile icon
+4. Click Login
+5. Login with username and password
+
+## 7. Profile :white_check_mark:
+
+1. Open Browser
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+3. Click user profile icon and login with username and password
+4. Click on user account icon
+5. Click on profile
+6. Displays personal details and order history
+
+## 8. Product Management :white_check_mark:
+
+Product Management :white_check_mark:
+
+- Add new product :white_check_mark:
+- Edit an existing product :white_check_mark:
+- Delete a product :white_check_mark:
 
 #### **As a first-time user, I would like to:**
 
@@ -254,7 +490,7 @@ Extensive manual testing was completed throughout the development of this applic
 
 > Adding a product to shopping bag
 
-![Deleted product from bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-added-product.png?raw=true)
+![Deleted product from bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-deleted-product.png?raw=true)
 
 > Successfully deleted a product to shopping bag
 
@@ -268,13 +504,15 @@ Extensive manual testing was completed throughout the development of this applic
 
 ![Signed in toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-signed-in.png?raw=true)
 
-> Signed in
+> Signed in to account
+
 > ![Signed out toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-signed-out.png?raw=true)
-> Signed out
 
-![Updated product toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-signed-out.png?raw=true)
+> Signed out of account
 
-> Updated product
+![Updated product toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-updated-product.png?raw=true)
+
+> Updated product details
 
 ### Navigation Bar
 
@@ -282,69 +520,30 @@ Extensive manual testing was completed throughout the development of this applic
 
 ### Checked with HTML Validator
 
-bag/templates/bag/
-
 - bag.html
-
-checkout/templates/checkout/
-
 - checkout_success.html
-
 - checkout.html
-
-home/templates/home/
-
 - index.html
-
-products/templates/products/
-
 - add_product.html
-
 - edit_product.html
-
 - product_detail.html
-
 - products.html
-
-profiles/templates/profiles/
-
 - profile.html
-
-templates/includes/
-
 - nav-bar.html
-
 - mobile-header.html
-
-templates/
-
 - base.html
-
-templates/includes/toasts/
-
 - toast_error.html
-
 - toast_info.html
-
 - toast_success.html
-
 - toast_warning.html
 
 ### Checked with CSS Validator
 
-static/css/
-
 - base.css
-
-checkout/static/checkout/css/
-
 - checkout.css
-
-profiles/static/profiles/css/
-
 - profile.css
 
-## Automatated Testing
+## Automated Testing
 
 - Home
 
@@ -468,7 +667,11 @@ profiles/static/profiles/css/
 
 - Fix: I realised the their was a mismatch between the ID in bag.html and the relevant JS code. I updated the ID in the JS code to `('.update-qty')`. This issue was resolved after testing.
 
-### Stripe Payments
+### Unresolved Bugs
+
+In mobile view, the shopping bag display the current amount in dollars. In all other views, it is displayed correctly in euro.
+
+### Making Stripe Payments
 
 1. Click your checkout button
 
