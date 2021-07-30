@@ -4,15 +4,17 @@
 
 ## []()Table of Contents
 
-- [HTML Validator](https://validator.w3.org/#validate_by_input)
+- [Getting Set Up]()
 
-- [W3C Validators](https://jigsaw.w3.org/css-validator/)
+- [HTML Validator]()
 
-- [JSHint Validator](https://jshint.com/)
+- [W3C Validators]()
 
-- [Python Checker](https://www.pythonchecker.com/)
+- [JSHint Validator]()
 
-- [Code Beautify](https://codebeautify.org/markdown-formatter)
+- [Python Checker]()
+
+- [Code Beautify]()
 
 - [Deployment]()
 
@@ -24,7 +26,41 @@
 
 - [User Testing]()
 
-## Validators
+## Getting Set Up
+
+1. Create repository using the [Code Institute Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
+
+2. To install django, enter ‘pip3 install django’ in the terminal.
+
+3. To create the project in the current directory, enter ‘django-admin startproject siopa-worldwide .’ in the terminal.
+
+4. Create a basic gitignore file by entering ‘touch .gitignore’ in the terminal.
+
+5. Run the project by entering ‘python3 manage.py runserver’ in the terminal and exposing port 8000.
+
+6. Stop the server by typing ‘Control + C’ in the terminal.
+
+7. Run the initial migrations by entering ‘python3 manage.py migrate’ in the terminal
+
+8. Create a superuser to log in as admin by entering ‘python3 manage.py createsuperuser’ in the terminal.
+
+9. Enter username, email address and password when prompted in the terminal.
+
+10. To push changes to GitHub, enter ‘git add -A’ in the terminal to add all the files.
+
+11. Enter ‘git commit -m ‘Initial commit’ to provide a commit message.
+
+12. Enter ‘git push’ to push commit to the repo.
+
+### [Django-Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+
+To use the Django Allauth templates, enter ‘pip3 install django-allauth==0.41.0’ in the terminal.
+
+The request context processor here allows allauth and django to access the HTTP request object in our templates. The authentication backends we added give us a really nice feature, allowing users to sign into our store simply using their email address.
+
+The applications we added to our installed apps are allauth and account. The allauth app allows all the basic user account features like logging in and out, user registration and password resets. The other one is for social accounts which specifically handles logging in via social media providers like Facebook and Google. This features will be developed in upcoming versions of the application.
+
+## Code Validators
 
 This code for this application was put through vigorously tested online using the W3C Validators. During development, I manually tested the code and features of the application to identify any bugs. Once the website was successfully deployed, I continued testing using automatic testing.
 
@@ -36,19 +72,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-HTML
-
-CSS
-
-JavaScript
-
-Python
-
-Markdown
-
 ## Deployment
 
 Before deploying my application on Heroku, I had to take some steps to ensure a successfully deployment.
+
 Firstly, in order to use Postgres, we installed `dj_database_url` and `psycopg2`:
 
 - Enter ‘pip3 install dj_database_url’
@@ -75,11 +102,11 @@ To log into Heroku, I had to use my email address and the API key from Heroku:
 
 - heroku: Enter your login credentials
 
-  - Email: alandoherty95@gmail.com
+- Email: alandoherty95@gmail.com
 
-  - Password: ******\*\*******
+- Password: \***\*\*\*\*\*\*\***
 
-  - Logged in as alandoherty95@gmail.com
+- Logged in as alandoherty95@gmail.com
 
 To prevent Heroku from trying to collect static files when we deploy the application:
 
@@ -182,6 +209,7 @@ I created the application on the website rather than in the CLI, so I had to ini
 ## Screenshots
 
 ![Desktop Home](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-index.png?raw=true)
+
 The home screen grabs the user's attention with vibrant colours and a prominent call-to-action button. The purpose of the website is immediately clear. Users are encouraged to 'Shop Now'.
 
 ![Desktop Sign In](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/ss-sign-in.png?raw=true)
@@ -216,6 +244,38 @@ Users can also sort items by price in order of highest to lowest or lowest to hi
 
 Extensive manual testing was completed throughout the development of this application. Once the website was successfully deployed on Heroku, I completed rigorous manual testing to ensure each button and feature was functioning correctly.
 
+![Manual Testing Table 1](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/manual-testing-table1.png?raw=true)
+
+![Manual Testing Table 2](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/manual-testing-table2.png?raw=true)
+
+#### Toast Messages
+
+![Add product to bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-add-product-to-bag.png?raw=true)
+
+> Adding a product to shopping bag
+
+![Deleted product from bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-added-product.png?raw=true)
+
+> Successfully deleted a product to shopping bag
+
+![Deleted product from bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-edit-product.png?raw=true)
+
+> Editing details for a product
+
+![Order confirmation toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-order-confirmation.png?raw=true)
+
+> Order confirmation
+
+![Signed in toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-signed-in.png?raw=true)
+
+> Signed in
+> ![Signed out toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-signed-out.png?raw=true)
+> Signed out
+
+![Updated product toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/toast-signed-out.png?raw=true)
+
+> Updated product
+
 ### Navigation Bar
 
 #### Desktop View
@@ -229,6 +289,7 @@ bag/templates/bag/
 checkout/templates/checkout/
 
 - checkout_success.html
+
 - checkout.html
 
 home/templates/home/
@@ -238,8 +299,11 @@ home/templates/home/
 products/templates/products/
 
 - add_product.html
+
 - edit_product.html
+
 - product_detail.html
+
 - products.html
 
 profiles/templates/profiles/
@@ -249,6 +313,7 @@ profiles/templates/profiles/
 templates/includes/
 
 - nav-bar.html
+
 - mobile-header.html
 
 templates/
@@ -258,8 +323,11 @@ templates/
 templates/includes/toasts/
 
 - toast_error.html
+
 - toast_info.html
+
 - toast_success.html
+
 - toast_warning.html
 
 ### Checked with CSS Validator
@@ -276,106 +344,160 @@ profiles/static/profiles/css/
 
 - profile.css
 
-
 ## Automatated Testing
 
 - Home
 
 97 Performance
+
 78 Accessibility
+
 100 Best Practices
+
 100 SEO
 
 - Products
 
 90 Performance
-77 Accessibility
-100 Best Practices
-100 SEO
 
+77 Accessibility
+
+100 Best Practices
+
+100 SEO
 
 - Product Detail
 
 98 Performance
+
 70 Accessibility
+
 93 Best Practices
+
 100 SEO
 
 - Shopping Bag
 
 98 Performance
-68 Accessibility
-100 Best Practices
-100 SEO
 
+68 Accessibility
+
+100 Best Practices
+
+100 SEO
 
 - Checkout
 
 87 Performance
-82 Accessibility
-100 Best Practices
-100 SEO
 
+82 Accessibility
+
+100 Best Practices
+
+100 SEO
 
 - Profile
 
 95 Performance
+
 78 Accessibility
+
 100 Best Practices
+
 100 SEO
 
 - Add Product
 
 98 Performance
-66 Accessibility
-100 Best Practices
-100 SEO
 
+66 Accessibility
+
+100 Best Practices
+
+100 SEO
 
 - Edit Product
 
 97 Performance
-60 Accessibility
-100 Best Practices
-90 SEO
 
+60 Accessibility
+
+100 Best Practices
+
+90 SEO
 
 ## Bugs
 
 ### Resolved Bugs
 
-### **Resolved Bugs**
-
 - Issue: The function allowing the user to remove items from the shopping bag wasn't functioning.
-  - Fix: I realised I forgot to pass 'data' through when submitting the request. I test the function after inputting data to ensure it works correctly.
+
+- Fix: I realised I forgot to pass 'data' through when submitting the request. I test the function after inputting data to ensure it works correctly.
 
 `$.post(url, data).done(function() {location.reload();});`
 
 - Issue: The subtotal calculation was not displaying in the shopping bag.
-  - Fix: After investigation, I realised the structure of my html table was incorrect. I rearranged the html code and used the code snippet below to correctly calculate the subtotal of each item in the shopping bag.
+
+- Fix: After investigation, I realised the structure of my html table was incorrect. I rearranged the html code and used the code snippet below to correctly calculate the subtotal of each item in the shopping bag.
 
 `<p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>`
 
 - The error (screenshot below) was displayed in the terminal when running my application in Gitpod.
-  - Fix: I sought help from a Code Institute tutor who kindly pointed out that the code snippet below should be in `checkout/init.py` instead of `bag/init.py`.
+
+- Fix: I sought help from a Code Institute tutor who kindly pointed out that the code snippet below should be in `checkout/init.py` instead of `bag/init.py`.
 
 `default_app_config = 'checkout.apps.CheckoutConfig'`
 
 ![Improperly Configured Error](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-improperly-configured.png?raw=true)
 
 - Issue: My initial attempt to deploy to Heroku failed displaying `{“error”:”Forbidden”}` in the preview panel and `“IP address mismatch”`in the browser.
-  - Fix: With tutor assistance, a typo was identified in the Procfile. The application deployed successfully after correcting typo.
+
+- Fix: With tutor assistance, a typo was identified in the Procfile. The application deployed successfully after correcting typo.
 
 ![Error 503 Heroku](https://github.com/alandoherty95/siopa_worldwide/blob/master/media/error-503-heroku.png?raw=true)
 
 - Issue: On the checkout success page, street_address1 was displayed twice mistakenly because the variable `{{ order.street_address1 }}` was duplicated in the html code.
 
-  - Fix: I corrected this by changing the second line to `{{ order.street_address2 }}` instead. Output is now working as expected.
+- Fix: I corrected this by changing the second line to `{{ order.street_address2 }}` instead. Output is now working as expected.
 
 - Issue: Some allauth forms were not displaying correctly, hidden behind the navigation bar.
 
-  - Fix: I updated `{% block content %}` to `{% block inner_content %}` on each allauth template instead. This resolved the issue with styling of each form.
+- Fix: I updated `{% block content %}` to `{% block inner_content %}` on each allauth template instead. This resolved the issue with styling of each form.
 
 - Issue: The button for updating the quantity of items in the shopping bag was not functioning.
-  - Fix: I realised the their was a mismatch between the ID in bag.html and the relevant JS code. I updated the ID in the JS code to `('.update-qty')`. This issue was resolved after testing.
 
+- Fix: I realised the their was a mismatch between the ID in bag.html and the relevant JS code. I updated the ID in the JS code to `('.update-qty')`. This issue was resolved after testing.
+
+### Stripe Payments
+
+1. Click your checkout button
+
+2. Fill out the payment details with the test card information:
+
+- Enter `4242 4242 4242 4242` as the card number.
+
+- Enter any future date for card expiry.
+
+- Enter any 3-digit number for CVC.
+
+- Enter any billing postal code.
+
+3. Click Pay.
+
+4. You’re redirected to your new success page.
+
+**Payment Intent Process**
+
+Step 1: When a user hits the checkout page, the checkout view will call out to stripe and create a payment intent for the current amount of the shopping bag
+
+Step 2: When stripe creates it, it’ll have a secret that identifies it which will be returned to us and we'll send it to the template as the client secret variable.
+
+Step 3: Then in the JavaScript on the client side, it'll call the confirm card payment method from stripe JS using the client secret which will verify the card number.
+
+[https://stripe.com/docs/payments/accept-a-payment-synchronously](https://stripe.com/docs/payments/accept-a-payment-synchronously)
+
+[https://stripe.com/docs/payments/handling-payment-events](https://stripe.com/docs/payments/handling-payment-events)
+
+- No authentication (default U.S. card): `4242 4242 4242 4242`.
+
+- Authentication required: `4000 0027 6000 3184`.
