@@ -120,7 +120,7 @@
                     </div>
                     <div class="col col-md-8 col-sm-12 my-auto">
                         <!-- Siopa Worldwide logo -->
-                        <img src="https://github.com/alandoherty95/siopa_worldwide/blob/master/media/siopa-logo-home.png?raw=true" class="logo-image" alt="Siopa Worldwide Logo">
+                        <img src="https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/screenshots/siopa-logo-home.png?raw=true" class="logo-image" alt="Siopa Worldwide Logo">
                     </div>
                 </div>
             </div>
@@ -132,11 +132,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
-    $('.btt-link').click(function(e) {
-        window.scrollTo(0, 0)
-    }) // Back to top button
-</script>
+
 {% include 'products/includes/input_quantity_script.html' %}
 
 <script type="text/javascript">

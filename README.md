@@ -787,7 +787,7 @@ The whole development process is broken down into smaller stages to help in mana
 
   
 
--  [w3schools](https://www.w3schools.com/) is a great resources for all software development queries.
+-  [w3schools](https://www.w3schools.com/) is a great resource for all software development queries.
 
   
 
@@ -795,7 +795,7 @@ The whole development process is broken down into smaller stages to help in mana
 
   
 
--  [Stripe Docs](https://stripe.com/docs) were utilised in setting up Stripe Payments for my store. The documentation is clear and comprehensive.
+-  [Stripe Docs](https://stripe.com/docs) were used in setting up Stripe Payments for my store. The documentation is clear and comprehensive.
 
   
 
@@ -1162,5 +1162,3 @@ Download the CSV file which will contain the user access key and secret access k
   
 
 This website was developed for educational purposes.
-
-  
