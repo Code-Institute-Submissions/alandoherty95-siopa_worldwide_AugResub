@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra-title %}- {{blogpost.title}} {% endblock %}
+
+{% block content %}
+
+<div class="shadow-for-nav"></div>
+
+<div class="container flex-fill">
+    <div class="row mb-5 text-center">
+        <div class="col">
+            <h1>{{blogpost.title}}</h1>
+            {% if blogpost.subtitle %}
+            <h3>{{blogpost.subtitle}}</h3>
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-sm mx-auto text-justify">
+            <!-- Blog Post Content -->
+            <p class="lead">{{blogpost.body}}</p>
+            <hr>
+            <!-- Date -->
+            <p>Posted on: {{blogpost.created_at|date:'d. M, Y'}}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
