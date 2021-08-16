@@ -39,7 +39,14 @@
             <div class="dropdown-menu border-0" aria-labelledby="drinks-link">
                 <a href="{% url 'products' %}?category=tea_and_coffee" class="dropdown-item">Tea & Coffee</a>
                 <a href="{% url 'products' %}?category=soda" class="dropdown-item">Fizzy Drinks</a>
-                <a href="{% url 'products' %}?category=tea_and_coffee,soda" class="dropdown-item">View All Drinks</a>
+                <a href="{% url 'products' %}?category=tea_and_coffee,soda" class="dropdown-item">View All
+                    Drinks</a>
+            </div>
+        </li>
+        <!-- Blog -->
+        <li class="nav-item ">
+            <div class="border-0" aria-labelledby="blog-link">
+                <a href="{% url 'blog' %}">Blog</a>
             </div>
         </li>
     </ul>

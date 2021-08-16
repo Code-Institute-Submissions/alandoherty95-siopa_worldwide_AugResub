@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% load static %}
+{% block extra-title %}- Blog {% endblock %}
+{% block content %}
+
+<div class="shadow-for-nav"></div>
+
+<div class="container flex-fill">
+    <div class="row header text-center">
+        <div class="col">
+            <h1>Siopa Worldwide Blog</h1>
+        </div>
+    </div>
+    {% for post in blogposts %}
+    <div class="row">
+        <div class="col">
+            <div class="card rounded-3">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{{post.slug}}">{{post.title}}</a></h5>
+                    <p class="card-text">{{post.subtitle}}</p>
+                    <p class="card-text"><small class="text-success">Posted: {{post.created_at|date:'d. M, Y'}}</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="container text-center">
+        <p>Check again soon! No blog posts have been published yet.</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

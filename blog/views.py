@@ -1,3 +1,14 @@
 from django.shortcuts import render
+from .models import BlogPost
 
-# Create your views here.
+
+def blogcontent(request):
+
+    blogposts = BlogPost.objects.all()
+    template = 'blog/blog.html'
+    context = {
+        'blogposts': blogposts,
+        }
+
+    return render(request, template, context)
+    
