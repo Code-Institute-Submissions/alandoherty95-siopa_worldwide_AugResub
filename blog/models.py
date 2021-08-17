@@ -12,16 +12,6 @@ class BlogPost(models.Model):
     slug = models.SlugField(unique=True,
                             max_length=250, default=None)
     created_at = models.DateTimeField(auto_now_add=True, null=False)
-    updated_at = models.DateTimeField(auto_now=True, null=False)
-    title_image = models.ImageField(null=True, blank=True)
-    title_image_url_1 = models.URLField(max_length=1024,
-                                        null=True, blank=True)
-    content_image_1 = models.ImageField(null=True, blank=True)
-    content_image_url_1 = models.URLField(max_length=1024,
-                                          null=True, blank=True)
-    content_image_2 = models.ImageField(null=True, blank=True)
-    content_image_url_2 = models.URLField(max_length=1024,
-                                          null=True, blank=True)
 
     def __str__(self):
         return self.title
