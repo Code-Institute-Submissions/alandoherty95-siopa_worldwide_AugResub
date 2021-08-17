@@ -23,14 +23,22 @@
                 <div class="card-body">
                     <!-- Blog Post Content -->
                     <h4 class="card-title"><a href="{{post.slug}}" class="text-success">{{blogpost.title}}</a></h4>
-                    <p class="card-text">{{post.subtitle}}</p>
-                    <p class="lead">{{blogpost.body}}</p>
+                    <p class="card-text">{{blogpost.subtitle}}</p>
+                    <p>{{blogpost.body}}</p>
                     <!-- Date -->
                     <p class="card-text"><small class="text-muted">Posted on: {{blogpost.created_at|date:'F j, Y, g:i a'}}</small>
                     </p>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row ml-1 mt-2">
+        <a href="{% url 'products' %}" class="btn btn-outline-green rounded-3 btn-lg">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">View all blog posts</span>
+        </a>
     </div>
 </div>
 
