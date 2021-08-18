@@ -25,8 +25,7 @@
                 <div class="card-body">
                     <h4 class="card-title"><a href="{{post.slug}}" class="text-success">{{post.title}}</a></h4>
                     <p class="card-text">{{post.subtitle}}</p>
-                    <p class="card-text"><small class="text-muted">Posted on: {{post.created_at|date:'F j, Y, g:i a'}}</small>
-                    </p>
+                    <span>{{post.date_created|date:'j F, Y' }}</span>
                 </div>
             </div>
         </div>
