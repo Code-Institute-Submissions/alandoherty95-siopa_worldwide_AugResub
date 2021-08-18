@@ -8,22 +8,22 @@ from .forms import BlogForm
 
 def display_blogcontent(request):
 
-    blogposts = BlogPost.objects.all()
+    posts = BlogPost.objects.all().order_by('-date_created')
     template = 'blog/blog.html'
     context = {
-        'blogposts': blogposts,
-        }
+        'posts': posts,
+    }
 
     return render(request, template, context)
 
 
-def show_post(request, slug):
+def show_post(request, post_id):
 
-    blogpost = get_object_or_404(BlogPost, pk=post_id)
+    post = get_object_or_404(BlogPost, pk=post_id)
     template = 'blog/show_post.html'
     context = {
-        'blogpost': blogpost
-        }
+        'post': post
+    }
     return render(request, template, context)
 
 

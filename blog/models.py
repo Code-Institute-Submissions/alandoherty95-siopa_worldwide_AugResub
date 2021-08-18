@@ -7,8 +7,10 @@ class BlogPost(models.Model):
 
     title = models.CharField(max_length=254, blank=False, null=False)
     slug = models.SlugField(max_length=254, unique=True)
-    intro = models.TextField(blank=False, null=False)
+    subtitle = models.TextField(blank=False, null=False)
     body = models.TextField(blank=False, null=False)
+    image = models.ImageField(blank=True, null=True)
+    date_created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title

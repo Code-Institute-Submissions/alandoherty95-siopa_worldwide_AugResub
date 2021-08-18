@@ -1,12 +1,15 @@
 from django import forms
 from .models import BlogPost
+from .widgets import CustomClearableFileInput
 
 
-# Form for adding blog posts
 class BlogForm(forms.ModelForm):
     class Meta:
         model = BlogPost
         fields = '__all__'
+
+    image = forms.ImageField(label='Image', required=False,
+                             widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         """
@@ -17,7 +20,10 @@ class BlogForm(forms.ModelForm):
         placeholders = {
             'title': 'Title',
             'slug': 'Slug',
+            'author': 'Author',
+            'subtitle': 'Subtitle',
             'body': 'Body',
+            'image': 'Image',
         }
 
         self.fields['title'].widget.attrs['autofocus'] = True

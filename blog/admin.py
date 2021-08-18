@@ -1,10 +1,9 @@
-from .models import BlogPost
 from django.contrib import admin
+from .models import BlogPost
 
 
-class BlogPostAdmin(admin.ModelAdmin):
-    model = BlogPost
-    readonly_fields = ('slug',)
+class BlogAdmin(admin.ModelAdmin):
+    list_display = ('title', 'date_created',)
 
 
-admin.site.register(BlogPost, BlogPostAdmin)
+admin.site.register(BlogPost, BlogAdmin)
