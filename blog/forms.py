@@ -8,8 +8,6 @@ class BlogForm(forms.ModelForm):
         model = BlogPost
         fields = '__all__'
 
-    image = forms.ImageField(label='Image', required=False)
-
     def __init__(self, *args, **kwargs):
         """
         Adds placeholders and classes, removes auto-generated
@@ -23,12 +21,11 @@ class BlogForm(forms.ModelForm):
             'body': 'Body',
         }
 
-        self.fields['title'] = True
+        self.fields['title'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if self.fields[field].required:
                 placeholder = f'{placeholders[field]} *'
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'input-shadow'
             self.fields[field].label = False
