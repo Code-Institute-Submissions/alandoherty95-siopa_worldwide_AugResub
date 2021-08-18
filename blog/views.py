@@ -19,7 +19,7 @@ def display_blogcontent(request):
 
 def show_post(request, slug):
 
-    blogpost = get_object_or_404(BlogPost, slug=slug)
+    blogpost = get_object_or_404(BlogPost, pk=post_id)
     template = 'blog/show_post.html'
     context = {
         'blogpost': blogpost
@@ -42,8 +42,8 @@ def add_post(request):
             return redirect(reverse('show_post', args=[post.id]))
         else:
             messages.error(request,
-                           'Failed to add blog post.'
-                           'Please ensure the form is valid.')
+                           'Failed to add post to our blog.'
+                           'Please check if the form is valid.')
     else:
         form = BlogForm()
 
@@ -72,7 +72,7 @@ def edit_post(request, post_id):
             return redirect(reverse('show_post', args=[post.id]))
         else:
             messages.error(request, f'Failed to update {post.title}.\
-                                     Please ensure the form is valid.')
+                                     Please check if the form is valid.')
     else:
         form = BlogForm(instance=post)
         messages.info(request, f'You are editing {post.title}')
@@ -96,4 +96,4 @@ def delete_post(request, post_id):
     post = get_object_or_404(BlogPost, pk=post_id)
     post.delete()
     messages.success(request, f'{post.title} was successfully deleted!')
-    return redirect(reverse('all_posts'))
+    return redirect(reverse('display_blogcontent'))

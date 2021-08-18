@@ -17,7 +17,6 @@ class BlogForm(forms.ModelForm):
         placeholders = {
             'title': 'Title',
             'slug': 'Slug',
-            'intro': 'Intro',
             'body': 'Body',
         }
 
@@ -28,4 +27,5 @@ class BlogForm(forms.ModelForm):
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
+            self.fields[field].widget.attrs['class'] = 'input-shadow'
             self.fields[field].label = False
