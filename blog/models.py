@@ -6,7 +6,6 @@ class BlogPost(models.Model):
         verbose_name = 'Blog Post'
 
     title = models.CharField(max_length=254, blank=False, null=False)
-    author = models.CharField(max_length=50, blank=True, null=True)
     slug = models.SlugField(max_length=254, unique=True)
     body = models.TextField(blank=False, null=False)
     image = models.ImageField(blank=True, null=True)

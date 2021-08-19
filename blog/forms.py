@@ -20,7 +20,6 @@ class BlogForm(forms.ModelForm):
         placeholders = {
             'title': 'Title',
             'slug': 'Slug',
-            'author': 'Author',
             'body': 'Body',
             'image': 'Image',
         }
