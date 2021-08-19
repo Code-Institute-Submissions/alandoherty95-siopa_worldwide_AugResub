@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="container-fluid mb-2">
+        <div class="row">
+            <div class="col">
+                <h1>Blog</h1>
+                <hr>
+            </div>
+        </div>
+
+        <!--Blog container-->
+        <section>
+            <div class="container-blog">
+                {% for post in posts %}
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <h2 class="text-pink font-weight-bold text-center text-capitalize">{{ post.title }}</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <!--Edit/Delete buttons for superuser-->
+                        {% if request.user.is_superuser %}
+                        <small class="float-right mr-3">
+                            <a class="text-pink form-link" href="{% url 'edit_blogpost' post.id %}">Edit</a>
+                            <span class="text-black">| </span>
+                            <button type="button" class="btn btn-sm delete-btn" data-toggle="modal" data-target="#deleteB_{{post.id}}">
+                                Delete
+                            </button>
+                        </small>
+                        {% endif %}
+
+                        <!--Delete Blogpost Modal -->
+                        <div class="modal fade" id="deleteB_{{post.id}}" tabindex="-1" aria-labelledby="deleteBModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title font-weight-bold text-pink" id="deletePModal">Confirm Delete</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Are you sure you want to delete<strong class="text-pink"> {{ post.title }}</strong>?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn shop-btn rounded-0 text-uppercase" data-dismiss="modal">Cancel</button>
+                                        <a class="delete-link btn shop-btn rounded-0 text-uppercase" href="{% url 'delete_blogpost' post.id %}">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="small text-center">
+                            {% if post.author %}
+                            <em>by: {{ post.author }}</em>
+                            {% endif %}
+                        </p>
+                        <span class="ml-3 float-left">{{post.date_created|date:'j F, Y' }}</span>
+                    </div>
+                </div>
+
+                <!--Layout for blogpost with image-->
+                {% if post.image %}
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <div class="blog-image pl-3 m-auto">
+                            <img class="img-fluid" src="{{ post.image.url }}" alt="{{ post.title }}">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-7">
+                        <p class="mb-1 mobile-center">{{ post.intro }}</p>
+                        <a href="{% url 'blogpost_detail' post.id %}" class="btn shop-btn rounded-0 float-right">Read More...</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 float-right text-pink mt-2 ml-3">
+                        <small class="text-muted">
+                            <em>
+                                {% if post.credit %} credit: {{ post.credit }}{% endif %}
+                                {% if post.original_url %}
+                                <a href="{{post.original_url}}" target="_blank" class="form-link">original article</a>
+                                {% endif %}
+                                {% if post.source %}
+                                - posted by: <a href="https://{{post.source}}" target="_blank" class="form-link">{{ post.source }}</a>
+                                {% endif %}
+                            </em>
+                        </small>
+                    </div>
+                </div>
+
+                {% else %}
+                <!--layout for blogpost without image-->
+                <hr>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <p class="mb-1 -mobile-center">{{ post.intro }}</p>
+                        <a href="{% url 'blogpost_detail' post.id %}" class="btn shop-btn rounded-0 float-right mt-2">Read More...</a>
+                    </div>
+                </div>
+
+                <!--If not original content display source/credit-->
+                <div class="row">
+                    <div class="col-10 offset-1 mt-4">
+                        <p class="text-muted float-right">
+                            <small class="mt-4 pr-1">
+                                <em>{% if post.credit %} credit: {{post.credit}}{% endif %}
+                                    {% if post.original_url %}
+                                    <a href="{{post.original_url}}" target="_blank" class="form-link">original article</a>
+                                    {% endif %}
+                                    {% if post.source %}
+                                    - posted by:
+                                    <a href="https://{{post.source}}" target="_blank" class="form-link">{{ post.source }}</a>
+                                    {% endif %}
+                                </em>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+                {% endif %}
+                <hr>
+                {% endfor %}
+            </div>
+        </section>
+</main>
+{% endblock %}
