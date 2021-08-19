@@ -17,7 +17,6 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=254)),
                 ('author', models.CharField(blank=True, max_length=50, null=True)),
-                ('slug', models.SlugField(max_length=254, unique=True)),
                 ('body', models.TextField()),
                 ('image', models.ImageField(blank=True, null=True, upload_to='')),
                 ('date_created', models.DateTimeField(auto_now_add=True)),
