@@ -3,7 +3,7 @@ from .models import BlogPost
 
 
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ('title', 'date_created',)
+    list_display = ('title',)
 
 
 admin.site.register(BlogPost, BlogAdmin)
