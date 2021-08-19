@@ -1,6 +1,5 @@
 from django import forms
 from .models import BlogPost
-from .widgets import CustomClearableFileInput
 
 
 class BlogForm(forms.ModelForm):
@@ -20,7 +19,6 @@ class BlogForm(forms.ModelForm):
             'body': 'Body',
         }
 
-        self.fields['title'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if self.fields[field].required:
                 placeholder = f'{placeholders[field]} *'
