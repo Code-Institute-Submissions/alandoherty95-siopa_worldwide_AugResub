@@ -19,7 +19,6 @@ class BlogForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         placeholders = {
             'title': 'Title',
-            'slug': 'Slug',
             'body': 'Body',
             'image': 'Image',
         }
