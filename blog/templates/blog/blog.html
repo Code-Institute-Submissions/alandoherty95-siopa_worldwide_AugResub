@@ -38,9 +38,18 @@
                         <a href="{% url 'delete_blogpost' post.id %}" class="text-danger" title="Delete post">Delete</a>
                     </small>
                     {% endif %}
-                    <span class="ml-3 float-left">{{post.date_created|date:'j F, Y' }}</span>
                 </div>
             </div>
+
+            {% if post.image %}
+            <a href="{% url 'blogpost_detail' post.id %}">
+                <img class="card-img-top img-fluid" src="{{ post.image.url }}" alt="{{ post.title }}">
+            </a>
+            {% else %}
+            <a href="{% url 'blogpost_detail' post.id %}">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
+            </a>
+            {% endif %}
 
             <!-- Layout for blogpost with image -->
             {% if post.image %}

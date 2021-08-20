@@ -31,7 +31,6 @@
     <!-- Blog post edit & delete buttons for admin only-->
     <div class="row">
         <div class="col-10 offset-1 mt-4">
-            <span class="float-right">{{ post.date_created|date:'j F, Y' }}</span>
             <!-- Edit & delete buttons for admin only-->
             {% if request.user.is_superuser %}
             <small>
