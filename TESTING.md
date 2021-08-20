@@ -38,31 +38,31 @@ Welcome to **[Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)** - a one
 
 1. Create a repository using the [Code Institute Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
 
-2. To install django, enter ‘pip3 install django’ in the terminal.
+2. To install django, run ‘pip3 install django’ in the terminal.
 
-3. To create the project in the current directory, enter ‘django-admin startproject siopa-worldwide .’ in the terminal.
+3. To create the project in the current directory, run ‘django-admin startproject siopa-worldwide .’ in the terminal.
 
-4. Create a basic gitignore file by entering ‘touch .gitignore’ in the terminal.
+4. Create a basic gitignore file by running ‘touch .gitignore’ in the terminal.
 
-5. Run the project by entering ‘python3 manage.py runserver’ in the terminal and exposing port 8000.
+5. Run the project by running `python3 manage.py runserver` in the terminal and exposing port 8000.
 
 6. Stop the server by typing ‘Control + C’ in the terminal.
 
-7. Run the initial migrations by entering ‘python3 manage.py migrate’ in the terminal
+7. Run the initial migrations by running ‘python3 manage.py migrate’ in the terminal
 
-8. Create a superuser to log in as admin by entering ‘python3 manage.py createsuperuser’ in the terminal.
+8. Create a superuser to log in as admin by running ‘python3 manage.py createsuperuser’ in the terminal.
 
 9. Enter username, email address and password when prompted in the terminal.
 
-10. To push changes to GitHub, enter ‘git add -A’ in the terminal to add all the files.
+10. To push changes to GitHub, run ‘git add -A’ in the terminal to add all the files.
 
-11. Enter ‘git commit -m ‘Initial commit’ to provide a commit message.
+11. Run ‘git commit -m ‘Initial commit’ to provide a commit message.
 
-12. Enter ‘git push’ to push commit to the repo.
+12. Run ‘git push’ to push commit to the repo.
 
 ### [Django-Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
 
-To use the Django Allauth templates, enter ‘pip3 install django-allauth==0.41.0’ in the terminal.
+To use the Django Allauth templates, run ‘pip3 install django-allauth==0.41.0’ in the terminal.
 
 The request context processor here allows allauth and django to access the HTTP request object in our templates. The authentication backends we added give us a really nice feature, allowing users to sign into our store simply using their email address.
 
@@ -140,27 +140,177 @@ Checked with CSS Validator
 
 ## 6. Deployment
 
+This application required the following to run:
+
+- **Python3**
+
+- **Django**
+
+- **Django Allauth**
+
+- **Stripe**
+
+- **PIP**
+
+> The full list of requirements can be found in the requirements.txt file
+
+### Gitpod Reminders
+
+To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+
+- A blue button should appear to click: _Make Public_,
+
+- Another blue button should appear to click: _Open Browser_.
+
+In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+
+To log into the Heroku toolbelt CLI:
+
+1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
+
+2. Scroll down to the _API Key_ and click _Reveal_
+
+3. Copy the key
+
+4. In Gitpod, from the terminal, run `heroku_config`
+
+5. Paste in your API key when asked
+
+You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+
+### **AWS**
+
+[AWS](https://aws.amazon.com/console/) was utilised when deploying my application. AWS was used to host both the static and media files for this project. I took the following steps to set up AWS:
+
+#### 1. Go to [AWS](https://aws.amazon.com/)
+
+- Create an account
+
+- Search for S3 and select it by clicking on it
+
+#### 2. Create a new bucket
+
+- Select the region closest to you
+
+- Uncheck block all public access
+
+- Click create bucket
+
+#### 3. In the properties section:
+
+- Turn on static web hosting
+
+- Enter a default values for the index and error documents
+
+- Click save
+
+#### 4. In the permissions section
+
+- Add the cors configuration
+
+- Go to the bucket policy section
+
+- Select policy generator
+
+- The policy type will be s3 bucket policy
+
+- Allow all principals by using the \* symbol
+
+- Select get object
+
+#### 5. Copy the ARN and paste it into the ARN box
+
+- Click add statement
+
+- Click generate policy
+
+- Copy this policy into the bucket policy editor
+
+- Select to allow access to all resources in this bucket by adding a /\* to the end of the resource key
+
+- Click save button
+
+- Go to the access control list section
+
+- Set the list objects permission for everyone under the public access section
+
+#### 6. Create a user with access to the bucket\*\*
+
+- From the services menu, open IAM
+
+- Click groups
+
+- Create a new group
+
+#### 7. Create the policy used to access the bucket
+
+- Click policies
+
+- Create policy
+
+- Go to the JSON tab
+
+- Select import managed policy
+
+- Search for s3
+
+- Import the s3 full access policy
+
+- Get the bucket ARN from the bucket policy page in s3
+
+- Paste it into the field
+
+- Click on review policy
+
+- Enter a name and description
+
+- Click on create policy
+
+#### 8. Attach the policy
+
+- Go to groups
+
+- Click on the group you just created
+
+- Click attach policy
+
+- Search for the policy you just created and select it
+
+- Click attach policy
+
+#### 9. Create a user
+
+- Click add user
+
+- Enter a name and give programmatic access
+
+- Click on next button
+
+- Click through to the end and then create user
+
+- Download the CSV file which will contain the user access key and secret access key which need to be added to the Heroku config vars
+
 Before deploying my application on Heroku, I had to take some steps to ensure a successful deployment.
 
 Firstly, in order to use Postgres, we installed `dj_database_url` and `psycopg2`:
 
-- Enter ‘pip3 install dj_database_url’
+- Run `pip3 install dj_database_url`
 
-- Enter ‘pip3 install psycopg2-binary’
+- Run `pip3 install psycopg2-binary`
 
-- Enter ‘python3 manage.py showmigrations'
+- Run `python3 manage.py showmigrations`
 
-- Enter ‘python3 manage.py migrate'
+- Run `python3 manage.py migrate`
 
-- Enter ‘python3 manage.py loaddata categories'
+- Run `python3 manage.py loaddata categories`
 
-- Enter ‘python3 manage.py loaddata products'
+- Run `python3 manage.py loaddata products`
 
 We also installed unicorn, which acts as the web server:
 
-- Enter ‘pip3 install gunicorn’
+- Run `pip3 install gunicorn`
 
-- Enter ‘pip3 freeze > requirements.txt’
+- Run `pip3 freeze > requirements.txt`
 
 To log into Heroku, I had to use my email address and the API key from Heroku:
 
@@ -170,21 +320,21 @@ To log into Heroku, I had to use my email address and the API key from Heroku:
 
 - Email: alandoherty95@gmail.com
 
-- Password: \***\*\*\*\*\*\*\***
+- Password: **\***
 
 - Logged in as alandoherty95@gmail.com
 
 To prevent Heroku from trying to collect static files when we deploy the application:
 
-- Enter ‘heroku config:set DISABLE_COLLECTSTATIC=1 --app siopa-worldwide'
+- Run `heroku config:set DISABLE_COLLECTSTATIC=1 --app siopa-worldwide`
 
-- Enter ‘git push heroku master'
+- Run `git push heroku master`
 
 I created the application on the website rather than in the CLI, so I had to initialise the Heroku git remote:
 
-- Enter ‘heroku git:remote -a siopa-worldwide'
+- Run `heroku git:remote -a siopa-worldwide`
 
-- Re-enter 'git push heroku master'
+- Re-run `git push heroku master`
 
 <span  id="usertesting"></span>
 
@@ -573,7 +723,9 @@ Product Management :white_check_mark:
 3. Click on the 'Shop Now' button
 
 4. Browse range of products
+
 5. Click on any product image
+
 6. Opens product detail page containing:
 
 Product name
@@ -916,7 +1068,7 @@ Issue: The button for updating the quantity of items in the shopping bag was not
 
 Issue: In the mobile view, the shopping bag displays the current amount in dollars. In all other views, it is displayed correctly in euro.
 
-- Fix: I updated the currency symbol from '$' to '€' as there was a typo in the mobile header. This resolved the issue and ensured consistency in the currency used throughout.
+- Fix: I updated the currency symbol from `$` to `€` as there was a typo in the mobile header. This resolved the issue and ensured consistency in the currency used throughout.
 
 Issue: In the mobile view, the shopping bag icon in the top right corner is different compared to all other devices. The icon on mobile devices appears as a shopping bag, whereas on other devices, it appears as a shopping basket.
 
