@@ -5,10 +5,11 @@ class BlogPost(models.Model):
     class Meta:
         verbose_name = 'Blog Post'
 
-    title = models.CharField(max_length=254, blank=False, null=False)
-    body = models.TextField(blank=False, null=False)
-    image = models.ImageField(blank=True, null=True)
-    date_created = models.DateTimeField(auto_now_add=True, null=True)
+    title = models.CharField(max_length=254, null=False, blank=False)
+    body = models.TextField(null=False, blank=False)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+    date_created = models.DateTimeField(null=True, auto_now_add=True)
 
     def __str__(self):
         return self.title
