@@ -22,7 +22,7 @@
         <!-- Post image -->
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
-                <h3>{{ post.title }}</h3>
+                <h3 class="text-success">{{ post.title }}</h3>
                 <!-- Displays post image -->
                 {% if post.image %}
                 <a href="{{ pos.image.url }}" target="_blank">
@@ -48,6 +48,12 @@
                 </small>
                 {% endif %}
             </div>
+            <a href="{% url 'all_blogposts' %}" class="btn btn-outline-green rounded-3 btn-lg">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Return to Blog</span>
+            </a>
         </div>
     </div>
 </div>

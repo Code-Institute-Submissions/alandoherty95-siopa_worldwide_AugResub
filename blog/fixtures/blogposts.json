@@ -3,8 +3,9 @@
         "model": "blog.blogpost",
         "fields": {
             "title": "About Us",
-            "body": "Firstly, welcome to Siopa Worldwide - a one stop shop for all your favourite Irish products. Siopa Worldwide specialises in the most sought-after Irish food and beverage products. There is a bountiful number of Irish people who live outside of their homeland but still desire Irish products. Tens of thousands of Irish people emigrate to other countries every year. Typically, Irish people living abroad will find it difficult to source authentic Irish food and beverages. The website allows users to easily browse through the range of products in our database. Shoppers can use the sorting and searching features to easily find their desired products.The shoppers can add items to their bag with a running cost displayed in the top right corner at all times. The user can complete an order by making a purchase and a confirmation message will be sent via email.",
+            "body": "Firstly, welcome to Siopa Worldwide - a one stop shop for all your favourite Irish products. Siopa Worldwide specialises in the most sought-after Irish food and beverage products. There is a bountiful number of Irish people who live outside of their homeland but still desire Irish products. Tens of thousands of Irish people emigrate to other countries every year. Typically, Irish people living abroad will find it difficult to source authentic Irish food and beverages. The website allows users to easily browse through the range of products in our database. Shoppers can use the sorting and searching features to easily find their desired products.",
             "date_created": "2021-08-15T18:11:23.523Z",
+            "image_url": "https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/screenshots/siopa-logo-home.png?raw=true",
             "image": "siopa-logo-home.png"
         }
     },
@@ -15,6 +16,7 @@
             "title": "Taste Dairy Milk Chocolate",
             "body": "Ireland's favourite chocolate bar is the 8 square Cadbury Dairy Milk standard which is produced in Coolock, Dublin. Cadbury Dairy Milk chocolate bars are available in a range of desirable flavours. Choose from the options like Dairy Milk Fruit & Nut, Oreo, Chopped Nut, Daim and many more. Taste the many different flavours of Dairy Milk chocolate bars before settling on your favourite.",
             "date_created": "2021-08-16T18:21:23.523Z",
+            "image_url": "https://images.sweetauthoring.com/product/85624.png",
             "image": "dairy-milk-milk.png"
         }
     },
@@ -22,10 +24,11 @@
         "pk": 3,
         "model": "blog.blogpost",
         "fields": {
-            "title": "Test Post",
-            "body": "Testing post in blog",
-            "date_created": "2021-08-17T18:23:23.523Z",
-            "image": "dairy-milk-milk.png"
+            "title": "Discover Nescafé Gold Blend",
+            "body": "Discover the signature smooth, rich instant coffee. Coffee connoisseurs will appreciate the well-rounded taste and rich aroma in every cup. This expertly crafted blend is great for all coffee drinking occasions, whenever you want to make a moment special. So why not relax, enjoy the now and savour the distinctive taste of this premium blend. The Arabica and Robusta coffee beans have been carefully selected, then roasted to bring out their natural flavour.",
+            "date_created": "2021-08-18T18:21:23.523Z",
+            "image_url": "https://d2wwnnx8tks4e8.cloudfront.net/images/app/large/7613036077514_3.JPG",
+            "image": "nescafe-gold-200.jpeg"
         }
     }
 ]
