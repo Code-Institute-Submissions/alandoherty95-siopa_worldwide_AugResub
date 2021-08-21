@@ -122,15 +122,12 @@
                     <!-- Update order button -->
                     <a href="{% url 'view_bag' %}" class="btn btn-outline-green btn-lg rounded-3">
                         <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Adjust Bag</span>
+                            <i class="fas fa-chevron-left"></i> Adjust Bag</span>
                     </a>
                     <!-- Complete order button -->
                     <button id="submit-button" class="btn btn-black btn-lg rounded-3">
                         <!-- Displays grand total -->
-                        <span class="text-uppercase">Pay €{{ grand_total|floatformat:2 }}</span>
-                        <span class="icon">
+                        <span class="icon">Pay €{{ grand_total|floatformat:2 }}
                             <i class="fab fa-cc-stripe fa-lg"></i>
                         </span>
                     </button>
@@ -141,11 +138,9 @@
 </div>
 <!-- Loading spinner -->
 <div id="loading-overlay">
-    <h1 class="text-light text-uppercase loading-spinner">
-        <span class="icon">
-            <i class="fas fa-spinner fa-spin"></i>
-        </span>
-    </h1>
+    <span class="icon">
+        <i class="fas fa-shipping-fast"></i>
+    </span>
 </div>
 {% endblock %}
 
