@@ -1,7 +1,8 @@
-
 from django.urls import path
 from . import views
 
+
+# Blog app URLs
 urlpatterns = [
     path('', views.all_blogposts, name='all_blogposts'),
     path('<int:post_id>/', views.blogpost_detail, name='blogpost_detail'),
