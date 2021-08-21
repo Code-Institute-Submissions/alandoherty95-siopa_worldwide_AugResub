@@ -30,14 +30,6 @@
                         <h2>{{ post.title }}</h2>
                     </a>
                     <a href="{% url 'blogpost_detail' post.id %}" class="btn btn-outline-green rounded-3 float-right">View Post</a>
-                    <small>
-                        <p>{{ post.body|truncatechars:60 }}</p>
-                    </small>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-10 offset-1">
                     <!-- Edit & delete buttons for admin only-->
                     {% if request.user.is_superuser %}
                     <small>
@@ -45,6 +37,9 @@
                         <a href="{% url 'delete_blogpost' post.id %}" class="text-danger" title="Delete post">Delete</a>
                     </small>
                     {% endif %}
+                    <small>
+                        <p>{{ post.body|truncatechars:60 }}</p>
+                    </small>
                 </div>
             </div>
             <div class="row">

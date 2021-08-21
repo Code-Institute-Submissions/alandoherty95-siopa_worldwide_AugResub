@@ -33,7 +33,7 @@ def blogpost_detail(request, post_id):
 def add_blogpost(request):
     """ Adds a post to our blog """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only the admin can do that.')
+        messages.error(request, 'Sorry, only the admin can perform this action.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -62,7 +62,7 @@ def add_blogpost(request):
 def edit_blogpost(request, post_id):
     """ Edit a blogpost """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only the admin can do that.')
+        messages.error(request, 'Sorry, only the admin can perform this action.')
         return redirect(reverse('home'))
 
     post = get_object_or_404(BlogPost, pk=post_id)
