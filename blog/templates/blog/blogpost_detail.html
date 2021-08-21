@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -7,57 +8,47 @@
     </div>
 </div>
 {% endblock %}
+
 {% block content %}
 <div class="overlay"></div>
-<!-- Blog post title -->
-<div class="container-blog">
-    <div class="row bag-header">
-        <div class="col-10 offset-1">
-            <h2 class="logo-style mt-3">{{ post.title }}</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col mt-3">
+            <!-- Page heading -->
+            <h2 class="logo-style mt-3">Siopa Worldwide Blog</h2>
         </div>
     </div>
-
-    <!-- Blog post image -->
     <div class="row">
-        <div class="col-10 offset-1">
-            <div class="h-50">
+        <!-- Post image -->
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                <h3>{{ post.title }}</h3>
+                <!-- Displays post image -->
                 {% if post.image %}
-                <img class="img-fluid" src="{{ post.image.url }}" alt="{{ post.title }}">
+                <a href="{{ pos.image.url }}" target="_blank">
+                    <img class="card-img-top img-fluid" src="{{ post.image.url }}" alt="{{ post.title }}">
+                </a>
+                <!-- Or else displays default image -->
+                {% else %}
+                <a href="">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        <!-- Post details -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="blogpost-details-container mb-5 mt-md-5">
+                <p>{{ post.body }}</p>
+                <!-- Admin access only -->
+                {% if request.user.is_superuser %}
+                <small>
+                    <a href="{% url 'edit_blogpost' post.id %}" class="text-warning" title="Edit post">Edit</a> |
+                    <a href="{% url 'delete_blogpost' post.id %}" class="text-danger" title="Delete post">Delete</a>
+                </small>
                 {% endif %}
             </div>
         </div>
     </div>
-
-    <!-- Blog post edit & delete buttons for admin only-->
-    <div class="row">
-        <div class="col-10 offset-1 mt-4">
-            <!-- Edit & delete buttons for admin only-->
-            {% if request.user.is_superuser %}
-            <small>
-                <a href="{% url 'edit_blogpost' post.id %}" class="text-warning" title="Edit post">Edit</a> |
-                <a href="{% url 'delete_blogpost' post.id %}" class="text-danger" title="Delete post">Delete</a>
-            </small>
-            {% endif %}
-        </div>
-    </div>
-    <hr>
-
-    <!-- Blog post body -->
-    <div class="row">
-        <div class="col-10 offset-1">
-            <p>{{ post.intro }}</p>
-            <p>{{ post.body }}</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-10 offset-1">
-            <!-- Return to products button -->
-            <a href="{% url 'all_blogposts' %}" class="btn btn-outline-green rounded-3 mt-5">
-                <span class="icon">
-                    <i class="fas fa-chevron-circle-left"></i>
-                </span>
-                <span class="text-uppercase">View All Posts</span>
-            </a>
-        </div>
-    </div>
-    {% endblock %}
+</div>
+{% endblock %}
