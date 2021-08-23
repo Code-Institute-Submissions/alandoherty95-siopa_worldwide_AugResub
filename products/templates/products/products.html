@@ -14,6 +14,10 @@
         <div class="col mt-3">
             <!-- Page heading -->
             <h2 class="logo-style mt-3">Browse Products</h2>
+            <!-- Add new product button for admin only-->
+            {% if request.user.is_superuser %}
+            <a href="{% url 'add_product' %}" class="btn btn-outline-green rounded-3 btn-lg" title="Add product">Add Product</a>
+            {% endif %}
             <!-- Categories -->
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">

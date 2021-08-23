@@ -15,7 +15,7 @@
             <h2 class="logo-style mt-3">Siopa Worldwide Blog</h2>
             <!-- Edit & delete buttons for admin only-->
             {% if request.user.is_superuser %}
-            <a href="{% url 'add_blogpost' %}" class="btn btn-outline-green rounded-3 btn-lg" title="Add a post">Add a Post</a>
+            <a href="{% url 'add_blogpost' %}" class="btn btn-outline-green rounded-3 btn-lg" title="Add post">Add Post</a>
             {% endif %}
             <hr>
         </div>
