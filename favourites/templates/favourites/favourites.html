@@ -1,38 +1,104 @@
-from django.shortcuts import render
-from products.models import Product
-from django.db.models.functions import Lower
+{% extends "base.html" %}
+{% load static %}
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid mb-2">
+    <div class="row">
+        <div class="col">
+            <h2 class="logo-style mt-3">Our Favourites</h2>
+        </div>
+    </div>
+    <!-- Sorting products -->
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col">
+                <div class="form-inline justify-content-end text-right">
+                    <label class="filters-toolbar-label select-label">Sort by: </label>
+                    <select class="filters-toolbar-input" id="SortBy" name="SortBy" data-default-sortby="manual">
+                        <option value="reset" {% if current_sorting == "None_None" %}selected{% endif %}>Featured</option>
+                        <option value="price_asc" {% if current_sorting == "price_asc"%}selected{% endif %}>Price low to high</option>
+                        <option value="price_desc" {% if current_sorting == "price_desc"%}selected{% endif %}>Price high to low</option>
+                        <option value="color_asc" {% if current_sorting == "color_asc"%}selected{% endif %}>Color A to Z</option>
+                        <option value="color_desc" {% if current_sorting == "color_desc"%}selected{% endif %}>Color Z to A</option>
+                        <option value="category_asc" {% if current_sorting == "category_asc"%}selected{% endif %}>Category A to Z</option>
+                        <option value="category_desc" {% if current_sorting == "category_desc"%}selected{% endif %}>Category Z to A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Favourite products -->
+    <div class="container flex-fill">
+        <div class="row">
+            {% for product in favourites %}
+            <div class="mb-5 col-12">
+                <div class="card h-100 border-0">
+                    <a href="{% url 'product_detail' product.id %}">
+                        {% if product.image %}
+                        <img class="h-100" src="{{ product.image.url }}" alt="{{ product.name }}" loading="lazy" />
+                        {% else %}
+                        <img class="" src="{MEDIA_URL }}noimage.png" alt="{{ product.name }}" loading="lazy" />
+                        {% endif %}
+                    </a>
+                    <div class="pb-0">
+                        <p class="mb-0">{{ product.name }} -
+                            <small>{{ product.category.friendly_name }}</small></p>
+                    </div>
+                    <div class="border-0 text-left">
+                        <div class="row">
+                            <div class="col">
+                                <p class="lead mb-0 text-left">
+                                    <s>{{ product.price }}€</s>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="mb-0 text-left">
+                                    <s>{{ product.price }}€</s>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
 
-def get_highlights(request):
-""" get_highlights:
-* gets all active products\n
-* if sort in GET request, products are sorted accordingly
-"""
-products = Product.objects.filter(is_featured=True)
-sort = None
-direction = None
+{% endblock %}
 
-if request.GET:
-if 'sort' in request.GET:
-sortkey = request.GET['sort']
-sort = sortkey
-if sortkey == "name":
-sortkey = 'lower_name'
-products = products.annotate(lower_name=Lower("name"))
-if sortkey == "color":
-sortkey = 'lower_color'
-products = products.annotate(lower_color=Lower("color"))
-if 'direction' in request.GET:
-direction = request.GET['direction']
-if direction == "desc":
-sortkey = f'-{sortkey}'
-products = products.order_by(sortkey)
+{% block postloadjs %}
 
-current_sorting = f'{sort}_{direction}'
+<!-- Sorting items options -->
+<script type="text/javascript">
+    $('#sort-selector').change(function() {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
 
-context = {
-'featured': products,
-'current_sorting': current_sorting,
-}
+        var selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            var sort = selectedVal.split("_")[0];
+            var direction = selectedVal.split("_")[1];
 
-return render(request, 'highlights/highlights.html', context)
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
+
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
+
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
+
+{% endblock %}
