@@ -33,19 +33,21 @@ def blogpost_detail(request, post_id):
 def add_blogpost(request):
     """ Adds a post to our blog """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only the admin can perform this action.')
+        messages.error(
+            request, 'Sorry, only the admin can perform this action.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save()
-            messages.success(request, f'Successfully added {post.title}!')
+            messages.success(
+                request, f'Successfully added {post.title} to our blog!')
             return redirect(reverse('blogpost_detail', args=[post.id]))
         else:
             messages.error(request,
-                           'Failed to add blog post.'
-                           'Please check if the form is valid.')
+                           'Failed to add blog post. \
+                           Please check if the form is valid.')
     else:
         form = BlogForm()
 
