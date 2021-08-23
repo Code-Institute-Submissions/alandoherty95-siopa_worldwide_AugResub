@@ -1,0 +1,61 @@
+[{
+        "pk": 51,
+        "model": "favourites.favourites",
+        "fields": {
+            "sku": "1101340155",
+            "name": "Cadbury Dairy Milk (200g)",
+            "description": "The brightly wrapped delicious Cadbury Roses chocolates, in distinctive blue packs, have been a family favourite in boxed chocolates since 1938.",
+            "category": 1,
+            "image_url": "https://images.sweetauthoring.com/product/85593.png",
+            "image": "dairy-milk-milk.png"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "favourites.favourites",
+        "fields": {
+            "sku": "1101600425",
+            "name": "Cadbury Dairy Milk Golden Crisp (200g)",
+            "description": "Cadbury Dairy Milk milk chocolate with golden honeycombed granules.",
+            "category": 1,
+            "image_url": "https://images.sweetauthoring.com/product/65861.png",
+            "image": "dairy-milk-golden-crisp.png"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "favourites.favourites",
+        "fields": {
+            "sku": "1101730010",
+            "name": "Cadbury Dairy Milk 30% Less Sugar (200g)",
+            "description": "Cadbury Dairy Milk with 30% less sugar. It’s just as irresistible and contains no artificial sweeteners.",
+            "category": 1,
+            "image_url": "https://images.sweetauthoring.com/product/92525.png",
+            "image": "dairy-milk-less-sugar.png"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "favourites.favourites",
+        "fields": {
+            "sku": "1101890157",
+            "name": "Cadbury Milk Tray",
+            "description": "This much loved brand was launched in 1915 and has subsequently enjoyed its place in the heart of the nation.",
+            "category": 1,
+            "image_url": "https://images.sweetauthoring.com/product/80807.png",
+            "image": "cadbury-milk-tray.png"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "favourites.favourites",
+        "fields": {
+            "sku": "1102111605",
+            "name": "Cadbury Dairy Milk Tiffin (200g)",
+            "description": "A mouth-watering medley of crunchy biscuit and juicy dried grapes, smothered in smooth creamy Cadbury Dairy Milk milk chocolate - a delicious old-school classic!",
+            "category": 1,
+            "image_url": "https://images.sweetauthoring.com/product/85632.png",
+            "image": "dairy-milk-tiffin.png"
+        }
+    }
+]

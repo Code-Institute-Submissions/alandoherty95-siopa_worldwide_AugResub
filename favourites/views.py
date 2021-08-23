@@ -5,7 +5,7 @@ from django.db.models.functions import Lower
 
 def show_favourites(request):
     """ View showing our favourite products in the store """
-    products = Product.objects.filter(is_featured=True)
+    products = Product.objects.filter()
     sort = None
     direction = None
     # sorting favourites
@@ -24,7 +24,7 @@ def show_favourites(request):
                 if direction == "desc":
                     sortkey = f'-{sortkey}'
                 products = products.order_by(sortkey)
-    # sorting directions 
+    # sorting directions
     current_sorting = f'{sort}_{direction}'
 
     context = {
