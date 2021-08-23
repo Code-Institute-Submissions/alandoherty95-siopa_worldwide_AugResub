@@ -12,93 +12,106 @@
 <div class="container-fluid mb-2">
     <div class="row">
         <div class="col">
-            <h2 class="logo-style mt-3">Our Favourites: Coming Soon</h2>
+            <h2 class="logo-style mt-3">Future Products</h2>
         </div>
     </div>
     <!-- Sorting products -->
     <div class="container">
-        <div class="row mb-3">
-            <div class="col">
-                <div class="form-inline justify-content-end text-right">
-                    <label class="filters-toolbar-label select-label">Sort by: </label>
-                    <select class="filters-toolbar-input" id="SortBy" name="SortBy" data-default-sortby="manual">
-                        <option value="reset" {% if current_sorting == "None_None" %}selected{% endif %}>Featured</option>
-                        <option value="price_asc" {% if current_sorting == "price_asc"%}selected{% endif %}>Price low to high</option>
-                        <option value="price_desc" {% if current_sorting == "price_desc"%}selected{% endif %}>Price high to low</option>
-                        <option value="color_asc" {% if current_sorting == "color_asc"%}selected{% endif %}>Color A to Z</option>
-                        <option value="color_desc" {% if current_sorting == "color_desc"%}selected{% endif %}>Color Z to A</option>
-                        <option value="category_asc" {% if current_sorting == "category_asc"%}selected{% endif %}>Category A to Z</option>
-                        <option value="category_desc" {% if current_sorting == "category_desc"%}selected{% endif %}>Category Z to A</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Favourite products -->
-    <div class="container flex-fill">
         <div class="row">
-            {% for product in favourites %}
-            <div class="mb-5 col-12">
-                <div class="card h-100 border-0">
-                    <a href="{% url 'product_detail' product.id %}">
-                        {% if product.image %}
-                        <img class="h-100" src="{{ product.image.url }}" alt="{{ product.name }}" loading="lazy" />
-                        {% else %}
-                        <img class="" src="{MEDIA_URL }}noimage.png" alt="{{ product.name }}" loading="lazy" />
-                        {% endif %}
-                    </a>
-                    <div class="pb-0">
-                        <p class="mb-0">{{ product.name }} -
-                            <small>{{ product.category.friendly_name }}</small></p>
-                    </div>
-                    <div class="border-0 text-left">
-                        <div class="row">
-                            <div class="col">
-                                <p class="lead mb-0 text-left">
-                                    <s>{{ product.price }}€</s>
-                                </p>
-                            </div>
-                            <div class="col">
-                                <p class="mb-0 text-left">
-                                    <s>{{ product.price }}€</s>
-                                </p>
-                            </div>
+            <div class="product-container col-10 offset-1">
+                <div class="row mt-1 mb-2">
+                    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                        <!-- Sorting items -->
+                        <div class="sort-select-wrapper">
+                            <select id="sort-selector" class="custom-select custom-select-sm rounded-3 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort items
+                                    by..
+                                </option>
+                                <!-- Sorting items by price -->
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
+                                    (Low to High)</option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
+                                    (High to Low)</option>
+                                <!-- Sorting items by name -->
+                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
+                                    (A to Z)</option>
+                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
+                                    (Z to A)</option>
+                                <!-- Sorting items by category -->
+                                <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
+                                    Category (A to Z)</option>
+                                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z to A)
+                                </option>
+                            </select>
                         </div>
                     </div>
                 </div>
             </div>
-            {% endfor %}
+            <!-- Favourite products -->
+            <div class="container flex-fill">
+                <div class="row">
+                    {% for product in favourites %}
+                    <div class="mb-5 col-12">
+                        <div class="card h-100 border-0">
+                            <a href="{% url 'product_detail' product.id %}">
+                                {% if product.image %}
+                                <img class="h-100" src="{{ product.image.url }}" alt="{{ product.name }}" loading="lazy" />
+                                {% else %}
+                                <img class="" src="{MEDIA_URL }}noimage.png" alt="{{ product.name }}" loading="lazy" />
+                                {% endif %}
+                            </a>
+                            <div class="pb-0">
+                                <p class="mb-0">{{ product.name }} -
+                                    <small>{{ product.category.friendly_name }}</small></p>
+                            </div>
+                            <div class="border-0 text-left">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="lead mb-0 text-left">
+                                            <s>{{ product.price }}€</s>
+                                        </p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="mb-0 text-left">
+                                            <s>{{ product.price }}€</s>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
 
-{% endblock %}
+        {% endblock %}
 
-{% block postloadjs %}
+        {% block postloadjs %}
 
-<!-- Sorting items options -->
-<script type="text/javascript">
-    $('#sort-selector').change(function() {
-        var selector = $(this);
-        var currentUrl = new URL(window.location);
+        <!-- Sorting items options -->
+        <script type="text/javascript">
+            $('#sort-selector').change(function() {
+                var selector = $(this);
+                var currentUrl = new URL(window.location);
 
-        var selectedVal = selector.val();
-        if (selectedVal != "reset") {
-            var sort = selectedVal.split("_")[0];
-            var direction = selectedVal.split("_")[1];
+                var selectedVal = selector.val();
+                if (selectedVal != "reset") {
+                    var sort = selectedVal.split("_")[0];
+                    var direction = selectedVal.split("_")[1];
 
-            currentUrl.searchParams.set("sort", sort);
-            currentUrl.searchParams.set("direction", direction);
+                    currentUrl.searchParams.set("sort", sort);
+                    currentUrl.searchParams.set("direction", direction);
 
-            window.location.replace(currentUrl);
-        } else {
-            currentUrl.searchParams.delete("sort");
-            currentUrl.searchParams.delete("direction");
+                    window.location.replace(currentUrl);
+                } else {
+                    currentUrl.searchParams.delete("sort");
+                    currentUrl.searchParams.delete("direction");
 
-            window.location.replace(currentUrl);
-        }
-    })
-</script>
+                    window.location.replace(currentUrl);
+                }
+            })
+        </script>
 
-{% endblock %}
+        {% endblock %}

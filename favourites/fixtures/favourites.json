@@ -1,6 +1,6 @@
 [{
         "pk": 51,
-        "model": "favourites.favourites",
+        "model": "favourites.product",
         "fields": {
             "sku": "1101340155",
             "name": "Cadbury Dairy Milk (200g)",
@@ -12,7 +12,7 @@
     },
     {
         "pk": 52,
-        "model": "favourites.favourites",
+        "model": "favourites.product",
         "fields": {
             "sku": "1101600425",
             "name": "Cadbury Dairy Milk Golden Crisp (200g)",
@@ -24,7 +24,7 @@
     },
     {
         "pk": 53,
-        "model": "favourites.favourites",
+        "model": "favourites.product",
         "fields": {
             "sku": "1101730010",
             "name": "Cadbury Dairy Milk 30% Less Sugar (200g)",
@@ -36,7 +36,7 @@
     },
     {
         "pk": 54,
-        "model": "favourites.favourites",
+        "model": "favourites.product",
         "fields": {
             "sku": "1101890157",
             "name": "Cadbury Milk Tray",
@@ -48,7 +48,7 @@
     },
     {
         "pk": 55,
-        "model": "favourites.favourites",
+        "model": "favourites.product",
         "fields": {
             "sku": "1102111605",
             "name": "Cadbury Dairy Milk Tiffin (200g)",

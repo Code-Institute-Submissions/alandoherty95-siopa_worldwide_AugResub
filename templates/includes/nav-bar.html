@@ -38,10 +38,14 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="drinks-link">
                 <a href="{% url 'products' %}?category=tea_and_coffee" class="dropdown-item">Tea & Coffee</a>
-                <a href="{% url 'products' %}?category=soda" class="dropdown-item">Fizzy Drinks</a>
+                <a href="{% url 'products' %}?category=soda" class="dropdown-item">Soda</a>
                 <a href="{% url 'products' %}?category=tea_and_coffee,soda" class="dropdown-item">View All
                     Drinks</a>
             </div>
+        </li>
+        <!-- Future Products -->
+        <li class="nav-item ">
+            <a href="{% url 'favourites' %}" class="logo-font nav-link text-black">Future Products</a>
         </li>
         <!-- Blog -->
         <li class="nav-item ">

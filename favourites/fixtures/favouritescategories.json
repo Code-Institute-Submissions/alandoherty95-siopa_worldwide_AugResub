@@ -1,6 +1,6 @@
 [{
         "pk": 1,
-        "model": "products.category",
+        "model": "favourites.category",
         "fields": {
             "name": "chocolate",
             "friendly_name": "Chocolate"
@@ -8,7 +8,7 @@
     },
     {
         "pk": 2,
-        "model": "products.category",
+        "model": "favourites.category",
         "fields": {
             "name": "crisps",
             "friendly_name": "Crisps"
@@ -16,7 +16,7 @@
     },
     {
         "pk": 3,
-        "model": "products.category",
+        "model": "favourites.category",
         "fields": {
             "name": "biscuits",
             "friendly_name": "Biscuits"
@@ -24,7 +24,7 @@
     },
     {
         "pk": 4,
-        "model": "products.category",
+        "model": "favourites.category",
         "fields": {
             "name": "tea_and_coffee",
             "friendly_name": "Tea & Coffee"
@@ -32,7 +32,7 @@
     },
     {
         "pk": 5,
-        "model": "products.category",
+        "model": "favourites.category",
         "fields": {
             "name": "soda",
             "friendly_name": "Soda"
