@@ -1,4 +1,4 @@
-  from django.db import models
+from django.db import models
 
 
 class ReceivedMessage(models.Model):
@@ -6,7 +6,7 @@ class ReceivedMessage(models.Model):
     class Meta:
         verbose_name = 'Message'
 
-    name = models.CharField(max_length=50, null=False, blank=False)
+    name = models.CharField(max_length=40, null=False, blank=False)
     email_address = models.EmailField(max_length=50, null=False, blank=False)
     subject = models.CharField(max_length=254, null=False, blank=False)
     message = models.TextField(blank=False, null=False)

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ReceivedMessage, ReceivedMessageAdmin
+from .models import ReceivedMessage
 
 
 class ReceivedMessageAdmin(admin.ModelAdmin):

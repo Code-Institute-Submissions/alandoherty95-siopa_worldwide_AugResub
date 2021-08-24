@@ -1,16 +1,47 @@
-from django.db import models
+from django.shortcuts import (render, redirect,
+                              reverse, HttpResponseRedirect)
+from django.contrib import messages
+from django.conf import settings
+from django.core.mail import send_mail, EmailMultiAlternatives
+from django.template.loader import render_to_string, get_template
+
+from .forms import ContactForm
 
 
-class ReceivedMessage(models.Model):
+def contact(request):
+    template = "contact/contact.html"
 
-    class Meta:
-        verbose_name = 'Message'
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request,
+                             "Message sent to Siopa Worldwide! We'll be in touch shortly!")
+            instance = form.save()
+            """ Sends automatic email repsponse confirming message was received """
+            sender_email = instance.email_address
+            subject = render_to_string(
+                'contact/confirmation_emails/subject_contact_confirmation_email.txt',
+                {'instance': instance})
+            body = render_to_string(
+                'contact/confirmation_emails/body_contact_confirmation_email.txt',
+                {'instance': instance,
+                 'contact_email': settings.DEFAULT_FROM_EMAIL})
+            send_mail(
+                subject,
+                body,
+                settings.DEFAULT_FROM_EMAIL,
+                [sender_email],
+            )
 
-    name = models.CharField(max_length=40, null=False, blank=False)
-    email_address = models.EmailField(max_length=50, null=False, blank=False)
-    subject = models.CharField(max_length=254, null=False, blank=False)
-    message = models.TextField(blank=False, null=False)
-    date_sent = models.DateTimeField(auto_now_add=True)
+        else:
+            messages.error(request, 'Message failed to send.'
+                           ' Please check if the form is valid.')
 
-    def __str__(self):
-        return self.name
+    form = ContactForm()
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
