@@ -6,7 +6,7 @@ from .models import ReceivedMessage
 class ContactForm(forms.ModelForm):
     class Meta:
         model = ReceivedMessage
-        fields = ('name', 'email_address', 'subject', 'message')
+        fields = ('name', 'email', 'subject', 'message')
 
     def __init__(self, *args, **kwargs):
         """
@@ -16,7 +16,7 @@ class ContactForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         placeholders = {
             'name': 'Name',
-            'email_address': 'Email Address',
+            'email': 'Email Address',
             'subject': 'Subject',
             'message': 'Message',
         }
