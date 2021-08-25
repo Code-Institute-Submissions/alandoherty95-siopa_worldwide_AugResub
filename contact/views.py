@@ -18,7 +18,7 @@ def contact(request):
             messages.success(request,
                              "Message sent to Siopa Worldwide! We'll be in touch shortly!")
             instance = form.save()
-            """ Sends automatic email repsponse confirming message was received """
+            """ Sends automatic email confirming message was received """
             sender_email = instance.email
             subject = render_to_string(
                 'contact/confirmation_emails/subject_contact_email.txt',

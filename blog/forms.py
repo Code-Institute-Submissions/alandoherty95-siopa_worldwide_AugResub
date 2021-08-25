@@ -3,18 +3,19 @@ from .models import BlogPost
 from .widgets import CustomClearableFileInput
 
 
+# Form for adding blog posts
 class BlogForm(forms.ModelForm):
     class Meta:
         model = BlogPost
         fields = '__all__'
 
-    image = forms.ImageField(label='Image', required=False,
+    image = forms.ImageField(label='Current Image', required=False,
                              widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         """
-        Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
+        Adds placeholders and classes, removes auto-generated
+        labels, sets autofocus on first field
         """
         super().__init__(*args, **kwargs)
         placeholders = {

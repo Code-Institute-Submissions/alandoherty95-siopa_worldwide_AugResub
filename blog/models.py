@@ -1,6 +1,7 @@
 from django.db import models
 
 
+# BLOGPOST FORM MODEL
 class BlogPost(models.Model):
     class Meta:
         verbose_name = 'Blog Post'
