@@ -90,27 +90,35 @@ The e-commerce store is primarily targeting Irish people who are living abroad. 
 
 ### Overview
 
-The website was designed with three main objectives:
+The website was designed with the following main objectives:
 
 - To allow users to browse all products in our database using sorting and searching features
 
 - To allow shoppers to complete an order by purchasing their desired products
 
-- To allows shoppers to create an account and view previous orders
+- To allow shoppers to create an account and view previous orders
+
+- To allow shoppers to contact the store owner by submitting a contact form
+
+- To allow shoppers to read blog posts created by the store owner
 
 ### **Project Goals**
 
-- As an owner of this e-commerce store, I would like to:
+As an owner of this e-commerce store, I would like to:
 
-- to encourage users to visit the store
+- encourage users to visit the store
 
-- to encourage users to browse our range of products
+- encourage users to browse our range of products
 
-- to encourage users to buy products from the store
+- encourage users to buy products from the store
 
-- to encourage users to return to the website again
+- encourage users to return to the website again
 
-- to create, update and delete items in our product range
+- create, update and delete items in our product range
+
+- create, update and delete posts in our blog
+
+- be contactable by shoppers using a contact form
 
 ### Application Features
 
@@ -137,6 +145,10 @@ The website was designed with three main objectives:
 - Search for specific items using keywords
 
 - Sort items by name, price or category
+
+- Contact form
+
+- Blog posts
 
 ### Design Process
 
@@ -208,15 +220,19 @@ The whole development process is broken down into smaller stages to help in mana
 
 - Create a base.html page including navigation with common elements, links and scripts
 
-- Create a home app
+- Create a home app to display a landing page
 
 - Create a products app to display all items in our product range
 
 - Create a bag app to display the contents of the shopping bag
 
-- Create a checkout app
+- Create a checkout app allowing shopper to complete an order
 
-- Create a profile app
+- Create a profile app to save personal information and order history
+
+- Create a blog app allowing the admin to create, update and delete posts
+
+- Create a contact app allowing users to submit a message to the store owner
 
 - Create additional elements contributing to the user experience such as toasts and messages
 
@@ -274,11 +290,19 @@ The whole development process is broken down into smaller stages to help in mana
 
 - view the details of my order in the confirmation email
 
-**Create Account**
+**Account**
 
 - create an account easily and quickly
 
-#### **As a registered user:**
+**Blog**
+
+- read blog posts about the mission, values of the store as well as products
+
+**Contact**
+
+- submit a contact form to get in touch with the store owner
+
+#### **As a registered user, I would like to:**
 
 - log in and out easily and quickly
 
@@ -294,7 +318,7 @@ The whole development process is broken down into smaller stages to help in mana
 
 - easily update my delivery information
 
-#### **As a Superuser:**
+#### **As a Superuser, I would like to:**
 
 - access the admin panel easily
 
@@ -307,6 +331,10 @@ The whole development process is broken down into smaller stages to help in mana
 - view and manage users of the site
 
 - view and manage orders
+
+- create, update and delete blog posts
+
+- be contactable using a contact form
 
 <span  id="wireframes"></span>
 
@@ -437,6 +465,10 @@ Signing in using social media accounts will make it much easier for users to reg
 - Returns Policy
 
 A policy can be implemented to allow customers to return goods if they are unsatisfied or have a change of mind. This will add to the legitimacy of the e-commerce store and will encourage more first-time users to shop on our website.
+
+- Incoming Products
+
+A feature can be implemented to promote products which will soon be available to purchase in the store. Future products can include suggestions from shoppers.
 
 <span  id="testing"></span>
 
