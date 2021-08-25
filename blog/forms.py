@@ -9,7 +9,7 @@ class BlogForm(forms.ModelForm):
         model = BlogPost
         fields = '__all__'
 
-    image = forms.ImageField(label='Current Image', required=False,
+    image = forms.ImageField(label='Image', required=False,
                              widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
