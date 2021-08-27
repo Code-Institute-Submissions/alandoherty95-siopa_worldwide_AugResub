@@ -1078,6 +1078,10 @@ Issue: Email confirmations are not being received after an order is completed. A
 
 - Fix: I updated the `DEFAULT_FROM_EMAIL` variable in settings.py to `siopaworldwide@example.com` instead of `siopaworldwide@gmail.com`. I tested the email confirmation by using my own gmail email address as well as a temporary email address which both worked perfectly.
 
+Issue: An error was displayed after submitting the contact form. 
+
+- Fix: I commented out my database code in the settings.py file. Instead, I updated the remote database and then ran migrations. I also checked my Gmail settings to ensure 2FA was enabled and a Django password was generated from Gmail. I deployed the application again to test the order confirmation emails and the contact form which functioned correctly. 
+
 <span  id="resolved"></span>
 
 ## 12. Unresolved Bugs
