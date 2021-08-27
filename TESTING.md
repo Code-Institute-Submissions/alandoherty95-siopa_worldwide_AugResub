@@ -1082,6 +1082,10 @@ Issue: An error was displayed after submitting the contact form.
 
 - Fix: I commented out my database code in the settings.py file. Instead, I updated the remote database and then ran migrations. I also checked my Gmail settings to ensure 2FA was enabled and a Django password was generated from Gmail. I deployed the application again to test the order confirmation emails and the contact form which functioned correctly. 
 
+Issue: New blog posts were not being added successfully. The admin could submit the `add_blogpost` form but it would not be saved with the other blog posts.
+
+- Fix: I identified a typo in the views.py file and updated `args=[post.id]` to `args=[blogpost.id]` to match `blogpost = form.save()`. 
+
 <span  id="resolved"></span>
 
 ## 12. Unresolved Bugs

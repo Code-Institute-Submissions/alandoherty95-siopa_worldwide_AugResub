@@ -42,13 +42,14 @@ def add_blogpost(request):
         if form.is_valid():
             blogpost = form.save()
             messages.success(
-                request, f'Successfully added {post.title} to our blog!')
-            return redirect(reverse('blogpost_detail', args=[post.id]))
+                request, f'Successfully added {blogpost.title} to our blog!')
+            return redirect(reverse('blogpost_detail', args=[blogpost.id]))
         else:
             messages.error(request,
                            'Failed to add blog post. \
                            Please check if the form is valid.')
     else:
+        print(request.method)
         form = BlogForm()
 
     template = 'blog/add_blogpost.html'

@@ -2,9 +2,7 @@ Hi {{ instance.name }}
 
 Thank you for getting in touch with us!
 
-We have received your message: {{ instance.subject }}.
-
-We will respond yo your message as soon as possible.
+We have received your message: {{ instance.subject }} and we will respond as soon as possible.
 
 Go raibh míle maith agat!
 
