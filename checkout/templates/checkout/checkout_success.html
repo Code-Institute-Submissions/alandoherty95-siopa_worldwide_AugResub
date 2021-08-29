@@ -1,10 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
-
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -12,7 +10,6 @@
     </div>
 </div>
 {% endblock %}
-
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
@@ -22,7 +19,8 @@
             <h2 class="logo-style mt-3">Thank You! <i class="far fa-smile-beam"></i></h2>
             <hr>
             <p>See your order summary below. A confirmation email will be sent to
-                <strong>{{ order.email }}</strong>.</p>
+                <strong>{{ order.email }}</strong>.
+            </p>
         </div>
     </div>
     <!-- Displays order summary -->
@@ -34,7 +32,6 @@
                         <p class="text-success mt-4">Order Summary</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p>Order Number</p>
@@ -43,7 +40,6 @@
                         <p>{{ order.order_number }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p>Order Date</p>
@@ -52,7 +48,6 @@
                         <p>{{ order.date }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col">
                         <p class="text-success mt-4">Order Details:</p>
@@ -72,13 +67,11 @@
                     </div>
                 </div>
                 {% endfor %}
-
                 <div class="row">
                     <div class="col">
                         <p class="text-success mt-4">Delivery Details:</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p>Full Name</p>
@@ -87,7 +80,6 @@
                         <p>{{ order.full_name }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p>Address 1</p>
@@ -118,7 +110,6 @@
                     </div>
                 </div>
                 {% endif %}
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p>Town or City</p>
@@ -138,7 +129,6 @@
                     </div>
                 </div>
                 {% endif %}
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p>Country</p>
@@ -147,7 +137,6 @@
                         <p>{{ order.country }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p>Phone Number</p>
@@ -156,13 +145,11 @@
                         <p>{{ order.phone_number }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col">
                         <p class="text-success mt-4">Billing Details:</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p>Order Total</p>
@@ -171,7 +158,6 @@
                         <p>€{{ order.order_total }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p>Delivery Cost</p>
@@ -180,7 +166,6 @@
                         <p>€{{ order.delivery_cost }}</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p>Grand Total</p>
@@ -192,7 +177,6 @@
             </div>
         </div>
     </div>
-
     <div class="row">
         <div class="col-12 col-lg-7">
             <!-- Return to profile button -->

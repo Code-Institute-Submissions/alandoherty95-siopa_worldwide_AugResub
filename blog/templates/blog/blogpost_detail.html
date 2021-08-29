@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -8,7 +7,6 @@
     </div>
 </div>
 {% endblock %}
-
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
@@ -25,7 +23,7 @@
                 <h3 class="text-success">{{ post.title }}</h3>
                 <!-- Displays post image -->
                 {% if post.image %}
-                <a href="{{ pos.image.url }}" target="_blank">
+                <a href="{{ post.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid" src="{{ post.image.url }}" alt="{{ post.title }}">
                 </a>
                 <!-- Or else displays default image -->

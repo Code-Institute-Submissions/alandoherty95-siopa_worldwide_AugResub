@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -8,7 +7,6 @@
     </div>
 </div>
 {% endblock %}
-
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
@@ -16,11 +14,10 @@
         <div class="col-12 col-md-8">
             <hr>
             <h2 class="logo-style mt-3">Product Management</h2>
-            <h2 class="text-success">Edit a Product <i class="far fa-edit"></i></h2>
+            <h5 class="text-success">Edit a Product <i class="far fa-edit"></i></h5>
             <hr>
         </div>
     </div>
-
     <div class="row">
         <div class="col-12 col-md-8">
             <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
@@ -41,7 +38,6 @@
     </div>
 </div>
 {% endblock %}
-
 <!-- Notifies user of what the image will be changed to -->
 {% block postloadjs %}
 {{ block.super }}
