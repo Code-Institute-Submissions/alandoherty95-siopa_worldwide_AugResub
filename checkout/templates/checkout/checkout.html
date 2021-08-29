@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
@@ -16,186 +17,131 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-style mt-3">Thank You! <i class="far fa-smile-beam"></i></h2>
+            <!-- Page heading -->
+            <h2 class="logo-style mt-3">Checkout <i class="fas fa-cash-register"></i></h2>
             <hr>
-            <p>See your order summary below. A confirmation email will be sent to
-                <strong>{{ order.email }}</strong>.
-            </p>
         </div>
     </div>
-    <!-- Displays order summary -->
-    <div class="row order-summary">
-        <div class="col-12 col-lg-7">
-            <div class="order-confirmation-wrapper p-2 border">
-                <div class="row">
-                    <div class="col">
-                        <p class="text-success mt-4">Order Summary</p>
-                    </div>
+    <div class="row">
+        <!-- Order summary -->
+        <div class="col-12 col-lg-6 order-lg-last mb-4">
+            <p class="text-success">Order Summary ({{ product_count }})</p>
+            <div class="row">
+                <div class="col-8">
+                    <p class="mb-1 mt-0 small text-muted">Items</p>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Order Number</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>{{ order.order_number }}</p>
-                    </div>
+                <div class="col-3 offset-1 text-right">
+                    <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Order Date</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>{{ order.date }}</p>
-                    </div>
+            </div>
+            {% for item in bag_items %}
+            <!-- Shopping bag contents -->
+            <div class="row">
+                <div class="col-3 mb-1">
+                    <a href="{% url 'product_detail' item.product.id %}">
+                        <!-- Displays product image -->
+                        {% if item.product.image %}
+                        <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                        <!-- Or else displays default image -->
+                        {% else %}
+                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        {% endif %}
+                    </a>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <p class="text-success mt-4">Order Details:</p>
-                    </div>
+                <div class="col-6">
+                    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                    <p class="my-0 small text-muted">Quantity: {{ item.quantity }}</p>
                 </div>
-                <!-- Displays items in order -->
-                {% for item in order.lineitems.all %}
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>
-                            {{ item.product.name }}{% if item.product_size %} - Size
-                            {{ item.product.size|upper }}{% endif %}
-                        </p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>{{ item.quantity }} @ €{{ item.product.price }} per item</p>
-                    </div>
+                <div class="col-3 text-right">
+                    <p class="my-0 small text-muted">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                 </div>
-                {% endfor %}
-                <div class="row">
-                    <div class="col">
-                        <p class="text-success mt-4">Delivery Details:</p>
-                    </div>
+            </div>
+            {% endfor %}
+            <hr class="my-0 mb-3">
+            <div class="row text-black">
+                <div class="col-6">
+                    <p>Shopping Bag Total:</p>
+                    <p>&#65122; Delivery Cost:</p>
+                    <p>Grand Total:</p>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Full Name</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>{{ order.full_name }}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Address 1</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>{{ order.street_address1 }}</p>
-                    </div>
-                </div>
-                <!-- Displays if form field was entered -->
-                {% if order.street_address2 %}
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Address 2</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>{{ order.street_address2 }}</p>
-                    </div>
-                </div>
-                {% endif %}
-                <!-- Displays if form field was entered -->
-                {% if order.county %}
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>County</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>{{ order.county }}</p>
-                    </div>
-                </div>
-                {% endif %}
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Town or City</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>{{ order.town_or_city }}</p>
-                    </div>
-                </div>
-                <!-- Displays if form field was entered -->
-                {% if order.postcode %}
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Postal Code</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>{{ order.postcode }}</p>
-                    </div>
-                </div>
-                {% endif %}
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Country</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>{{ order.country }}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Phone Number</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>{{ order.phone_number }}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p class="text-success mt-4">Billing Details:</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Order Total</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>€{{ order.order_total }}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Delivery Cost</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>€{{ order.delivery_cost }}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p>Grand Total</p>
-                    </div>
-                    <div class="col-12 col-md-8 text-md-right">
-                        <p>€{{ order.grand_total }}</p>
-                    </div>
+                <div class="col-6 text-right">
+                    <p>€{{ total | floatformat:2 }}</p>
+                    <p>€{{ delivery | floatformat:2 }}</p>
+                    <p><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-lg-7">
-            <!-- Return to profile button -->
-            {% if from_profile %}
-            <a href="{% url 'profile' %}" class="btn btn-outline-green rounded-3 my-2">
-                <span class="icon mr-2">
-                    <i class="fas fa-angle-left"></i> Return to Profile</span>
-            </a>
-            {% endif %}
-        </div>
-    </div>
-    <!-- Continue shopping button -->
-    <div class="row">
-        <div class="col-12 col-lg-7 text-right">
-            <a href="{% url 'products' %}" class="btn btn-outline-green rounded-3 mt-1 btn-lg">
-                <span class="icon">
-                    <i class="fas fa-chevron-left"></i> Continue Shopping</span>
-            </a>
+        <!-- Checkout form -->
+        <div class="col-12 col-lg-6">
+            <p class="text-success">Complete your order by filling out the form below</p>
+            <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                {% csrf_token %}
+                <fieldset class="rounded px-3 mb-4">
+                    <legend class="fieldset-label small text-black px-2 w-auto">Customer Details</legend>
+                    {{ order_form.full_name | as_crispy_field }}
+                    {{ order_form.email | as_crispy_field }}
+                </fieldset>
+                <fieldset class="rounded px-3 mb-4">
+                    <legend class="fieldset-label small text-black px-2 w-auto">Delivery Details</legend>
+                    {{ order_form.street_address1 | as_crispy_field }}
+                    {{ order_form.street_address2 | as_crispy_field }}
+                    {{ order_form.town_or_city | as_crispy_field }}
+                    {{ order_form.county | as_crispy_field }}
+                    {{ order_form.postcode | as_crispy_field }}
+                    {{ order_form.country | as_crispy_field }}
+                    {{ order_form.phone_number | as_crispy_field }}
+                    <div class="form-check form-check-inline float-right mr-0">
+                        <!-- Autofills the user's information, autofills the form with the same information for future orders -->
+                        {% if user.is_authenticated %}
+                        <label class="form-check-label" for="id-save-info">Save delivery details for future
+                            orders</label>
+                        <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
+                        {% else %}
+                        <label class="form-check-label" for="id-save-info">
+                            <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
+                            <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                        </label>
+                        {% endif %}
+                    </div>
+                </fieldset>
+                <fieldset class="px-3">
+                    <legend class="fieldset-label small text-black px-2 w-auto">Payment Details</legend>
+                    <!-- Displays Stripe card element -->
+                    <div class="mb-3" id="card-element"></div>
+                    <!-- Displays any form errors -->
+                    <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                    <!-- Passes client secret to the view so we can get the payment intent id -->
+                    <input type="hidden" value="{{ client_secret }}" name="client_secret">
+                </fieldset>
+                <div class="submit-button text-right mt-3 mb-2">
+                    <!-- Update order button -->
+                    <a href="{% url 'view_bag' %}" class="btn btn-outline-green btn-lg rounded-3">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i> Adjust Bag</span>
+                    </a>
+                    <!-- Complete order button -->
+                    <button id="submit-button" class="btn btn-black btn-lg rounded-3">
+                        <!-- Displays grand total -->
+                        <span class="icon">Pay €{{ grand_total|floatformat:2 }}
+                            <i class="fab fa-cc-stripe fa-lg"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
+<!-- Loading spinner -->
+<div id="loading-overlay">
+    <span class="icon">
+        <i class="fas fa-shipping-fast"></i>
+    </span>
+</div>
+{% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+<!-- Stripe, submit checkout form -->
+{{ stripe_public_key|json_script:"id_stripe_public_key" }}
+{{ client_secret|json_script:"id_client_secret" }}
+<script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
