@@ -9,7 +9,7 @@ from .forms import ContactForm
 
 
 def contact(request):
-    template = "contact/contact.html"
+    template = "products/products.html"
 
     if request.method == "POST":
         form = ContactForm(request.POST)

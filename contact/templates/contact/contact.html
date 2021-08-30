@@ -19,18 +19,18 @@
     <div class="row">
         <div class="col-12 col-lg-6 offset-lg-3">
             <p class="mobile-center">
-                Please get in touch if you have any product suggestions, questions or queries for Siopa Worlwide
+                Please get in touch if you have any product suggestions, questions or queries for Siopa Worldwide.
             </p>
         </div>
     </div>
     <!-- Contact form -->
     <div class="row">
-        <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+        <div class="col-12 col-lg-6 offset-lg-3 col-md-10 offset-md-1">
             <form method="POST" action="{% url 'contact' %}">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button type="Submit" class="btn btn-outline-green rounded-3 mt-5">Send</button>
-                <a href="{% url 'contact' %}" class="btn btn-black rounded-3 mt-5">Cancel</a>
+                <button type="Submit" class="btn btn-outline-green rounded-3 mt-2">Send</button>
+                <a href="{% url 'products' %}" class="btn btn-black rounded-3 mt-2">Cancel</a>
             </form>
         </div>
     </div>

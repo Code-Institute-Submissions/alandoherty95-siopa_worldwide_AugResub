@@ -13,7 +13,7 @@ from bag.contexts import bag_contents
 import stripe
 import json
 
-# Saves customer info
+# Saves customer info for future orders
 @require_POST
 def cache_checkout_data(request):
     try:

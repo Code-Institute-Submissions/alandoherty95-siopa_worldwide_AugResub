@@ -74,7 +74,6 @@ h3.greeting {
     background: #000000;
     color: #ffffff;
     letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 .btn-outline-green {
@@ -82,7 +81,6 @@ h3.greeting {
     color: #ffffff !important;
     border: 1px solid #ffffff;
     letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 .btn-outline-green:hover,

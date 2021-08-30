@@ -88,6 +88,7 @@
                     {{ order_form.town_or_city | as_crispy_field }}
                     {{ order_form.county | as_crispy_field }}
                     {{ order_form.postcode | as_crispy_field }}
+                    <!-- Select from country dropdown -->
                     {{ order_form.country | as_crispy_field }}
                     {{ order_form.phone_number | as_crispy_field }}
                     <div class="form-check form-check-inline float-right mr-0">
@@ -134,7 +135,7 @@
 <!-- Loading spinner -->
 <div id="loading-overlay">
     <span class="icon">
-        <i class="fas fa-shipping-fast"></i>
+        <i class="fas fa-3x fa-spin fa-shipping-fast"></i>
     </span>
 </div>
 {% endblock %}
