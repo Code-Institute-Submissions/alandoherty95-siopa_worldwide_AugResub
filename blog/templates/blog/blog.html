@@ -37,7 +37,7 @@
                         <a href="{% url 'delete_blogpost' post.id %}" class="text-danger" title="Delete post">Delete</a>
                     </small>
                     {% endif %}
-                    <p>{{ post.body|truncatechars:60 }}</p>
+                    <p>{{ post.body|truncatechars:80 }}</p>
                 </div>
             </div>
             <div class="row">

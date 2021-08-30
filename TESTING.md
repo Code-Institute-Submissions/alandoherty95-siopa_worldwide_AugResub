@@ -736,6 +736,28 @@ Description
 
 7. Click on add to bag button or continue shopping button
 
+### 9. Contact
+
+#### Contact Siopa Worldwide :white_check_mark:
+
+1. Open Browser
+
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+
+3. Click on the 'Contact' option in the navigation bar
+4. Enter details in form fields
+5. Click submit
+
+#### Contact Siopa Worldwide :white_check_mark:
+
+1. Open Browser
+
+2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
+
+3. Click on the 'Blog' option in the navigation bar
+4. Scroll to view all blog posts
+5. Click on 'View Post'
+
 ### User Requirements
 
 #### **As a first-time user, I would like to:**
@@ -786,6 +808,16 @@ Description
 
 - view the details of my order in the confirmation email
 
+  **Contact**
+
+- get in contact with the store owner by filling out a simple contact form
+
+- receive an email confirmation that the message was sent
+
+  **Blog**
+
+- read blog posts about Siopa Worldwide
+
 **Create Account**
 
 - create an account easily and quickly
@@ -819,6 +851,10 @@ Description
 - view and manage users of the site
 
 - view and manage orders
+
+- view messages submitted by users using the contact form
+
+- create, edit and delete blog posts about Siopa Worldwide
 
 Extensive manual testing was completed throughout the development of this application. Once the website was successfully deployed on Heroku, I completed rigorous manual testing to ensure each button and feature was functioning correctly.
 
@@ -1078,13 +1114,13 @@ Issue: Email confirmations are not being received after an order is completed. A
 
 - Fix: I updated the `DEFAULT_FROM_EMAIL` variable in settings.py to `siopaworldwide@example.com` instead of `siopaworldwide@gmail.com`. I tested the email confirmation by using my own gmail email address as well as a temporary email address which both worked perfectly.
 
-Issue: An error was displayed after submitting the contact form. 
+Issue: An error was displayed after submitting the contact form.
 
-- Fix: I commented out my database code in the settings.py file. Instead, I updated the remote database and then ran migrations. I also checked my Gmail settings to ensure 2FA was enabled and a Django password was generated from Gmail. I deployed the application again to test the order confirmation emails and the contact form which functioned correctly. 
+- Fix: I commented out my database code in the settings.py file. Instead, I updated the remote database and then ran migrations. I also checked my Gmail settings to ensure 2FA was enabled and a Django password was generated from Gmail. I deployed the application again to test the order confirmation emails and the contact form which functioned correctly.
 
 Issue: New blog posts were not being added successfully. The admin could submit the `add_blogpost` form but it would not be saved with the other blog posts.
 
-- Fix: I identified a typo in the views.py file and updated `args=[post.id]` to `args=[blogpost.id]` to match `blogpost = form.save()`. 
+- Fix: I identified a typo in the views.py file and updated `args=[post.id]` to `args=[blogpost.id]` to match `blogpost = form.save()`.
 
 <span  id="resolved"></span>
 

@@ -11,6 +11,7 @@ from products.models import Product
 from profiles.models import UserProfile
 
 
+# Order information
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
@@ -72,6 +73,7 @@ class Order(models.Model):
         return self.order_number
 
 
+# Order line items
 class OrderLineItem(models.Model):
     order = models.ForeignKey(
         Order, null=False, blank=False,
