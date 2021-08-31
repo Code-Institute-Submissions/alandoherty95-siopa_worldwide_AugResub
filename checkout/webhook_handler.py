@@ -28,7 +28,7 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/body_confirmation_email.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-    
+
         send_mail(
             subject,
             body,
@@ -43,7 +43,7 @@ class StripeWH_Handler:
         return HttpResponse(
             content=f'Unhandled Stripe webhook received: {event["type"]}',
             status=200)
-    
+
     def handle_payment_intent_succeeded(self, event):
         """
         Handles the payment_intent.succeeded webhook from Stripe
@@ -61,9 +61,9 @@ class StripeWH_Handler:
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
-        
+
         # Updates profile information if save_info box was checked
-        profile = None # Allows anonymous users to check out
+        profile = None  # Allows anonymous users to check out
         username = intent.metadata.username
         if username != 'AnonymousUser':
             # Gets username if user is not anonymous

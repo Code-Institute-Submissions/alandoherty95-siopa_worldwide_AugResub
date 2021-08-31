@@ -16,7 +16,7 @@ def contact(request):
         if form.is_valid():
             form.save()
             messages.success(request,
-                             "Message sent to Siopa Worldwide! We'll be in touch shortly!")
+                             "Message sent. We'll be in touch shortly!")
             instance = form.save()
             """ Sends automatic email confirming message was received """
             sender_email = instance.email
