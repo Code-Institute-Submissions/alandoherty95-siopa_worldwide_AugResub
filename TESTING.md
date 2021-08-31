@@ -340,7 +340,44 @@ I created the application on the website rather than in the CLI, so I had to ini
 
 ## 7. User Stories Testing
 
-![User Stories Table](https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/screenshots/user-stories-table.png?raw=true)
+| User Story ID                    | As a...     | I want to be able to...                                    | So that I can...                                                                                |
+| -------------------------------- | ----------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Viewing & Navigation**         |
+| 1                                | Shopper     | View a list of products                                    | Select some items to purchase                                                                   |
+| 2                                | Shopper     | View individual product details                            | View the price, description, image and category                                                 |
+| 3                                | Shopper     | Quickly identify items of interest                         | Identify items I'd like to purchase                                                             |
+| 4                                | Shopper     | Easily view my order total at any time                     | Avoid spending too much                                                                         |
+| **Registration & User Accounts** |
+| 5                                | Site User   | Easily register for an account                             | Have a personal account and be able to view my profile                                          |
+| 6                                | Site User   | Easily login or logout                                     | Access my personal account information                                                          |
+| 7                                | Site User   | Easily recover my password in case I forget it             | Recover access to my account                                                                    |
+| 8                                | Site User   | Receive an email confirmation after registering            | Verify that my account registration was successful                                              |
+| 9                                | Site User   | Have a personalized user profile                           | View my personal order history and order confirmations as well as save my personal information  |
+| **Sorting & Searching**          |
+| 10                               | Shopper     | Sort the list of available products                        | Easily identify the best rated, best priced and categorically sorted products                   |
+| 11                               | Shopper     | Sort a specific category of product                        | Find the best priced items in a specific category or sorts the product in that category by name |
+| 12                               | Shopper     | Sort multiple categories of prodcuts simultanesously       | Find the best priced items across broad categories like "clothing" or "homeware"                |
+| 13                               | Shopper     | Search for a product by name and description               | Fidn a specific items I'd like to purchase                                                      |
+| 14                               | Shopper     | Easily view search results                                 | Quickly find items of interest                                                                  |
+| **Purchasing & Checkout**        |
+| 15                               | Shopper     | Easily select the quantity of a product when purchasing it | Ensure I dont accidentally select the wrong product or quantity                                 |
+| 16                               | Shopper     | View items in my bag to be purchased                       | Identify the total cost of my purchase and all items I will receive                             |
+| 17                               | Shopper     | Adjust the quantity of individual items in my bag          | Easily make changes to my purchase before checkout                                              |
+| 18                               | Shopper     | Enter my payment information                               | Check out quickly and with no hassle                                                            |
+| 19                               | Shopper     | Feel my personal and payment information is secure         | Confidently provide the needed information to make a purchase                                   |
+| 20                               | Shopper     | View an order confirmation after checkout                  | Verify that I haven't made any purchases                                                        |
+| 21                               | Shopper     | Receive an email confirmation after checking out           | Keep information relating to my past orders                                                     |
+| **Contact**                      |
+| 22                               | Shopper     | Get in touch with Siopa Worldwide via contact form         | Contact the store owner with any questions, queries or product suggestions                      |
+| **Blog**                         |
+| 23                               | Shopper     | Read all blog posts                                        | Understand the mission and values of Siopa Worldwide and learn about new products               |
+| **Admin & Site Management**      |
+| 24                               | Store Owner | Add a new product                                          | Add new items to my store                                                                       |
+| 25                               | Store Owner | Edit an existing product                                   | Change the item price, descriptions or image                                                    |
+| 26                               | Store Owner | Delete a product                                           | Remove items that are no longer for sale                                                        |
+| 27                               | Store Owner | Add a new blog post                                        | Add new posts to the blog                                                                       |
+| 28                               | Store Owner | Edit an existing blog post                                 | Update name, image or content of blog post                                                      |
+| 29                               | Store Owner | Delete a blog post                                         | Remove posts that are no longer wanted                                                          |
 
 <span  id="manual"></span>
 
@@ -745,7 +782,9 @@ Description
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
 
 3. Click on the 'Contact' option in the navigation bar
+
 4. Enter details in form fields
+
 5. Click submit
 
 #### Contact Siopa Worldwide :white_check_mark:
@@ -755,7 +794,9 @@ Description
 2. Open [Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)
 
 3. Click on the 'Blog' option in the navigation bar
+
 4. Scroll to view all blog posts
+
 5. Click on 'View Post'
 
 ### User Requirements
@@ -808,13 +849,13 @@ Description
 
 - view the details of my order in the confirmation email
 
-  **Contact**
+**Contact**
 
 - get in contact with the store owner by filling out a simple contact form
 
 - receive an email confirmation that the message was sent
 
-  **Blog**
+**Blog**
 
 - read blog posts about Siopa Worldwide
 
@@ -858,9 +899,71 @@ Description
 
 Extensive manual testing was completed throughout the development of this application. Once the website was successfully deployed on Heroku, I completed rigorous manual testing to ensure each button and feature was functioning correctly.
 
-![Manual Testing Table 1](https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/screenshots/manual-testing-table1.png?raw=true)
-
-![Manual Testing Table 2](https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/screenshots/manual-testing-table2.png?raw=true)
+| Navigation Bar            |        |                                                         |         |
+| ------------------------- | ------ | ------------------------------------------------------- | ------- |
+| Item                      | Action | Expected Result                                         | Outcome |
+| Siopa Worldwide Logo      | Click  | Return to 'Home'                                        | Success |
+| All Products              | Click  | Reveal dropdown menu                                    | Success |
+| ^ By Price (Low to High)  | Click  | Go to 'Products' page, sorted by lowest price           | Success |
+| ^ By Name (A to Z)        | Click  | Go to 'Products' page, sortied items alphabetically     | Success |
+| ^ By Category (A to Z)    | Click  | Go to 'Products' page, sorted categories alphabetically | Success |
+| ^ View all Products       | Click  | Go to 'Products' page                                   | Success |
+| Food                      | Click  | Reveal dropdown menu                                    | Success |
+| ^ Chocolate               | Click  | Go to 'Products' page, filtered to chocolate            | Success |
+| ^ Crisps                  | Click  | Go to 'Products' page, filtered to crisps               | Success |
+| ^ Biscuits                | Click  | Go to 'Products' page, filtered to biscuits             | Success |
+| ^ View All Food           | Click  | Go to 'Products' page, filtered to all food             | Success |
+| Drinks                    | Click  | Reveal dropdown menu                                    | Success |
+| ^ Tea & Coffee            | Click  | Go to 'Products' page, filtered to tea & coffee         | Success |
+| ^ Fizzy Drinks            | Click  | Go to 'Products' page, filtered to fizzy drinks         | Success |
+| ^ View All Drinks         | Click  | Go to 'Products' page, filtered to all drinks           | Success |
+| Search bar                | Click  | Return related search results                           | Success |
+| Account                   | Click  | Reveal dropdown Menu                                    | Success |
+| ^ Register                | Click  | Go to 'Sign Up' page                                    | Success |
+| ^ Login                   | Click  | Go to 'Sign In' page                                    | Success |
+| Shopping Bag              | Click  | Go to 'Shopping Bag' page                               | Success |
+| Shop Now                  | Click  | Go to 'Products' page                                   | Success |
+|                           |        |                                                         |         |
+| **Products**              |        |                                                         |         |
+| Sort items by..           | Click  | Reveal dropdown menu                                    | Success |
+| Product image             | Click  | Go to 'Product Detail' page                             | Success |
+|                           |        |                                                         |         |
+| **Product Detail**        |        |                                                         |         |
+| Quantity decrement button | Click  | Decreases quantity of item                              | Success |
+| Quantity increment button | Click  | Increases quantity of item                              | Success |
+| Continue shopping button  | Click  | Go to 'Products' page                                   | Success |
+| Add to bag button         | Click  | Adds item to shopping bag                               | Success |
+|                           |        |                                                         |         |
+| **Shopping Bag**          |        |                                                         |         |
+| Quantity decrement button | Click  | Decreases quantity of item                              | Success |
+| Quantity increment button | Click  | Increases quantity of item                              | Success |
+| Apply changes button      | Click  | Updates quantity of item in shopping bag                | Success |
+| Complete order button     | Click  | Go to 'Checkout' page                                   | Success |
+|                           |        |                                                         |         |
+| **Checkout**              |        |                                                         |         |
+| Form Fields               | Click  | Allows user to input order details                      | Success |
+| Country option            | Click  | Allows user to select country in dropdown list          | Success |
+| Create an account button  | Click  | Go to 'Sign Up' page                                    | Success |
+| Login button              | Click  | Go to 'Sign In' page                                    | Success |
+| Adjust bag button         | Click  | Go to 'Shopping Bag' page                               | Success |
+| Pay button                | Click  | Go to 'Checkout Success' page                           | Success |
+|                           |        |                                                         |         |
+| **Profile**               |        |                                                         |         |
+| Form Fields               | Click  | Allows user to input order details                      | Success |
+| Country option            | Click  | Allows user to select country in dropdown list          | Success |
+| Update information button | Click  | Updates personal infromation on profile                 | Success |
+| Order number              | Click  | Go to 'Checkout Success' page, shows order confirmation | Success |
+|                           |        |                                                         |         |
+| **Contact**               |        |                                                         |         |
+| Form Fields               | Click  | Allows user to input order details                      | Success |
+| Submit button             | Click  | Submits form, sends confirmation email                  | Success |
+| Cancel button             | Click  | Go to 'Products' page                                   | Success |
+|                           |        |                                                         |         |
+| **Blog**                  |        |                                                         |         |
+| View Post button          | Click  | Go to 'Blogpost Detail' page                            | Success |
+|                           |        |                                                         |         |
+| **Blogpost Detail**       |        |                                                         |         |
+| Return to Blog button     | Click  | Go to 'Blog' page                                       | Success |
 
 #### Responsiveness
 

@@ -28,9 +28,11 @@ Welcome to **[Siopa Worldwide](https://siopa-worldwide.herokuapp.com/)** - a one
 
 9.  <a  href="#deployment">**Deployment**</a>
 
-10. <a  href="#credits">**Credits**</a>
+10. <a  href="#database">**Database**</a>
 
-11. <a  href="#acknowledgements">**Acknowledgements**</a>
+11. <a  href="#credits">**Credits**</a>
+
+12. <a  href="#acknowledgements">**Acknowledgements**</a>
 
 <span  id="context"></span>
 
@@ -596,7 +598,73 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 <span  id="credits"></span>
 
-## 10. Credits
+## 10. Database Models
+
+| Data Models             |                                                                                                  |                                                                                                                                     |
+| ----------------------- | ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Categories              |                                                                                                  |                                                                                                                                     |
+| Name                    | Type                                                                                             | Example                                                                                                                             |
+| name                    | CharField(max_length=254)                                                                        | chocolate                                                                                                                           |
+| friendly_name           | CharField(max_length=254, null=True, blank=True)                                                 | Chocolate                                                                                                                           |
+|                         |                                                                                                  |                                                                                                                                     |
+| Products                |                                                                                                  |                                                                                                                                     |
+| category                | ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)                         | 1                                                                                                                                   |
+| sku                     | CharField(max_length=254, null=True, blank=True)                                                 | 5001600425                                                                                                                          |
+| name                    | CharField(max_length=254)                                                                        | Cadbury Dairy Milk (200g)                                                                                                           |
+| description             | TextField()                                                                                      | Our classic bar of deliciously creamy Cadbury Dairy Milk milk chocolate, made with fresh milk. A mouthful of “mmmm” in every piece! |
+| price                   | DecimalField(max_digits=6, decimal_places=2)                                                     | 3.49                                                                                                                                |
+| image_url               | URLField(max_length=1024, null=True, blank=True)                                                 | https://images.sweetauthoring.com/product/85624.png                                                                                 |
+| image                   | mageField(null=True, blank=True)                                                                 | dairy-milk-milk.png                                                                                                                 |
+|                         |                                                                                                  |                                                                                                                                     |
+| User Profile            |                                                                                                  |                                                                                                                                     |
+| user                    | OneToOneField(User, on_delete=models.CASCADE)                                                    | aland5991                                                                                                                           |
+| default_street_address1 | CharField(max_length=80, null=True, blank=True)                                                  | Test House                                                                                                                          |
+| default_street_address2 | CharField(max_length=80, null=True, blank=True)                                                  | Test Street                                                                                                                         |
+| default_town_or_city    | CharField(max_length=40, null=True, blank=True)                                                  | Corbally                                                                                                                            |
+| default_county          | CharField(max_length=80, null=True, blank=True)                                                  | Limerick                                                                                                                            |
+| default_postcode        | CharField(max_length=20, null=True, blank=True)                                                  | v94ABC1                                                                                                                             |
+| default_country         | CountryField(blank_label='Country \*', null=True, blank=True)                                    | Ireland                                                                                                                             |
+| default_phone_number    | CharField(max_length=20, null=True, blank=True)                                                  | 0831234567                                                                                                                          |
+|                         |                                                                                                  |                                                                                                                                     |
+| Blog                    |                                                                                                  |                                                                                                                                     |
+| title                   | CharField(max_length=254, null=False, blank=False)                                               | About Us                                                                                                                            |
+| body                    | TextField(null=False, blank=False)                                                               | We are Siopa Worldwide!                                                                                                             |
+| image                   | ImageField(null=True, blank=True)                                                                | siopa-logo-home.png                                                                                                                 |
+| date_created            | DateTimeField(null=True, auto_now_add=True)                                                      | 2021-08-15T18:11:23.523Z                                                                                                            |
+|                         |                                                                                                  |                                                                                                                                     |
+| Contact                 |                                                                                                  |                                                                                                                                     |
+| name                    | CharField(max_length=40, null=False, blank=False)                                                | Alan                                                                                                                                |
+| email                   | EmailField(max_length=50, null=False, blank=False)                                               | test@gmail.com                                                                                                                      |
+| subject                 | CharField(max_length=254, null=False, blank=False)                                               | Great selection of products                                                                                                         |
+| message                 | TextField(blank=False, null=False)                                                               | I love the range of products in the store                                                                                           |
+| date_sent               | DateTimeField(auto_now_add=True)                                                                 | 2021-08-15T18:11:23.523Z                                                                                                            |
+|                         |                                                                                                  |                                                                                                                                     |
+| Order                   |                                                                                                  |                                                                                                                                     |
+| order_number            | CharField(max_length=32, null=False, editable=False)                                             |                                                                                                                                     |
+| user_profile            | ForeignKey(UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders') |                                                                                                                                     |
+| full_name               | CharField(max_length=40, null=False, blank=False)                                                |                                                                                                                                     |
+| email                   | EmailField(max_length=200, null=False, blank=False)                                              |                                                                                                                                     |
+| phone_number            | CharField(max_length=20, null=False, blank=False)                                                |                                                                                                                                     |
+| country                 | CountryField(blank_label='Country \*', null=False, blank=False)                                  |                                                                                                                                     |
+| postcode                | CharField(max_length=22, null=True, blank=True)                                                  |                                                                                                                                     |
+| town_or_city            | CharField(max_length=40, null=False, blank=False)                                                |                                                                                                                                     |
+| street_address1         | CharField(max_length=60, null=False, blank=False)                                                |                                                                                                                                     |
+| street_address2         | CharField(max_length=60, null=True, blank=True)                                                  |                                                                                                                                     |
+| county                  | CharField(max_length=60, null=True, blank=True)                                                  |                                                                                                                                     |
+| date                    | DateTimeField(auto_now_add=True)                                                                 |                                                                                                                                     |
+| delivery_cost           | DecimalField(max_digits=6, decimal_places=2, null=False, default=0)                              |                                                                                                                                     |
+| order_total             | DecimalField(max_digits=10, decimal_places=2, null=False, default=0)                             |                                                                                                                                     |
+| grand_total             | DecimalField(max_digits=10, decimal_places=2, null=False, default=0)                             |                                                                                                                                     |
+| original_bag            | TextField(null=False, blank=False, default='')                                                   |                                                                                                                                     |
+| stripe_pid              | CharField(max_length=254, null=False, blank=False, default='')                                   |                                                                                                                                     |
+|                         |                                                                                                  |                                                                                                                                     |
+| Order Line Item         |                                                                                                  |                                                                                                                                     |
+| order                   | ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')   |                                                                                                                                     |
+| product                 | ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)                           |                                                                                                                                     |
+| quantity                | IntegerField(null=False, blank=False, default=0)                                                 |                                                                                                                                     |
+| lineitem_total          | DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)            |
+
+## 11. Credits
 
 - [Heroku](https://dashboard.heroku.com/apps) for supplying a platform for deploying my website.
 
@@ -622,7 +690,7 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 <span  id="acknowledgements"></span>
 
-## 11. Acknowledgements
+## 12. Acknowledgements
 
 - My Code Institute Mentor [Nishant Kumar](https://github.com/nishant8BITS/) for his continuous help and guidance.
 
@@ -630,7 +698,7 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 - My friends lent me their time to demonstrate the website while offering proposals and constructive feedback.
 
-- My peers and colleagues for providing invaluable feedback and suggestions before selecting the products to sell in our store.
+- My peers and colleagues provided invaluable feedback and suggestions before selecting the products to sell in our store.
 
 - My family for putting up with me during this project and for providing ideas and feedback along the way.
 
