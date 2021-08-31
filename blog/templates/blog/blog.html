@@ -29,7 +29,6 @@
                     <a href="{% url 'blogpost_detail' post.id %}" class="text-success">
                         <h2>{{ post.title }}</h2>
                     </a>
-                    <a href="{% url 'blogpost_detail' post.id %}" class="btn btn-outline-green rounded-3 float-right">View Post</a>
                     <!-- Edit & delete buttons for admin only-->
                     {% if request.user.is_superuser %}
                     <small>
@@ -38,6 +37,7 @@
                     </small>
                     {% endif %}
                     <p>{{ post.body|truncatechars:80 }}</p>
+                    <a href="{% url 'blogpost_detail' post.id %}" class="btn btn-outline-green rounded-3 float-right">View Post</a>
                 </div>
             </div>
             <div class="row">
