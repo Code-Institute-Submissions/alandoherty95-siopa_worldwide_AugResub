@@ -354,6 +354,12 @@ The whole development process is broken down into smaller stages to help in mana
 
 ![Checkout Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/wireframes/desktop-wireframes/checkout-wireframe.png?raw=true)
 
+![Contact Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/wireframes/desktop-wireframes/contact-wireframe.png?raw=true)
+
+![Blog Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/wireframes/desktop-wireframes/blog-wireframe.png?raw=true)
+
+![Blogpost Detail Page](https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/wireframes/blogpost-detail-wireframes/-wireframe.png?raw=true)
+
 ### Mobile Wireframes
 
 ![Mobile Wireframes 1](https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/wireframes/mobile-wireframes/mobile-wireframes1.png?raw=true)

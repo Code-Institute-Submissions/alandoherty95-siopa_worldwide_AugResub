@@ -1119,6 +1119,14 @@ The following reports were generated using Lighthouse:
 
 > Users can also sort items by price in order of highest to lowest or lowest to highest. This gives users the opportunity to browse products based on their budgetary requirements.
 
+![Contact Form](https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/screenshots//contact-form.png?raw=true)
+
+> Users can get in touch with the store owner by completing a simple contact form. The user will receive an email confirmation when the message has been submitted.
+
+![Add post to blog](https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/screenshots//add-blogpost.png?raw=true)
+
+> The store owner can add new posts to the blog. This allows the store to keep customers up to date with news or future products. The store owner can also edit or delete existing posts.
+
 #### Toast Messages
 
 ![Add product to bag toast](https://github.com/alandoherty95/siopa_worldwide/blob/master/resources/screenshots//toast-add-product-to-bag.png?raw=true)
@@ -1228,6 +1236,10 @@ Issue: New blog posts were not being added successfully. The admin could submit 
 <span  id="resolved"></span>
 
 ## 12. Unresolved Bugs
+
+- Several improvements can be made to the user experience throughout the application, particularly on smaller devices.
+
+-
 
 <span  id="extra"></span>
 
