@@ -102,6 +102,16 @@ Checked with HTML Validator
 
 - base.html
 
+- contact.html
+
+- blog.html
+
+- blogpost_detail.html
+
+- add_blogpost.html
+
+- edit_blogpost.html
+
 - toast_error.html
 
 - toast_info.html
@@ -134,7 +144,7 @@ Checked with CSS Validator
 
 ## 5. Python Checker
 
-[Python Checker](https://www.pythonchecker.com/) was used to validate all Python code in the application.
+[Python Checker](https://www.pythonchecker.com/) and [PEP8](http://pep8online.com/) was used to validate all Python code in the application.
 
 <span  id="deployment"></span>
 
