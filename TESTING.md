@@ -1249,8 +1249,6 @@ Issue: New blog posts were not being added successfully. The admin could submit 
 
 - Several improvements can be made to the user experience throughout the application, particularly on smaller devices.
 
--
-
 <span  id="extra"></span>
 
 ## 13. Extra
