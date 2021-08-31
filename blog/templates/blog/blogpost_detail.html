@@ -36,11 +36,11 @@
         </div>
         <!-- Post details -->
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="blogpost-details-container mb-5 mt-md-5">
+            <div class="blogpost-details-container">
                 <p>{{ post.body }}</p>
                 <!-- Admin access only -->
                 {% if request.user.is_superuser %}
-                <small>
+                <small class="my-2">
                     <a href="{% url 'edit_blogpost' post.id %}" class="text-warning" title="Edit post">Edit</a> |
                     <a href="{% url 'delete_blogpost' post.id %}" class="text-danger" title="Delete post">Delete</a>
                 </small>
